@@ -7,7 +7,9 @@ verification:
   status: partial
   missing:
     - "אין לפרודון ערך באנציקלופדיה של סטנפורד או באנציקלופדיה של האינטרנט (IEP). הביוגרפיה נשענת על Gran Enciclopèdia Catalana (s3) ועל רשומת קרן פרידריך אברט (s4) לתאריכים. Britannica חסומה מסביבת העבודה (403). מקורות מבוססי ויקיפדיה (New World Encyclopedia, encyclopedia.pub) נדחו."
-    - "אנטישמיות ומיזוגיניה: ידוע שבמחברות האישיות שלו (Carnets, פורסמו אחרי מותו) ובחיבור La Pornocratie (1875) יש קטעים אנטישמיים ואנטי-פמיניסטיים. חיפשתי ומצאתי רק מסות, פורומים ואתרים אנרכיסטיים, לא מקור אקדמי או את הטקסט עצמו. לא נכנס לכרטיס עד שיימצא מקור טוב. זה פער מהותי בביקורת."
+    - "קטע המחברות מ-26 בדצמבר 1847 נבדק בתרגום אנגלי (מיטשל אבידור, marxists.org, s6) ומצוטט גם במאמר של Miething (s7). המקור הצרפתי (Carnets, Rivière, 1960) לא נפתח. מקור אחד מתארך את הקטע ל-22 בדצמבר; ההכרעה לפי s6 ו-s7."
+    - "מחקרו של פרדריק קרייר (Sozialismus für Kleinbürger, Böhlau 2009), שלפיו רוב האמירות האנטי-יהודיות של פרודון נמצאות בספרים שפרסם בחייו, מובא דרך הסקירה של Miething (s7). הספר עצמו לא נפתח."
+    - "מיקום הציטוט מ-La Pornocratie ניתן לפי עמוד הסריקה בוויקיטקסט (89) ולפי הפרק (III), ולא לפי מספר העמוד המודפס במהדורת 1875."
     - "התרגום האנגלי של 'מהו רכוש?' ב-Gutenberg (s1) הוא של בנג'מין טאקר לפי הביבליוגרפיה של s2. כותרת הקובץ ב-Gutenberg לא מציינת מתרגם."
     - "לא נבדקו כתביו המאוחרים (Système des contradictions économiques, Du principe fédératif). הם מוזכרים רק דרך s3 ו-s5."
     - "אין כרטיס זרם 'אנרכיזם' ואין כרטיס יצירה. schools ו-key_works ריקים."
@@ -34,8 +36,25 @@ sources:
     title: "Karl Marx, Letter to J. B. Schweitzer 'On Proudhon' (24 January 1865), Marxists Internet Archive"
     url: https://www.marxists.org/archive/marx/works/1865/letters/65_01_24.htm
     type: primary
+  - id: s6
+    title: "P.-J. Proudhon, notebook entry of 26 December 1847, 'On the Jews' (from Carnets, Rivière 1960; tr. Mitchell Abidor), Marxists Internet Archive"
+    url: https://www.marxists.org/reference/subject/economics/proudhon/1847/jews.htm
+    type: primary
+  - id: s7
+    title: "Dominique F. Miething, 'Antisemitism in the anarchist tradition' (review article), Anarchist Studies 26.1 (2018)"
+    url: https://www.polsoz.fu-berlin.de/polwiss/forschung/sozialkunde/politikdidaktik/Team/miething/Miething_-Dominique-_2018_---Antisemitism-in-the-anarchist-tradition.pdf
+    type: academic
+  - id: s8
+    title: "P.-J. Proudhon, La Pornocratie, ou les Femmes dans les temps modernes (1875), Wikisource (fr)"
+    url: https://fr.wikisource.org/wiki/La_Pornocratie,_ou_les_Femmes_dans_les_temps_modernes/Texte_entier
+    type: primary
+  - id: s9
+    title: "Jenny P. d'Héricourt, A Woman's Philosophy of Woman; or, Woman Affranchised (1864; French 1860), Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/53937
+    type: primary
 born: 1809
 died: 1865
+critics: [karl-marx]
 guides: [stanford-encyclopedia-of-philosophy]
 ---
 
@@ -60,7 +79,15 @@ guides: [stanford-encyclopedia-of-philosophy]
 **כלכלה מבולבלת ועמדה "זעיר-בורגנית".** לפי מרקס, הידע של פרודון בכלכלה פוליטית היה לקוי, תפיסת ערך החליפין שלו מבולבלת, והוא נע כל הזמן בין ההון לעבודה. מרקס ראה בו "זעיר-בורגני" שמבקר את החברה מנקודת המבט של איכר בעל חלקה קטנה [^s5]. מרקס גם האשים אותו שבחיבורו על ההפיכה של 1851 ניסה להפוך את לואי בונפרטה לרצוי בעיני הפועלים [^s5].
 
 :::assessment
-הערכה של כותב הכרטיס: הביקורת היחידה שמובאת כאן באה מיריב אידאולוגי ישיר ובן תחרות. מרקס הוא מקור ראשוני לגבי המחלוקת ביניהם, אבל לא מקור נייטרלי לגבי פרודון. חסרה ביקורת מכיוון אחר (ליברלי או שמרני), וחסרה ההתייחסות לאנטישמיות ולמיזוגיניה (ראה missing). הביקורת בכרטיס הזה חלשה יותר משהיא צריכה להיות.
+הערכה של כותב הכרטיס: הביקורת הכלכלית שמובאת כאן באה מיריב אידאולוגי ישיר ובן תחרות. מרקס הוא מקור ראשוני לגבי המחלוקת ביניהם, אבל לא מקור נייטרלי לגבי פרודון. חסרה עדיין ביקורת עניינית על הכלכלה שלו מכיוון ליברלי או שמרני.
+:::
+
+**אנטישמיות.** במחברת האישית שלו, ב-26 בדצמבר 1847, כתב פרודון שצריך לכתוב מאמר נגד היהודים, לדרוש את גירושם מצרפת, לסגור את בתי הכנסת, ושהיהודי הוא "אויב המין האנושי" שיש "לשלוח בחזרה לאסיה או להשמיד" [^s6] [^s7]. הקטע נודע אחרי פרסום המחברות בשנות ה-60 של המאה ה-20. לפי סקירה בכתב העת Anarchist Studies, מחקרו של פרדריק קרייר מראה שרוב האמירות האנטי-יהודיות של פרודון מופיעות דווקא בספרים שפרסם בחייו, כולל "מהו רכוש?", ומצטרפות לתפיסת עולם אנטישמית שלמה ולא ל"הערות אגב" [^s7]. יש מגיני פרודון שרואים בזה פגם אישי שאינו חלק מתורתו, והסקירה דוחה את ההקטנה הזו [^s7].
+
+**מיזוגיניה.** ב-La Pornocratie, שפורסם אחרי מותו, פרודון כותב שבפני האישה עומדות שתי אפשרויות בלבד: "courtisane ou ménagère" (פרוצה או עקרת בית), ושהוא "לא נסוג" מכך: "עדיף ההסגר על פני השחרור" [^s8]. ז'ני ד'אריקור, בת זמנו, הקדישה פרק שלם בספרה "האישה המשוחררת" (1860) להפרכת עמדותיו של פרודון על נשים, שלדבריה ראה באישה יצור נחות וקטין [^s9].
+
+:::assessment
+הערכה של כותב הכרטיס: זו לא שאלה ביוגרפית שולית. אם הסקירה ב-s7 צודקת, השנאה ליהודים קשורה אצל פרודון לביקורת הסמכות עצמה (הוא ראה ביהודים את מי ששולטים בסתר בכל סמכות). מי שמאמץ את ביקורת הרכוש והשלטון שלו צריך לבדוק אם היא עומדת גם בלי הרכיב הזה.
 :::
 
 **הביקורות הכלליות על אנרכיזם** (שהאנרכיה תחזור למדינה, שהיא אוטופית, שהיא לא קוהרנטית) מפורטות בערך של סטנפורד, יחד עם התשובות האנרכיסטיות [^s2]. ראה גם את השאלה על לגיטימיות המדינה.
