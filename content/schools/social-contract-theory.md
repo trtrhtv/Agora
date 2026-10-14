@@ -14,7 +14,7 @@ sources:
     title: "Stanford Encyclopedia of Philosophy: Contemporary Approaches to the Social Contract"
     url: https://plato.stanford.edu/entries/contractarianism-contemporary/
     type: encyclopedia
-key_thinkers: [thomas-hobbes, john-locke]
+key_thinkers: [thomas-hobbes, john-locke, jean-jacques-rousseau, immanuel-kant]
 ---
 
 ## הרעיון המרכזי

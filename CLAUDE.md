@@ -18,6 +18,13 @@ Personal worldview app. The full spec is in `SPEC.md`. Read it before any task.
 - New or edited cards always get `reviewed_by_me: false`. Only the owner sets it to true.
 - Write content in batches of 5–10 cards, then stop for review.
 
+## Format decisions (owner, after phase 1 batch 1)
+
+- Quotes: exact original (English) with its location, then a Hebrew free translation marked as such.
+- Positions with no holder in the library stay in the question, fully written, with a note that no holder exists yet.
+- Living scholars known only through a secondary source (e.g. an SEP summary): describe the argument and cite the secondary source, without attributing it by name.
+- Pace: batches of 5–10 cards, then stop for review.
+
 ## Research & verification protocol
 
 Your memory is not a source. Check before you state anything.
