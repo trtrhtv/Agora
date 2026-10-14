@@ -1,0 +1,25 @@
+{
+  "name": "agora",
+  "version": "1.0.0",
+  "description": "Personal worldview app",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test:invalid": "node scripts/test-invalid.mjs",
+    "test": "npm run build && npm run test:invalid"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trtrhtv/agora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trtrhtv/agora/issues"
+  },
+  "homepage": "https://github.com/trtrhtv/agora#readme",
+  "dependencies": {
+    "astro": "^7.3.8"
+  },
+  "private": true,
+  "type": "module"
+}

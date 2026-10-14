@@ -1,0 +1,42 @@
+---
+// Phase 0 placeholder home page. Running the integrity check here makes every build enforce it.
+import Base from '../layouts/Base.astro';
+import { assertIntegrity } from '../lib/integrity';
+
+const all = await assertIntegrity();
+
+const labels = {
+  thinkers: 'הוגים',
+  schools: 'זרמים',
+  questions: 'שאלות',
+  works: 'יצירות',
+  guides: 'מסבירים',
+  publishers: 'הוצאות לאור',
+} as const;
+
+const badge = (v: { status: string; reviewed_by_me: boolean }) =>
+  (v.status === 'verified' ? '🟢' : v.status === 'partial' ? '🟡' : '⚪') + (v.reviewed_by_me ? '' : ' ✋');
+
+const title = (d: Record<string, unknown>) => (d.name_he ?? d.question_he) as string;
+---
+
+<Base title="אגורה">
+  <h1>אגורה</h1>
+  <p>ספרייה אישית של רעיונות. שלב 0: תשתית.</p>
+  {
+    Object.entries(labels).map(([kind, label]) => (
+      <section>
+        <h2>
+          {label} ({all[kind as keyof typeof labels].length})
+        </h2>
+        <ul>
+          {all[kind as keyof typeof labels].map((e) => (
+            <li>
+              {badge(e.data.verification)} {title(e.data)}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>
