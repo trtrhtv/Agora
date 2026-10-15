@@ -5,8 +5,9 @@ import { href, type Ref } from '../lib/view';
 
 type Layer = 'text' | 'listen' | 'intro' | 'deep';
 type Inline = { title: string; by: string; type: string; language: 'he' | 'en'; year?: number; url: string };
+type Endorsement = { by_he: string; url: string };
 interface Props {
-  items: ({ layer: Layer; note_he: string } & ({ work: string } | Inline))[];
+  items: ({ layer: Layer; note_he: string; endorsement?: Endorsement } & ({ work: string } | Inline))[];
   ref: (kind: 'thinkers' | 'guides' | 'publishers', id: string) => Ref;
 }
 const { items, ref } = Astro.props;
@@ -48,7 +49,7 @@ const author = (id: string) => {
           .flatMap((i) => ('work' in i && works.has(i.work) ? [{ i, w: works.get(i.work)! }] : []))
           .sort((a, b) => Number(isHebrew(b.w)) - Number(isHebrew(a.w)));
         const inline = items
-          .filter((i): i is { layer: Layer; note_he: string } & Inline => i.layer === layer && !('work' in i))
+          .filter((i): i is { layer: Layer; note_he: string; endorsement?: Endorsement } & Inline => i.layer === layer && !('work' in i))
           .sort((a, b) => Number(b.language === 'he') - Number(a.language === 'he'));
         const rows = inWorks;
         return (
@@ -79,6 +80,11 @@ const author = (id: string) => {
                         </div>
                       ))}
                       <div>{i.note_he}</div>
+                      {i.endorsement && (
+                        <div class="muted">
+                          מומלץ: <a href={i.endorsement.url}>{i.endorsement.by_he}</a>
+                        </div>
+                      )}
                     </li>
                   );
                 })}
@@ -91,6 +97,11 @@ const author = (id: string) => {
                       {i.year && <> · {i.year}</>}
                     </span>
                     <div>{i.note_he}</div>
+                      {i.endorsement && (
+                        <div class="muted">
+                          מומלץ: <a href={i.endorsement.url}>{i.endorsement.by_he}</a>
+                        </div>
+                      )}
                   </li>
                 ))}
               </ul>

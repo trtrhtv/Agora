@@ -65,10 +65,14 @@ const sourcedLinks = z.array(sourcedLink).default([]);
 // An item is either a work card, or (for a one-off article, chapter or book that needs no card) an inline
 // reference. Lectures, podcasts and videos always need a work card with a vetted guide (CLAUDE.md).
 const layer = z.enum(['text', 'listen', 'intro', 'deep']);
+// Why this item and not another: an independent expert who recommends it (a Five Books pick, a syllabus,
+// an encyclopedia's reading list, a review), with a link to that recommendation.
+const endorsement = z.strictObject({ by_he: z.string().min(1), url: z.url() });
 const deepenWork = z.strictObject({
   work: slug,
   layer,
   note_he: z.string().min(1), // why this item, and what to look for in it
+  endorsement: endorsement.optional(),
 });
 const deepenInline = z.strictObject({
   title: z.string().min(1),
@@ -79,6 +83,7 @@ const deepenInline = z.strictObject({
   url: z.url(), // the item itself, or the publisher's page for it
   layer: layer.exclude(['listen']),
   note_he: z.string().min(1),
+  endorsement: endorsement.optional(),
 });
 const deepen = z.array(z.union([deepenWork, deepenInline])).default([]);
 
