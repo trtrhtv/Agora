@@ -62,12 +62,25 @@ const sourcedLinks = z.array(sourcedLink).default([]);
 //   listen - a lecture, podcast episode or video that introduces the topic
 //   intro  - an accessible introductory article
 //   deep   - a scholarly book or article, including serious critics
-const deepenItem = z.strictObject({
+// An item is either a work card, or (for a one-off article, chapter or book that needs no card) an inline
+// reference. Lectures, podcasts and videos always need a work card with a vetted guide (CLAUDE.md).
+const layer = z.enum(['text', 'listen', 'intro', 'deep']);
+const deepenWork = z.strictObject({
   work: slug,
-  layer: z.enum(['text', 'listen', 'intro', 'deep']),
+  layer,
   note_he: z.string().min(1), // why this item, and what to look for in it
 });
-const deepen = z.array(deepenItem).default([]);
+const deepenInline = z.strictObject({
+  title: z.string().min(1),
+  by: z.string().min(1), // author(s), as printed; living people only for their own writing
+  type: z.enum(['book', 'chapter', 'article', 'essay']),
+  language: z.enum(['he', 'en']),
+  year: z.number().int().optional(),
+  url: z.url(), // the item itself, or the publisher's page for it
+  layer: layer.exclude(['listen']),
+  note_he: z.string().min(1),
+});
+const deepen = z.array(z.union([deepenWork, deepenInline])).default([]);
 
 const names = {
   name_he: z.string().min(1),

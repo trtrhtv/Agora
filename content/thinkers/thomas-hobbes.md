@@ -52,6 +52,38 @@ critics:
   - { id: john-locke, source: s2 }
 influenced:
   - { id: john-locke, source: s3 }
+deepen:
+  - work: "leviathan"
+    layer: "text"
+    note_he: "פרק 13 (מצב הטבע), פרק 14 (חוקי הטבע והאמנה), פרק 17 (ייסוד המדינה) ופרק 21 (חירות הנתינים). בעברית, רק התרגום של שלם כולל גם את החלקים על הדת."
+  - work: "podoksik-mpt-03-hobbes"
+    layer: "listen"
+    note_he: "הרצאה אקדמית בעברית מקורס מבוא במחשבה מדינית. ההרצאה הבאה בקורס עוסקת בלוק."
+  - work: "heyd-hobbes-van-leer"
+    layer: "listen"
+    note_he: "הרצאה בעברית שבונה את הובס סביב השאלה שבמרכז הכרטיס: מה מוותרים עליו מהחירות כדי לקבל סדר."
+  - work: "in-our-time-hobbes"
+    layer: "listen"
+    note_he: "מבוא באנגלית בשיחה של שלושה היסטוריונים, ביניהם קוונטין סקינר."
+  - title: "מבוא למהדורה העברית של \"לויתן\" (בדגימה החינמית של הוצאת שלם)"
+    by: "מנחם לורברבוים"
+    type: "chapter"
+    language: "he"
+    year: 2009
+    url: "http://shalempress.co.il/wp-content/uploads/2017/05/9_9_2009_36_28_Hobbes.pdf"
+    layer: "intro"
+    note_he: "מבוא מחקרי בעברית: ההקשר ההיסטורי, המהדורות, והשאלה התאולוגית-פוליטית. העורך קושר את הובס גם לשאלות של מדינת ישראל, וזו הפרשנות שלו."
+  - title: "הזכות הטבעית וההיסטוריה, פרק ה, סעיף א: \"הובס\" (עמ' 129–152)"
+    by: "ליאו שטראוס (תרגום: דוד זינגר, מבוא: אהוד לוז)"
+    type: "chapter"
+    language: "he"
+    year: 2005
+    url: "https://shalempress.co.il/shop/leviathan/%d7%94%d7%96%d7%9b%d7%95%d7%aa-%d7%94%d7%98%d7%91%d7%a2%d7%99%d7%aa-%d7%95%d7%94%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94/"
+    layer: "deep"
+    note_he: "קריאה ביקורתית בעברית, שמציבה את הובס בראשית הזכות הטבעית המודרנית. הסעיף הבא באותו פרק עוסק בלוק."
+  - work: "second-treatise"
+    layer: "deep"
+    note_he: "הצד השני: לוק נגד שלטון מוחלט. בסעיף 93 הוא כותב שמי שמקבל שליט מוחלט מתגונן מפני בואשים ושועלים ומסכים להיטרף בידי אריות. לוק לא נוקב שם בשמו של הובס, אלא תוקף מלוכה מוחלטת בכלל."
 quotes:
   - text: "...during the time men live without a common Power to keep them all in awe, they are in that condition which is called Warre; and such a warre, as is of every man, against every man."
     location: "Leviathan, Part I, ch. 13"

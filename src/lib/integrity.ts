@@ -53,7 +53,8 @@ export async function assertIntegrity() {
 
   // Go-deeper items: the work must exist and fit its layer.
   const workAuthor = new Map(all.works.map((w) => [w.data.id, w.data.author]));
-  const checkDeepen = (where: string, items: { work: string; layer: string }[]) => {
+  const checkDeepen = (where: string, all: ({ layer: string } & ({ work: string } | { url: string }))[]) => {
+    const items = all.filter((i): i is { work: string; layer: string } => 'work' in i);
     ref(`${where} deepen`, 'works', items.map((i) => i.work));
     for (const { work, layer } of items) {
       const t = workType.get(work);

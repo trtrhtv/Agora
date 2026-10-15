@@ -65,6 +65,37 @@ died: 1873
 schools: [liberalism]
 key_works: [on-liberty]
 guides: [stanford-encyclopedia-of-philosophy]
+deepen:
+  - work: "on-liberty"
+    layer: "text"
+    note_he: "פרק 1 (העיקרון), פרק 2 (חופש הדעה) ופרק 3 (אינדיבידואליות). בעברית יש תרגום של שלם (2006) ושל מאגנס (1946)."
+  - work: "subjection-of-women"
+    layer: "text"
+    note_he: "לחלק השני של מיל, השוויון בין המינים. התרגום העברי היחיד הוא של רסלינג."
+  - work: "podoksik-mpt-19-spencer-mill"
+    layer: "listen"
+    note_he: "הרצאה אקדמית בעברית. מיל מגיע בחלקה השני, אחרי ספנסר."
+  - work: "podoksik-mpt-20-mill"
+    layer: "listen"
+    note_he: "ההמשך: מיל, ואחריו הלאומיות הליברלית."
+  - work: "in-our-time-on-liberty"
+    layer: "listen"
+    note_he: "מבוא עדכני באנגלית (2026) עם שלושה חוקרים, כולל חלקה של הרייט טיילור מיל ביצירה."
+  - title: "מיל, ג'ון סטיוארט (ערך באנציקלופדיה \"פילוסופיה\", ספריית אופק)"
+    by: "ג'. או. יורמסון"
+    type: "article"
+    language: "he"
+    url: "https://www.lib.cet.ac.il/pages/item.asp?item=868"
+    layer: "intro"
+    note_he: "ערך מבוא ארוך וחינמי בעברית על החיים, התועלתנות, \"על החירות\" והלוגיקה. הוא ישן (תרגום של אנציקלופדיה משנות ה-60), ולכן כדאי לקרוא אותו לצד ערך סטנפורד."
+  - title: "Liberty, Equality, Fraternity"
+    by: "James Fitzjames Stephen"
+    type: "book"
+    language: "en"
+    year: 1873
+    url: "https://archive.org/details/libertyequality02stepgoog"
+    layer: "deep"
+    note_he: "הביקורת המרכזית בת הזמן על \"על החירות\". סטיבן כותב במפורש שהתאוריות של מיל בספריו המאוחרים אינן נכונות. חינמי (מהדורת 1882)."
 quotes:
   - text: "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant."
     location: "On Liberty, ch. 1 (para. 9)"

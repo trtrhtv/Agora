@@ -72,6 +72,39 @@ schools: [liberalism, social-contract-theory]
 guides: [stanford-encyclopedia-of-philosophy]
 influenced_by:
   - { id: thomas-hobbes, source: s10 }
+deepen:
+  - work: "second-treatise"
+    layer: "text"
+    note_he: "פרקים 2 (מצב הטבע), 5 (רכוש), 8 (ראשית החברה הפוליטית והסכמה שבשתיקה) ו-19 (פירוק השלטון). בעברית יש שני תרגומים, של שלם (2025) ושל מאגנס."
+  - work: "letter-concerning-toleration"
+    layer: "text"
+    note_he: "קצרה, ונוגעת ישירות בגבולות הכפייה. התרגום העברי של מאגנס נעשה מהמקור הלטיני."
+  - work: "podoksik-mpt-04-locke"
+    layer: "listen"
+    note_he: "הרצאה אקדמית בעברית, ההמשך הישיר של ההרצאה על הובס באותו קורס."
+  - title: "הליברליזם של לוק: עיון מחודש"
+    by: "גולן להט"
+    type: "article"
+    language: "he"
+    year: 2025
+    url: "https://hashiloach.org.il/lockes-liberalism/"
+    layer: "intro"
+    note_he: "מאמר מבוא בעברית, חינמי. הוא גם ביקורת על התרגום החדש של שלם, ועוסק בהקשר ההיסטורי ובחולשות המסה, לא רק במעלותיה. התפרסם ב\"השילוח\", כתב עת של המרכז לחרות ישראלית, שמגדיר את עצמו כמנהיגות אינטלקטואלית שמרנית."
+  - title: "הזכות הטבעית וההיסטוריה, פרק ה, סעיף ב: \"לוק\" (מעמ' 153)"
+    by: "ליאו שטראוס (תרגום: דוד זינגר, מבוא: אהוד לוז)"
+    type: "chapter"
+    language: "he"
+    year: 2005
+    url: "https://shalempress.co.il/shop/leviathan/%d7%94%d7%96%d7%9b%d7%95%d7%aa-%d7%94%d7%98%d7%91%d7%a2%d7%99%d7%aa-%d7%95%d7%94%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94/"
+    layer: "deep"
+    note_he: "קריאה ביקורתית בעברית בלוק, ישר אחרי הסעיף על הובס."
+  - title: "Of the Original Contract"
+    by: "David Hume"
+    type: "essay"
+    language: "en"
+    url: "https://davidhume.org/texts/empl2/oc"
+    layer: "deep"
+    note_he: "הביקורת הקלאסית על ההסכמה: דימוי הספינה נמצא בפסקה 25. יום מפנה בהערות שלו ישירות לסעיפים 90 ו-138–140 של לוק. טקסט מלא וחינמי במהדורה מחקרית."
 quotes:
   - text: "But though this be a state of liberty, yet it is not a state of licence... being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions..."
     location: "Second Treatise, ch. 2, §6"
