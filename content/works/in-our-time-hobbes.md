@@ -6,6 +6,7 @@ domains: [politics, philosophy]
 verification:
   status: partial
   missing:
+    - "בדף הפרק כתוב 45 דקות, אבל קובץ השמע בפיד של התוכנית הוא כ-28 דקות. הכרטיס מציג 28."
     - "הפרק לא נשמע במלואו בעת הוספת הכרטיס. נבדקו הדף, המשתתפים, האורך והתקציר."
   reviewed_by_me: false
   last_checked: 2026-10-15
@@ -18,7 +19,7 @@ type: podcast
 author: in-our-time
 series: "In Our Time (BBC Radio 4)"
 url: https://www.bbc.co.uk/programmes/p003k9l1
-duration_min: 45
+duration_min: 28
 year: 2005
 language: en
 availability: reference_only

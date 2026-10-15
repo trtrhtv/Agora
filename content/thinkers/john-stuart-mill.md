@@ -96,6 +96,51 @@ deepen:
     url: "https://archive.org/details/libertyequality02stepgoog"
     layer: "deep"
     note_he: "ביקורת מוכרת בת הזמן על \"על החירות\". סטיבן כותב שהתאוריות שמיל הציע בנושא (חירות, שוויון, אחווה) ברוב ספריו המאוחרים הן \"unsound\". חינמי (מהדורת 1882)."
+  - work: "mill-autobiography"
+    layer: "text"
+    note_he: "פרק 5, \\\"A Crisis in My Mental History\\\": המקור האישי של ההתרחקות של מיל מבנת'ם. שאלה לקחת: האם האינדיבידואליות בפרק 3 של \\\"על החירות\\\" צומחת מהמשבר הזה, והאם מיל נשאר תועלתן אחריו?"
+    endorsement:
+      by_he: "ערך מיל בסטנפורד (Macleod) מצטט ממנו את תיאור המשבר"
+      url: https://plato.stanford.edu/entries/mill/
+  - work: "pb-reeves-mill-on-liberty"
+    layer: "listen"
+    note_he: "14 דקות עם הביוגרף של מיל. שאלה לקחת: כמה מ\\\"על החירות\\\" הוא מעשה פוליטי ולא חיבור עיוני?"
+    endorsement:
+      by_he: "על הביוגרפיה של ריבס: אאוג'ניו ביאג'יני (קיימברידג') ב-Journal of Liberal History"
+      url: https://liberalhistory.org.uk/wp-content/uploads/2014/10/60_Biagini_Reeves_John_Stuart_Mill_review.pdf
+  - title: "ג'ון סטיוארט מיל ותכליות החיים (בתוך \\\"ארבע מסות על חירות\\\")"
+    by: "ישעיהו ברלין"
+    type: "chapter"
+    language: "he"
+    year: 1971
+    url: "https://archive.org/details/fouressaysonlibe0000berl"
+    layer: "deep"
+    note_he: "מיל כפלורליסט שמחויב לבחירה ולגיוון יותר מאשר לתועלת. בעברית ב\\\"ארבע מסות על חירות\\\" (1971), שכנראה אזל. הקישור הוא להשאלה חינמית של המקור האנגלי. שאלה לקחת: האם המיל של ברלין עוד תועלתן, או שברלין הפך אותו לברלין?"
+    endorsement:
+      by_he: "ערך ברלין בסטנפורד מפנה למסה הזו כביטוי לליברליזם המילי שלו"
+      url: https://plato.stanford.edu/entries/berlin/
+  - title: "Law, Liberty, and Morality"
+    by: "H. L. A. Hart"
+    type: "book"
+    language: "en"
+    year: 1963
+    url: "https://archive.org/details/lawlibertymorali0000hart"
+    layer: "deep"
+    note_he: "עקרון הנזק מול המשפט הפלילי, בוויכוח עם הלורד דבלין. זו התשובה המודרנית לסטיבן. שאלה לקחת: האם חברה רשאית לאכוף מוסר משותף כדי לשמור על עצמה?"
+    endorsement:
+      by_he: "ג'ון גרדנר (אוקספורד): בספר הזה הארט חידש את הטיעון של מיל נגד המוסרנות המשפטית"
+      url: https://johngardnerathome.info/pdfs/hartencyclopaediaentryfinal.pdf
+  - title: "Liberalism and Empire"
+    by: "Uday Singh Mehta"
+    type: "book"
+    language: "en"
+    year: 1999
+    url: "https://press.uchicago.edu/ucp/books/book/chicago/L/bo3623192.html"
+    layer: "deep"
+    note_he: "מבקר מכיוון אחר: האימפריאליזם לא סותר את הליברליזם אלא נובע מהנחותיו על תבונה וקדמה. שאלה לקחת: ההחרגה של חברות \\\"נחשלות\\\" בפרק 1 של \\\"על החירות\\\", מקרית או מובנית?"
+    endorsement:
+      by_he: "פרס גרינסטון של האגודה האמריקאית למדע המדינה לספר הטוב בתאוריה פוליטית (2002)"
+      url: https://watson.brown.edu/southasia/people/uday-mehta
 quotes:
   - text: "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant."
     location: "On Liberty, ch. 1 (para. 9)"

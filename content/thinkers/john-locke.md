@@ -105,6 +105,67 @@ deepen:
     url: "https://davidhume.org/texts/empl2/oc"
     layer: "deep"
     note_he: "הביקורת הקלאסית על ההסכמה: דימוי הספינה נמצא בפסקה 24. יום מפנה בהערות שלו ישירות לסעיפים 90 ו-138–140 של לוק. טקסט מלא וחינמי במהדורה מחקרית."
+  - work: "pb-dunn-locke-toleration"
+    layer: "listen"
+    note_he: "14 דקות עם ג'ון דאן, עם תמליל מלא. לוק כפרוטסטנט של המאה ה-17 ולא כליברל מודרני. שאלה לקחת: למה בדיוק הוא מוציא את האתאיסטים מהסובלנות?"
+    endorsement:
+      by_he: "Victor Nuovo ב-NDPR: דאן הראשון שהציג את התאוריה הפוליטית של לוק בהקשר הדתי שלה"
+      url: https://ndpr.nd.edu/news/god-locke-and-equality-christian-foundations-of-locke-s-political-thought/
+  - title: "Obligation and Consent—I"
+    by: "Hanna Pitkin"
+    type: "article"
+    language: "en"
+    year: 1965
+    url: "https://www.jstor.org/stable/1953218"
+    layer: "deep"
+    note_he: "תשובה ליום מצד לוק: אולי הלגיטימיות תלויה באיכות השלטון ולא במעשה הסכמה. שאלה לקחת: האם זה מציל את לוק, או מוותר בשקט על ההסכמה?"
+    endorsement:
+      by_he: "Diversity Reading List: עדיין מבוא טוב לנושא החובה הפוליטית, עם דיון יסודי בלוק"
+      url: https://diversityreadinglist.org/obligation-and-consent-i-2/
+  - title: "God, Locke, and Equality"
+    by: "Jeremy Waldron"
+    type: "book"
+    language: "en"
+    year: 2002
+    url: "https://doi.org/10.1017/CBO9780511613920"
+    layer: "deep"
+    note_he: "האם אפשר להחזיק בשוויון בין בני אדם בלי אלוהים? וולדרון טוען שהתאולוגיה של לוק נותנת לשוויון בסיס טוב יותר מהגישות החילוניות. הביקורת של נואבו ב-NDPR: לא ברור לאיזו נצרות לוק החזיק."
+    endorsement:
+      by_he: "Victor Nuovo, Notre Dame Philosophical Reviews (2003), וערך לוק בסטנפורד"
+      url: https://ndpr.nd.edu/news/god-locke-and-equality-christian-foundations-of-locke-s-political-thought/
+  - title: "The Political Theory of Possessive Individualism: Hobbes to Locke"
+    by: "C. B. Macpherson"
+    type: "book"
+    language: "en"
+    year: 1962
+    url: "https://archive.org/details/politicaltheoryo0000cbma"
+    layer: "deep"
+    note_he: "הקריאה של לוק כמגן הצבירה הקפיטליסטית הבלתי מוגבלת. שאלה לקחת: מה קורה למגבלת הקלקול ולתנאי \\\"מספיק, וטוב באותה מידה\\\" אחרי שהכסף הומצא? כדאי לקרוא יחד עם טאלי, שתוקף את הקריאה הזו."
+    endorsement:
+      by_he: "ערך לוק בסטנפורד (Tuckness) מציג אותה כפרשנות מרכזית"
+      url: https://plato.stanford.edu/entries/locke-political/
+  - title: "A Discourse on Property: John Locke and his Adversaries"
+    by: "James Tully"
+    type: "book"
+    language: "en"
+    year: 1980
+    url: "https://doi.org/10.1017/CBO9780511558641"
+    layer: "deep"
+    note_he: "התשובה למקפרסון: פרק 5 הוא לא הצדקה לרכוש פרטי, אלא תורה של זכויות שימוש בתוך מסגרת של בעלות משותפת, כולל חובת צדקה כלפי מי שאין לו."
+    endorsement:
+      by_he: "ערך לוק בסטנפורד (Tuckness) מציג אותו כמי שתקף את פרשנות מקפרסון"
+      url: https://plato.stanford.edu/entries/locke-political/
+  - title: "Whose Fundamental Constitutions? Locke, Slavery, and Manuscript Evidence"
+    by: "Holly Brewer"
+    type: "article"
+    language: "en"
+    year: 2024
+    url: "https://ojs.lib.uwo.ca/index.php/locke/article/view/17536"
+    layer: "deep"
+    note_he: "ויכוח ארכיוני חי על לוק והקולוניאליזם. דייוויד ארמיטג' טען (2004) שלוק תיקן את חוקת קרוליינה בזמן שכתב את פרק הרכוש. בריואר טוענת שהראיות בכתבי היד לא תומכות בכך. חינמי. שאלה לקחת: האם ההקשר הקולוניאלי משנה את משמעות הטיעון, או רק את מה שלוק עשה?"
+    endorsement:
+      by_he: "ערך לוק בסטנפורד מציג את טענת ארמיטג', וזה המאמר שחולק עליה"
+      url: https://plato.stanford.edu/entries/locke-political/
 quotes:
   - text: "But though this be a state of liberty, yet it is not a state of licence... being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions..."
     location: "Second Treatise, ch. 2, §6"

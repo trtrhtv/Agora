@@ -84,6 +84,62 @@ deepen:
   - work: "second-treatise"
     layer: "deep"
     note_he: "הצד השני: לוק נגד שלטון מוחלט. בסעיף 93 הוא כותב שמי שמקבל שליט מוחלט נזהר מחמוסים ומשועלים, ומסתפק בכך שיטרפו אותו אריות. לוק לא נוקב שם בשמו של הובס, אלא תוקף מלוכה מוחלטת בכלל, גולן להט (ראו כרטיס לוק) טוען שהיעד העיקרי של המסה הוא פילמר, ושלוק רק מרמז לעתים רחוקות על מענה להובס."
+  - work: "runciman-hobbes-state"
+    layer: "listen"
+    note_he: "שיחה של שעה שקושרת את הובס לשאלה מה היא בכלל מדינה, ולמה היא עדיין נשענת על הרעיון שלו. כדאי לשים לב איך רנסימן מחבר את \"לוויתן\" לפוליטיקה של היום."
+    endorsement:
+      by_he: "לינקולן אליסון, Times Higher Education, על ספר הסדרה (עם ביקורת על שטחיות)"
+      url: https://www.timeshighereducation.com/node/717979
+  - work: "pb-skinner-hobbes-state"
+    layer: "listen"
+    note_he: "18 דקות עם קוונטין סקינר. שאלה לקחת: בשם מי הריבון פועל, בשם המלך, בשם העם, או בשם המדינה כאישיות מלאכותית?"
+    endorsement:
+      by_he: "ערש אבי-זאדה (מקגיל) ב-Five Books מכנה את סקינר אחד מחוקרי הובס החשובים"
+      url: https://fivebooks.com/best-books/the-best-thomas-hobbes-books-arash-abizadeh/
+  - title: "Hobbes: A Very Short Introduction"
+    by: "Richard Tuck"
+    type: "book"
+    language: "en"
+    year: 2002
+    url: "https://doi.org/10.1093/actrade/9780192802552.001.0001"
+    layer: "intro"
+    note_he: "מבוא קצר שקורא את הפוליטיקה של הובס כתשובה לספקנות ולמחלוקת מוסרית. שאלה לקחת: מלחמת הכל בכל, האם היא על אינטרסים חומריים או על מחלוקת אידאולוגית?"
+    endorsement:
+      by_he: "ערש אבי-זאדה (מקגיל) ב-Five Books: מבוא נפלא, קצר וקריא"
+      url: https://fivebooks.com/best-books/the-best-thomas-hobbes-books-arash-abizadeh/
+  - title: "Hobbes and the Social Contract Tradition"
+    by: "Jean Hampton"
+    type: "book"
+    language: "en"
+    year: 1986
+    url: "https://doi.org/10.1017/cbo9780511625060"
+    layer: "deep"
+    note_he: "הקריאה דרך תורת המשחקים, ואחריה ביקורת מבפנים: לפי המבנה הלוגי של הטיעון, הובס לא יכול להגיע לאבסולוטיזם שהוא רוצה. שאלה לקחת: האם מצב הטבע הוא דילמת האסיר, או בעיית תיאום?"
+    endorsement:
+      by_he: "ערש אבי-זאדה (מקגיל) ב-Five Books: ספר משפיע מאוד, שמבקר את הובס מבפנים"
+      url: https://fivebooks.com/best-books/the-best-thomas-hobbes-books-arash-abizadeh/
+  - title: "Hobbes and Republican Liberty"
+    by: "Quentin Skinner"
+    type: "book"
+    language: "en"
+    year: 2008
+    url: "https://www.lrb.co.uk/the-paper/v30/n18/ellen-meiksins-wood/why-it-matters"
+    layer: "deep"
+    note_he: "החירות של הובס (היעדר מכשולים חיצוניים) מול החירות הרפובליקנית (לא לחיות תחת שרירות לבו של אחר). שאלה לקחת: האם אדם חופשי כשאיש לא עוצר אותו אבל הוא חי בחסדי אחר? הקישור הוא לביקורת ב-LRB, שגם משבחת וגם מבקרת."
+    endorsement:
+      by_he: "אלן מייקסינס ווד, London Review of Books (2008): צלול, אלגנטי ומשכנע בתנאיו שלו, עם מגבלות"
+      url: https://www.lrb.co.uk/the-paper/v30/n18/ellen-meiksins-wood/why-it-matters
+  - title: "The Allegiance of Thomas Hobbes"
+    by: "Jeffrey R. Collins"
+    type: "book"
+    language: "en"
+    year: 2005
+    url: "https://doi.org/10.1093/acprof:oso/9780199237647.001.0001"
+    layer: "deep"
+    note_he: "הובס של הדת והכנסייה (החלקים השלישי והרביעי של \"לוויתן\"), שרוב הקוראים מדלגים עליהם. שאלה לקחת: למה מי שרואה במחלוקת דתית סיבה למלחמה תמך בפירוק הכוח המאורגן של הכנסייה?"
+    endorsement:
+      by_he: "ערש אבי-זאדה (מקגיל) ב-Five Books: דוגמה מופתית למחקר היסטורי"
+      url: https://fivebooks.com/best-books/the-best-thomas-hobbes-books-arash-abizadeh/
 quotes:
   - text: "...during the time men live without a common Power to keep them all in awe, they are in that condition which is called Warre; and such a warre, as is of every man, against every man."
     location: "Leviathan, Part I, ch. 13"
