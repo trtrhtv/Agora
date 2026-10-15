@@ -25,6 +25,11 @@ Personal worldview app. The full spec is in `SPEC.md`. Read it before any task.
 - Living scholars known only through a secondary source (e.g. an SEP summary): describe the argument and cite the secondary source, without attributing it by name.
 - Pace: batches of 5–10 cards, then stop for review.
 
+## Product decisions (owner, SPEC v0.3)
+
+- No map of the owner's opinions: no stance recording, no proximity to thinkers, no tracking of opinion changes. The app is a library for reading and understanding.
+- Phase 1 content is paused after batch 3. Phase 1.5 (minimal reader) comes first; card shortening (~500 words) and the "קרא את זה" section are piloted on three cards before rolling out.
+
 ## Source and format rules (after the self-review of batches 1–3)
 
 The build enforces the starred rules (`src/lib/integrity.ts`).
