@@ -1,0 +1,110 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Verification from '../../components/Verification.astro';
+import Sources from '../../components/Sources.astro';
+import RefLinks from '../../components/RefLinks.astro';
+import { LEVEL_LABEL, href, lifeSpan, loadIndex } from '../../lib/view';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('thinkers');
+  return entries.map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const { all, ref } = await loadIndex();
+
+const life = lifeSpan(d.born, d.died);
+
+// Reverse links: the questions in which this thinker is listed as holding a position.
+const heldIn = all.questions.flatMap((q) =>
+  q.data.positions.flatMap((p) =>
+    p.holders.filter((h) => h.id === d.id).map((h) => ({ q, p, h })),
+  ),
+);
+const links = (xs: { id: string; source: string; note_he?: string }[]) =>
+  xs.map((x) => ({ ref: ref('thinkers', x.id), source: x.source, note: x.note_he }));
+---
+
+<Base title={d.name_he}>
+  <h1>{d.name_he}</h1>
+  <p class="muted"><span lang="en">{d.name_en}</span>{life && <> · <span dir="ltr">{life}</span></>}</p>
+  <Verification v={d.verification} />
+
+  <article>
+    <Content />
+  </article>
+
+  {
+    d.quotes.length > 0 && (
+      <section>
+        <h2>ציטוטים מאומתים</h2>
+        {d.quotes.map((q) => (
+          <figure class="quote">
+            <blockquote lang="en">{q.text}</blockquote>
+            {q.translated_he && <p>{q.translated_he} <span class="muted">(תרגום חופשי)</span></p>}
+            <figcaption>
+              <span lang="en">{q.location}</span> · <span lang="en">{q.translation}</span>{' '}
+              <sup class="cite">
+                <a href={`#src-${q.source}`}>{q.source}</a>
+              </sup>
+            </figcaption>
+          </figure>
+        ))}
+      </section>
+    )
+  }
+
+  {
+    d.misattributed.length > 0 && (
+      <section>
+        <h2>מיוחס לו בטעות</h2>
+        {d.misattributed.map((m) => (
+          <figure class="quote">
+            <blockquote lang="en">
+              <s>{m.text}</s>
+            </blockquote>
+            <p>
+              {m.verdict_he}{' '}
+              {m.sources.map((s) => (
+                <sup class="cite">
+                  <a href={`#src-${s}`}>{s}</a>
+                </sup>
+              ))}
+            </p>
+          </figure>
+        ))}
+      </section>
+    )
+  }
+
+  <section>
+    <h2>קישורים</h2>
+    <RefLinks title="הושפע מ" items={links(d.influenced_by)} />
+    <RefLinks title="השפיע על" items={links(d.influenced)} />
+    <RefLinks title="מבקרים" items={links(d.critics)} />
+    <RefLinks title="זרמים" items={d.schools.map((id) => ({ ref: ref('schools', id) }))} />
+    <RefLinks title="יצירות" items={d.key_works.map((id) => ({ ref: ref('works', id) }))} />
+    <RefLinks title="הרצאות ופודקאסטים" items={d.media.map((id) => ({ ref: ref('works', id) }))} />
+    <RefLinks title="מסבירים" items={d.guides.map((id) => ({ ref: ref('guides', id) }))} />
+    {
+      heldIn.length > 0 && (
+        <>
+          <h3>בשאלות</h3>
+          <ul class="links">
+            {heldIn.map(({ q, p, h }) => (
+              <li>
+                <a href={href('questions', q.data.id)}>{q.data.question_he}</a>: {p.label_he}{' '}
+                <span class="muted">({LEVEL_LABEL[h.level]})</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </section>
+
+  <Sources sources={d.sources} />
+</Base>

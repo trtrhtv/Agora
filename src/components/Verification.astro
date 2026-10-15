@@ -1,0 +1,53 @@
+---
+// Verification badge (SPEC 7) plus the reviewer-facing details: weakest claims first, then gaps.
+import { STATUS_ICON, STATUS_LABEL } from '../lib/view';
+
+interface Props {
+  v: {
+    status: keyof typeof STATUS_LABEL;
+    missing: string[];
+    weakest_claims: string[];
+    reviewed_by_me: boolean;
+    last_checked: Date;
+  };
+}
+const { v } = Astro.props;
+const date = v.last_checked.toISOString().slice(0, 10);
+---
+
+<p>
+  <span class="badge">{STATUS_ICON[v.status]} {STATUS_LABEL[v.status]}</span>
+  <span class="badge">{v.reviewed_by_me ? '✔ עברתי עליו' : '✋ טרם עברתי'}</span>
+  <span class="muted">נבדק לאחרונה {date}</span>
+</p>
+{
+  (v.weakest_claims.length > 0 || v.missing.length > 0) && (
+    <details class="check">
+      <summary>מה לבדוק בכרטיס הזה</summary>
+      {v.weakest_claims.length > 0 && (
+        <>
+          <p>
+            <strong>הטענות החלשות ביותר</strong> (לבדוק קודם):
+          </p>
+          <ul>
+            {v.weakest_claims.map((c) => (
+              <li>{c}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {v.missing.length > 0 && (
+        <>
+          <p>
+            <strong>מה חסר או לא נבדק:</strong>
+          </p>
+          <ul>
+            {v.missing.map((m) => (
+              <li>{m}</li>
+            ))}
+          </ul>
+        </>
+      )}
+    </details>
+  )
+}

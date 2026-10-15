@@ -1,0 +1,31 @@
+---
+// A titled list of links to other cards. A link item may carry the source that backs it.
+import { href, type Ref } from '../lib/view';
+
+interface Props {
+  title: string;
+  items: { ref: Ref; source?: string; note?: string }[];
+}
+const { title, items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <>
+      <h3>{title}</h3>
+      <ul class="links">
+        {items.map(({ ref, source, note }) => (
+          <li>
+            <a href={href(ref.kind, ref.id)}>{ref.title}</a>
+            {source && (
+              <sup class="cite">
+                <a href={`#src-${source}`}>{source}</a>
+              </sup>
+            )}
+            {note && <span class="muted"> · {note}</span>}
+          </li>
+        ))}
+      </ul>
+    </>
+  )
+}

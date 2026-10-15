@@ -1,0 +1,96 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Verification from '../../components/Verification.astro';
+import Sources from '../../components/Sources.astro';
+import RefLinks from '../../components/RefLinks.astro';
+import { LEVEL_LABEL, href, loadIndex } from '../../lib/view';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('questions');
+  return entries.map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const { ref } = await loadIndex();
+---
+
+<Base title={d.question_he}>
+  <h1>{d.question_he}</h1>
+  {d.question_en && <p class="muted" lang="en">{d.question_en}</p>}
+  <Verification v={d.verification} />
+
+  <section>
+    <h2>העמדות בקצרה</h2>
+    <p class="muted">רמת ההחזקה היא שיפוט של כותב הכרטיס, לפי המקור שמצוין לידה.</p>
+    <table>
+      <thead>
+        <tr><th>עמדה</th><th>מי מחזיק בה</th></tr>
+      </thead>
+      <tbody>
+        {
+          d.positions.map((p) => (
+            <tr>
+              <td>{p.label_he}</td>
+              <td>
+                {p.holders.length === 0 ? (
+                  <span class="muted">אין עדיין בספרייה</span>
+                ) : (
+                  p.holders.map((h, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={href('thinkers', h.id)}>{ref('thinkers', h.id).title}</a>{' '}
+                      <span class="muted">({LEVEL_LABEL[h.level]})</span>
+                      <sup class="cite">
+                        <a href={`#src-${h.source}`}>{h.source}</a>
+                      </sup>
+                    </>
+                  ))
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <article>
+    <Content />
+  </article>
+
+  {
+    d.tensions.length > 0 && (
+      <section>
+        <h2>מתחים עם שאלות אחרות</h2>
+        <ul>
+          {d.tensions.map((t) => (
+            <li>
+              {t.note_he}{' '}
+              {t.basis === 'structural' ? (
+                <span class="muted">(הערכה של כותב הכרטיס)</span>
+              ) : (
+                t.source && (
+                  <sup class="cite">
+                    <a href={`#src-${t.source}`}>{t.source}</a>
+                  </sup>
+                )
+              )}{' '}
+              → <a href={href('questions', t.with.question)}>{ref('questions', t.with.question).title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section>
+    <h2>קישורים</h2>
+    <RefLinks title="שאלות קשורות" items={d.related_questions.map((id) => ({ ref: ref('questions', id) }))} />
+    <RefLinks title="הרצאות ופודקאסטים" items={d.media.map((id) => ({ ref: ref('works', id) }))} />
+  </section>
+
+  <Sources sources={d.sources} />
+</Base>
