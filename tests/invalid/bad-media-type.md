@@ -9,5 +9,6 @@ verification:
   status: unverified
   reviewed_by_me: false
   last_checked: 2026-10-14
-media: [on-liberty]
+deepen:
+  - { work: on-liberty, layer: listen, note_he: "בדיקה" }
 ---

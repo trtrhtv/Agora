@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Verification from '../../components/Verification.astro';
 import Sources from '../../components/Sources.astro';
 import RefLinks from '../../components/RefLinks.astro';
+import Deepen from '../../components/Deepen.astro';
 import { LEVEL_LABEL, href, lifeSpan, loadIndex } from '../../lib/view';
 
 export async function getStaticPaths() {
@@ -36,6 +37,8 @@ const links = (xs: { id: string; source: string; note_he?: string }[]) =>
   <article>
     <Content />
   </article>
+
+  <Deepen items={d.deepen} ref={ref} />
 
   {
     d.quotes.length > 0 && (
@@ -87,7 +90,6 @@ const links = (xs: { id: string; source: string; note_he?: string }[]) =>
     <RefLinks title="מבקרים" items={links(d.critics)} />
     <RefLinks title="זרמים" items={d.schools.map((id) => ({ ref: ref('schools', id) }))} />
     <RefLinks title="יצירות" items={d.key_works.map((id) => ({ ref: ref('works', id) }))} />
-    <RefLinks title="הרצאות ופודקאסטים" items={d.media.map((id) => ({ ref: ref('works', id) }))} />
     <RefLinks title="מסבירים" items={d.guides.map((id) => ({ ref: ref('guides', id) }))} />
     {
       heldIn.length > 0 && (

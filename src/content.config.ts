@@ -57,6 +57,18 @@ const sourcedLink = z.strictObject({
 });
 const sourcedLinks = z.array(sourcedLink).default([]);
 
+// A "go deeper" item (SPEC 4.2): a work, placed in one of four layers of depth.
+//   text   - the thinker's own text (with its Hebrew translation, if any)
+//   listen - a lecture, podcast episode or video that introduces the topic
+//   intro  - an accessible introductory article
+//   deep   - a scholarly book or article, including serious critics
+const deepenItem = z.strictObject({
+  work: slug,
+  layer: z.enum(['text', 'listen', 'intro', 'deep']),
+  note_he: z.string().min(1), // why this item, and what to look for in it
+});
+const deepen = z.array(deepenItem).default([]);
+
 const names = {
   name_he: z.string().min(1),
   name_en: z.string().min(1),
@@ -75,7 +87,7 @@ const thinkers = defineCollection({
     critics: sourcedLinks,
     key_works: slugs,
     guides: slugs,
-    media: slugs, // works of type lecture | podcast | video about this thinker
+    deepen,
     quotes: z.array(quote).default([]),
     misattributed: z.array(misattributed).default([]),
   }),
@@ -116,7 +128,7 @@ const questions = defineCollection({
       )
       .min(1),
     related_questions: slugs,
-    media: slugs, // works of type lecture | podcast | video on this question
+    deepen,
     tensions: z
       .array(
         z
@@ -144,8 +156,11 @@ const works = defineCollection({
     .strictObject({
       ...base,
       ...names,
-      type: z.enum(['book', 'essay', 'lecture', 'podcast', 'novel', 'video']),
-      author: slug, // a thinker, or a guide for lectures and podcasts
+      type: z.enum(['book', 'essay', 'article', 'lecture', 'podcast', 'novel', 'video']),
+      author: slug, // a thinker, or a guide (lecturer, podcast host, scholar)
+      series: z.string().optional(), // e.g. the podcast or the lecture course this episode belongs to
+      url: z.url().optional(), // the item's own page (episode page, publisher page); not full text
+      duration_min: z.number().int().positive().optional(),
       year: z.number().int(),
       language: z.string().min(2),
       availability: z.enum(['public_domain', 'excerpt_only', 'reference_only']),

@@ -1,0 +1,85 @@
+---
+// "Go deeper" (SPEC 4.2): works grouped by layer of depth, Hebrew first within each layer.
+import { getCollection } from 'astro:content';
+import { href, type Ref } from '../lib/view';
+
+interface Props {
+  items: { work: string; layer: 'text' | 'listen' | 'intro' | 'deep'; note_he: string }[];
+  ref: (kind: 'thinkers' | 'guides' | 'publishers', id: string) => Ref;
+}
+const { items, ref } = Astro.props;
+const works = new Map((await getCollection('works')).map((w) => [w.data.id, w.data]));
+const publishers = new Map((await getCollection('publishers')).map((p) => [p.data.id, p.data]));
+
+const LAYERS = [
+  ['text', 'הטקסט עצמו'],
+  ['listen', 'להאזין ולצפות'],
+  ['intro', 'מאמר מבוא'],
+  ['deep', 'לעומק'],
+] as const;
+const TYPE_LABEL: Record<string, string> = {
+  book: 'ספר',
+  essay: 'מסה',
+  article: 'מאמר',
+  lecture: 'הרצאה',
+  podcast: 'פודקאסט',
+  video: 'וידאו',
+  novel: 'רומן',
+};
+const isHebrew = (w: { language: string; translations: { language: string }[] }) =>
+  w.language === 'he' || w.translations.some((t) => t.language === 'he');
+const author = (id: string) => {
+  const t = ref('thinkers', id);
+  return t.title !== id ? t : ref('guides', id);
+};
+---
+
+{
+  items.length > 0 && (
+    <section>
+      <h2>להעמיק</h2>
+      {LAYERS.map(([layer, label]) => {
+        const rows = items
+          .filter((i) => i.layer === layer)
+          // Unknown works are reported by the integrity check; skip them here so that error surfaces.
+          .flatMap((i) => (works.has(i.work) ? [{ i, w: works.get(i.work)! }] : []))
+          .sort((a, b) => Number(isHebrew(b.w)) - Number(isHebrew(a.w)));
+        return (
+          rows.length > 0 && (
+            <>
+              <h3>{label}</h3>
+              <ul class="deepen">
+                {rows.map(({ i, w }) => {
+                  const by = author(w.author);
+                  const he = w.translations.filter((t) => t.language === 'he');
+                  const link = w.url ?? w.full_text_url;
+                  return (
+                    <li>
+                      <span class="badge">{w.language === 'he' ? 'עברית' : 'English'}</span>
+                      {link ? <a href={link}>{w.name_he}</a> : <span>{w.name_he}</span>}{' '}
+                      <span class="muted">
+                        · {TYPE_LABEL[w.type]} · <a href={href(by.kind, by.id)}>{by.title}</a>
+                        {w.series && <> · <span lang={w.language}>{w.series}</span></>}
+                        {w.duration_min && <> · {w.duration_min} דק'</>}
+                        {' · '}
+                        <a href={href('works', w.id)}>פרטים</a>
+                      </span>
+                      {he.map((t) => (
+                        <div class="muted">
+                          בעברית: {t.url ? <a href={t.url}>{t.title}</a> : t.title}
+                          {t.translator && <>, תרגום {t.translator}</>}
+                          {t.publisher && <>, {publishers.get(t.publisher)?.name_he ?? t.publisher}</>}
+                        </div>
+                      ))}
+                      <div>{i.note_he}</div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
+          )
+        );
+      })}
+    </section>
+  )
+}

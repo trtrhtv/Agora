@@ -51,11 +51,19 @@ export async function assertIntegrity() {
       errors.push(`${where}: verification.weakest_claims is required once a card is checked`);
   };
 
-  const checkMedia = (where: string, ids: string[]) => {
-    ref(where, 'works', ids);
-    for (const id of ids) {
-      const t = workType.get(id);
-      if (t && !MEDIA_TYPES.has(t)) errors.push(`${where}: media "${id}" is a ${t}, not a lecture, podcast or video`);
+  // Go-deeper items: the work must exist and fit its layer.
+  const workAuthor = new Map(all.works.map((w) => [w.data.id, w.data.author]));
+  const checkDeepen = (where: string, items: { work: string; layer: string }[]) => {
+    ref(`${where} deepen`, 'works', items.map((i) => i.work));
+    for (const { work, layer } of items) {
+      const t = workType.get(work);
+      if (!t) continue;
+      if (layer === 'listen' && !MEDIA_TYPES.has(t))
+        errors.push(`${where} deepen: "${work}" is a ${t}, not a lecture, podcast or video`);
+      if (layer !== 'listen' && MEDIA_TYPES.has(t))
+        errors.push(`${where} deepen: "${work}" is a ${t}, so its layer must be listen`);
+      if (layer === 'text' && !index.thinkers.has(workAuthor.get(work) ?? ''))
+        errors.push(`${where} deepen: "${work}" is in the text layer but its author is not a thinker`);
     }
   };
 
@@ -83,7 +91,7 @@ export async function assertIntegrity() {
     }
     ref(where, 'works', e.data.key_works);
     ref(where, 'guides', e.data.guides);
-    checkMedia(where, e.data.media);
+    checkDeepen(where, e.data.deepen);
 
     // Quotes must come from a primary text, never through a secondary source.
     for (const q of e.data.quotes) {
@@ -118,7 +126,7 @@ export async function assertIntegrity() {
   for (const e of all.questions) {
     const { where, sourceIds } = checkCommon('questions', e);
     ref(where, 'questions', e.data.related_questions);
-    checkMedia(where, e.data.media);
+    checkDeepen(where, e.data.deepen);
     if (e.data.verification.status !== 'unverified') {
       checkWeakest(where, e.data.verification);
       checkConcentration(where, sourceById(e), e.body);

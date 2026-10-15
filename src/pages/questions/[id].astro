@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Verification from '../../components/Verification.astro';
 import Sources from '../../components/Sources.astro';
 import RefLinks from '../../components/RefLinks.astro';
+import Deepen from '../../components/Deepen.astro';
 import { LEVEL_LABEL, href, loadIndex } from '../../lib/view';
 
 export async function getStaticPaths() {
@@ -61,6 +62,8 @@ const { ref } = await loadIndex();
     <Content />
   </article>
 
+  <Deepen items={d.deepen} ref={ref} />
+
   {
     d.tensions.length > 0 && (
       <section>
@@ -89,7 +92,6 @@ const { ref } = await loadIndex();
   <section>
     <h2>קישורים</h2>
     <RefLinks title="שאלות קשורות" items={d.related_questions.map((id) => ({ ref: ref('questions', id) }))} />
-    <RefLinks title="הרצאות ופודקאסטים" items={d.media.map((id) => ({ ref: ref('works', id) }))} />
   </section>
 
   <Sources sources={d.sources} />

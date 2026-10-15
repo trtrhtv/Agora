@@ -44,10 +44,18 @@ if (kind === 'guides') add('יצירות', 'works', d.works);
   {d.name_en && <p class="muted" lang="en">{d.name_en}</p>}
   <Verification v={d.verification} />
   {
-    kind === 'works' && d.full_text_url && (
-      <p>
-        <a href={d.full_text_url}>הטקסט המלא (נחלת הכלל)</a>
-      </p>
+    kind === 'works' && (
+      <ul class="links">
+        {d.full_text_url && <li><a href={d.full_text_url}>הטקסט המלא (נחלת הכלל)</a></li>}
+        {d.url && <li><a href={d.url}>עמוד היצירה</a>{d.series && <> · <span lang={d.language}>{d.series}</span></>}{d.duration_min && <> · {d.duration_min} דק'</>}</li>}
+        {d.translations.map((t: any) => (
+          <li>
+            תרגום ({t.language}): {t.url ? <a href={t.url}>{t.title}</a> : t.title}
+            {t.translator && <>, {t.translator}</>}
+            {t.publisher && <>, <a href={`/publishers/${t.publisher}/`}>{ref('publishers', t.publisher).title}</a></>}
+          </li>
+        ))}
+      </ul>
     )
   }
   <article>
