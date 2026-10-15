@@ -11,6 +11,11 @@ verification:
     - "התחום 'כלכלה' (Principles of Political Economy) לא נחקר במנה זו. מופיע ב-domains על סמך s2 בלבד, בלי תוכן בכרטיס."
     - "ציטוטים מזויפים: ב-Wikiquote מופיע תחת Misattributed המשפט 'A society that will trade a little liberty for a little order...' כפרפרזה מודרנית על פרנקלין. לא נמצא מקור בלתי תלוי שמפריך, ולכן לא נכנס לכרטיס."
     - "הקשר בין מיל לבין המשפט 'כל מה שנדרש לניצחון הרשע' נשען על מקור אחד (Quote Investigator, s6). לא נמצא מקור שני."
+  weakest_claims:
+    - "הצגת הביקורת של המוסרנות המשפטית (\"גם ממשיכי מיל נאלצו לכלול רכיב של עוולה\") היא הטיעון של מחבר ערך סטנפורד (Stanton-Ife), לא עמדה מוסכמת בספרות."
+    - "דבריו של הארט על הפטרנליזם של מיל (\"מופרז\") מובאים בפרפרזה דרך s4. הטקסט של הארט לא נפתח."
+    - "\"פסקה 9\" בפרק הראשון של \"על החירות\" נשען על s4 בלבד."
+    - "התחום \"כלכלה\" מסומן בלי שום תוכן כלכלי בכרטיס."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -43,6 +48,26 @@ died: 1873
 schools: [liberalism]
 key_works: [on-liberty]
 guides: [stanford-encyclopedia-of-philosophy]
+quotes:
+  - text: "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant."
+    location: "On Liberty, ch. 1 (para. 9)"
+    source: s3
+    translation: "original English (1859), Project Gutenberg #34901"
+    translated_he: "שהמטרה היחידה שלשמה מותר להפעיל כוח בצדק על חבר כלשהו בקהילה מתורבתת, בניגוד לרצונו, היא למנוע נזק לאחרים. טובתו שלו, גופנית או מוסרית, אינה הצדקה מספקת."
+  - text: "...if it is not fully, frequently, and fearlessly discussed, it will be held as a dead dogma, not a living truth."
+    location: "On Liberty, ch. 2"
+    source: s3
+    translation: "original English (1859), Project Gutenberg #34901"
+    translated_he: "אם לא תידון במלואה, לעתים קרובות וללא פחד, היא תוחזק כדוגמה מתה ולא כאמת חיה."
+  - text: "Human nature is not a machine to be built after a model, and set to do exactly the work prescribed for it, but a tree, which requires to grow and develop itself on all sides..."
+    location: "On Liberty, ch. 3"
+    source: s3
+    translation: "original English (1859), Project Gutenberg #34901"
+    translated_he: "הטבע האנושי אינו מכונה שנבנית לפי דגם ומוגדרת לבצע בדיוק את העבודה שנקבעה לה, אלא עץ שצריך לצמוח ולהתפתח לכל עבריו..."
+misattributed:
+  - text: "The only thing necessary for the triumph of evil is for good men to do nothing."
+    verdict_he: "לא של מיל וגם לא של ברק. לפי Quote Investigator, אצל מיל יש משפט קרוב ברעיון אך שונה בנוסח, בנאום הפתיחה באוניברסיטת סנט אנדרוז (1867). הגרסה הדומה ביותר לנוסח המודרני שנמצאה היא מ-1916."
+    sources: [s6]
 ---
 
 ## מי היה
@@ -78,7 +103,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **החריג הקולוניאלי.** מיל עצמו קבע שהעיקרון לא חל על "חברות נחשלות", ושעריצות היא "צורת שלטון לגיטימית" כלפי "ברברים" אם מטרתה שיפורם [^s3] [^s5].
 
 :::assessment
-הערכה (של כותב הכרטיס, לא של המקורות): החריג הזה אינו שולי. הוא מראה שההגנה של מיל על החירות תלויה בשיפוט מי "בשל" לה, ושיפוט כזה שימש בפועל להצדקת שלטון קולוניאלי (מיל עצמו עבד בחברת הודו המזרחית [^s1]).
+שאלה פתוחה: האם החריג הזה שולי, או שהוא מראה שההגנה של מיל על החירות תלויה בשיפוט מי "בשל" לה? (מיל עצמו עבד בחברת הודו המזרחית [^s1].)
 :::
 
 **ה"הוכחה" לתועלתנות.** ג'. א. מור טען שהמעבר של מיל מ"נרצה" (desired) ל"ראוי לרצייה" (desirable) הוא כשל לוגי בוטה. ערך האנציקלופדיה מקבל שהניסוח אומלל, אבל טוען שהטיעון חזק יותר כשקוראים אותו בהקשר הנטורליסטי שלו [^s1].
@@ -88,21 +113,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"על החירות"** (1859). קצר, זמין במלואו בנחלת הכלל [^s3], ומרוכזים בו הרעיונות שבגללם מיל רלוונטי לשאלות של אגורה. הפרק הראשון מנסח את העיקרון, והשני והשלישי הם הלב. אחריו **"התועלתנות"** (1861), כדי להבין על מה העיקרון נשען.
 :::
-
-## ציטוטים מאומתים
-
-> "That the only purpose for which power can be rightfully exercised over any member of a civilised community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant."
-
-*On Liberty*, פרק 1 (פסקה 9 לפי מספור [^s4]) [^s3]. תרגום חופשי: "שהמטרה היחידה שלשמה מותר להפעיל כוח בצדק על חבר כלשהו בקהילה מתורבתת, בניגוד לרצונו, היא למנוע נזק לאחרים. טובתו שלו, גופנית או מוסרית, אינה הצדקה מספקת."
-
-> "...if it is not fully, frequently, and fearlessly discussed, it will be held as a dead dogma, not a living truth."
-
-*On Liberty*, פרק 2 [^s3]. תרגום חופשי: "אם לא תידון במלואה, לעתים קרובות וללא פחד, היא תוחזק כדוגמה מתה ולא כאמת חיה."
-
-> "Human nature is not a machine to be built after a model, and set to do exactly the work prescribed for it, but a tree, which requires to grow and develop itself on all sides..."
-
-*On Liberty*, פרק 3 [^s3]. תרגום חופשי: "הטבע האנושי אינו מכונה שנבנית לפי דגם ומוגדרת לבצע בדיוק את העבודה שנקבעה לה, אלא עץ שצריך לצמוח ולהתפתח לכל עבריו..."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-**"כל מה שנדרש לניצחון הרשע הוא שאנשים טובים לא יעשו דבר."** מיוחס בדרך כלל לאדמונד ברק, ולא נמצא בכתביו. לפי Quote Investigator, אצל מיל יש משפט קרוב ברעיון אך שונה בנוסח, בנאום הפתיחה שנשא באוניברסיטת סנט אנדרוז ב-1867. הגרסה הדומה ביותר לנוסח המודרני שנמצאה היא משנת 1916 [^s6]. כלומר: גם מיל לא אמר את המשפט הזה.

@@ -11,6 +11,11 @@ verification:
     - "'אמיל' (חינוך) ו'וידויים' לא נבדקו מעבר לתיאור ב-s1. הכרטיס מתמקד בפוליטיקה. התחום lifestyle מסומן על סמך s1 (חינוך, אותנטיות) בלבד."
     - "הציטוטים מ'האמנה החברתית' נלקחו מתרגום G. D. H. Cole (1913) ב-Gutenberg. מספרי הפרקים מאומתים מול הטקסט שם."
     - "אין כרטיס יצירה ל'האמנה החברתית'. key_works ריק."
+  weakest_claims:
+    - "נטישת חמשת הילדים מבוססת על עדותו של רוסו עצמו, כפי שמובאת ב-s1."
+    - "הקריאה הטוטליטרית מיוחסת ל\"כותבים עוינים\" בלי שמות ובלי מקור ראשוני."
+    - "הביקורת של וולסטונקרפט מובאת דרך s1 בלבד."
+    - "\"ההשפעה הפילוסופית החשובה ביותר שלו הייתה על קאנט\" היא שיפוט של s1."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -29,9 +34,29 @@ sources:
 born: 1712
 died: 1778
 schools: [social-contract-theory]
-influenced_by: [thomas-hobbes, john-locke, plato]
-influenced: [immanuel-kant]
 guides: [stanford-encyclopedia-of-philosophy]
+influenced_by:
+  - { id: thomas-hobbes, source: s1 }
+  - { id: john-locke, source: s1 }
+  - { id: plato, source: s1 }
+influenced:
+  - { id: immanuel-kant, source: s1 }
+quotes:
+  - text: "Man is born free; and everywhere he is in chains. One thinks himself the master of others, and still remains a greater slave than they."
+    location: "The Social Contract, Book I, ch. 1"
+    source: s3
+    translation: "tr. G. D. H. Cole (1913), Project Gutenberg #46333"
+    translated_he: "האדם נולד חופשי, ובכל מקום הוא כבול בשלשלאות. יש החושב עצמו אדון לאחרים, והוא עבד יותר מהם."
+  - text: "The problem is to find a form of association which will defend and protect with the whole common force the person and goods of each associate, and in which each, while uniting himself with all, may still obey himself alone, and remain as free as before."
+    location: "The Social Contract, Book I, ch. 6"
+    source: s3
+    translation: "tr. G. D. H. Cole (1913), Project Gutenberg #46333"
+    translated_he: "הבעיה היא למצוא צורת התאגדות שתגן בכל הכוח המשותף על גופו ורכושו של כל שותף, ושבה כל אחד, אף שהוא מתאחד עם כולם, ימשיך לציית רק לעצמו ויישאר חופשי כשהיה."
+  - text: "...whoever refuses to obey the general will shall be compelled to do so by the whole body. This means nothing less than that he will be forced to be free..."
+    location: "The Social Contract, Book I, ch. 7"
+    source: s3
+    translation: "tr. G. D. H. Cole (1913), Project Gutenberg #46333"
+    translated_he: "...מי שמסרב לציית לרצון הכללי ייאלץ לעשות זאת בידי הגוף כולו. פירוש הדבר לא פחות מכך שהוא ייאלץ להיות חופשי..."
 ---
 
 ## מי היה
@@ -71,21 +96,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"האמנה החברתית"** (1762), ספר ראשון, פרקים 1, 6, 7 ו-8. הם קצרים ומכילים את הבעיה, הפתרון, "ייאלץ להיות חופשי" ושלושת סוגי החירות [^s3]. מי שרוצה את הביקורת על החברה הקיימת יקרא קודם את **"המאמר על אי-השוויון"** (1755), שנמצא באותו כרך ב-Gutenberg [^s3].
 :::
-
-## ציטוטים מאומתים
-
-> "Man is born free; and everywhere he is in chains. One thinks himself the master of others, and still remains a greater slave than they."
-
-*The Social Contract*, ספר 1, פרק 1 (תרגום Cole) [^s3]. תרגום חופשי: "האדם נולד חופשי, ובכל מקום הוא כבול בשלשלאות. יש החושב עצמו אדון לאחרים, והוא עבד יותר מהם."
-
-> "The problem is to find a form of association which will defend and protect with the whole common force the person and goods of each associate, and in which each, while uniting himself with all, may still obey himself alone, and remain as free as before."
-
-*The Social Contract*, ספר 1, פרק 6 [^s3]. תרגום חופשי: "הבעיה היא למצוא צורת התאגדות שתגן בכל הכוח המשותף על גופו ורכושו של כל שותף, ושבה כל אחד, אף שהוא מתאחד עם כולם, ימשיך לציית רק לעצמו ויישאר חופשי כשהיה."
-
-> "...whoever refuses to obey the general will shall be compelled to do so by the whole body. This means nothing less than that he will be forced to be free..."
-
-*The Social Contract*, ספר 1, פרק 7 [^s3]. תרגום חופשי: "...מי שמסרב לציית לרצון הכללי ייאלץ לעשות זאת בידי הגוף כולו. פירוש הדבר לא פחות מכך שהוא ייאלץ להיות חופשי..."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא נבדק במנה זו.

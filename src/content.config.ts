@@ -12,6 +12,8 @@ const domain = z.enum(['philosophy', 'economics', 'politics', 'lifestyle']);
 const verification = z.strictObject({
   status: z.enum(['verified', 'partial', 'unverified']),
   missing: z.array(z.string()).default([]),
+  // The 3–5 claims the author would be least able to defend: the owner reviews these first.
+  weakest_claims: z.array(z.string()).default([]),
   reviewed_by_me: z.boolean(),
   last_checked: z.coerce.date(),
 });
@@ -31,6 +33,30 @@ const base = {
   sources: z.array(source).default([]),
 };
 
+// A verified quote: exact wording from a primary source, with its location and the translation used.
+const quote = z.strictObject({
+  text: z.string().min(1),
+  location: z.string().min(1), // e.g. "Leviathan, Part I, ch. 13"
+  source: sourceId, // must be a primary source (checked in integrity.ts)
+  translation: z.string().min(1), // translator and edition, or "original" if not translated
+  translated_he: z.string().optional(), // the author's free Hebrew translation
+});
+
+// A misattributed or distorted quote, with the source that refutes or corrects it.
+const misattributed = z.strictObject({
+  text: z.string().min(1),
+  verdict_he: z.string().min(1),
+  sources: z.array(sourceId).min(1),
+});
+
+// A link to another entity that is itself a claim (influence, criticism), so it needs a source.
+const sourcedLink = z.strictObject({
+  id: slug,
+  source: sourceId,
+  note_he: z.string().optional(),
+});
+const sourcedLinks = z.array(sourcedLink).default([]);
+
 const names = {
   name_he: z.string().min(1),
   name_en: z.string().min(1),
@@ -44,11 +70,14 @@ const thinkers = defineCollection({
     born: z.number().int().optional(), // negative = BCE
     died: z.number().int().optional(),
     schools: slugs,
-    influenced_by: slugs,
-    influenced: slugs,
-    critics: slugs,
+    influenced_by: sourcedLinks,
+    influenced: sourcedLinks,
+    critics: sourcedLinks,
     key_works: slugs,
     guides: slugs,
+    media: slugs, // works of type lecture | podcast | video about this thinker
+    quotes: z.array(quote).default([]),
+    misattributed: z.array(misattributed).default([]),
   }),
 });
 
@@ -87,14 +116,23 @@ const questions = defineCollection({
       )
       .min(1),
     related_questions: slugs,
+    media: slugs, // works of type lecture | podcast | video on this question
     tensions: z
       .array(
-        z.strictObject({
-          with: z.strictObject({ question: slug, position: slug }),
-          my_position: slug,
-          note_he: z.string().min(1),
-          source: sourceId,
-        }),
+        z
+          .strictObject({
+            with: z.strictObject({ question: slug, position: slug }),
+            my_position: slug,
+            note_he: z.string().min(1),
+            // sourced: a cited author names the tension. structural: the author's own reasoning,
+            // shown to the owner as an assessment, never as a fact.
+            basis: z.enum(['sourced', 'structural']).default('sourced'),
+            source: sourceId.optional(),
+          })
+          .refine((t) => t.basis === 'structural' || !!t.source, {
+            message: 'a sourced tension needs a source',
+            path: ['source'],
+          }),
       )
       .default([]),
   }),
@@ -107,7 +145,7 @@ const works = defineCollection({
       ...base,
       ...names,
       type: z.enum(['book', 'essay', 'lecture', 'podcast', 'novel', 'video']),
-      author: slug,
+      author: slug, // a thinker, or a guide for lectures and podcasts
       year: z.number().int(),
       language: z.string().min(2),
       availability: z.enum(['public_domain', 'excerpt_only', 'reference_only']),

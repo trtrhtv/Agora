@@ -11,6 +11,11 @@ verification:
     - "תורת האידאות, הדיאלוגים המוקדמים, 'המשתה' ו'החוקים' לא נבדקו לעומק. הכרטיס מתמקד ב'המדינה' ובתורת המדינה."
     - "התרגום האנגלי של 'המדינה' ב-Gutenberg (ג'ואט, המאה ה-19) לא כולל מספור סטפנוס. המספור (473c–d, 414b–c) נלקח מ-s2, ומיקום הספרים אומת מול הטקסט של ג'ואט."
     - "אין כרטיס יצירה ל'המדינה'. key_works ריק."
+  weakest_claims:
+    - "שנות החיים לא ודאיות (s1 ו-s3 חלוקים)."
+    - "ביקורת פופר מובאת דרך s2. הספר לא נפתח."
+    - "מספור סטפנוס של הציטוטים לקוח מ-s2, כי בתרגום ג'ואט שב-Gutenberg אין מספור."
+    - "הקביעה שאפלטון הוא דוגמה לתפיסת לגיטימיות מבוססת ידיעה היא סיווג של s6 (Peter)."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -40,9 +45,22 @@ sources:
     type: encyclopedia
 born: -428
 died: -347
-influenced: [aristotle]
-critics: [aristotle]
 guides: [stanford-encyclopedia-of-philosophy]
+influenced:
+  - { id: aristotle, source: s1 }
+critics:
+  - { id: aristotle, source: s5 }
+quotes:
+  - text: "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one... cities will never have rest from their evils..."
+    location: "Republic, Book V (473c–d)"
+    source: s4
+    translation: "tr. Benjamin Jowett, Project Gutenberg #1497"
+    translated_he: "כל עוד הפילוסופים אינם מלכים, או מלכי העולם ונסיכיו אין בהם רוח הפילוסופיה וכוחה, ואין הגדולה המדינית והחכמה נפגשות באחד... לא תהיה לערים מנוחה מרעותיהן..."
+  - text: "How then may we devise one of those needful falsehoods of which we lately spoke—just one royal lie which may deceive the rulers, if that be possible, and at any rate the rest of the city?"
+    location: "Republic, Book III (414b–c)"
+    source: s4
+    translation: "tr. Benjamin Jowett, Project Gutenberg #1497"
+    translated_he: "איך אפוא נמציא אחד מאותם שקרים נחוצים שדיברנו עליהם לא מכבר, שקר מלכותי אחד שיטעה את השליטים עצמם אם אפשר, ובכל מקרה את שאר העיר?"
 ---
 
 ## מי היה
@@ -72,7 +90,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **אוטופיה.** יש הטוענים שהעיר נשענת על תמונה לא מציאותית של בני אדם [^s2]. מנגד, סטנפורד מעיר שאפשר לטעון את ההפך: "המדינה" פסימית מדי, כי היא דנה את רוב בני האדם לחיים של עבדים או של תלות עבדותית בשליטים [^s2].
 
 :::assessment
-הערכה של כותב הכרטיס: המחלוקת אם אפלטון "פמיניסט" או "טוטליטרי" תלויה במידה רבה בהגדרות, כפי שערך סטנפורד מדגיש [^s2]. מה שלא שנוי במחלוקת הוא שהשקר האצילי בא על חשבון ההסכמה של הנשלטים, ולכן הוא סותר כל תפיסה של לגיטימיות שמבוססת על הסכמה.
+שאלה פתוחה: לפי ערך סטנפורד, המחלוקת אם אפלטון "פמיניסט" או "טוטליטרי" תלויה במידה רבה בהגדרות [^s2]. השקר האצילי בא על חשבון ההסכמה של הנשלטים [^s2]: האם אפשר ליישב אותו עם תפיסה כלשהי של לגיטימיות שמבוססת על הסכמה?
 :::
 
 ## איפה להתחיל
@@ -80,17 +98,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"המדינה"**, ספרים 1–2 (השאלה למה להיות צודק), 5 (נשים, משפחה, מלכי-פילוסופים) ו-7 (משל המערה) [^s4]. בתרגום עברי יש לבדוק מי המתרגם וההוצאה; טרם נבדק.
 :::
-
-## ציטוטים מאומתים
-
-> "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one... cities will never have rest from their evils..."
-
-*Republic*, ספר 5 (473c–d לפי [^s2]), תרגום ג'ואט [^s4]. תרגום חופשי: "כל עוד הפילוסופים אינם מלכים, או מלכי העולם ונסיכיו אין בהם רוח הפילוסופיה וכוחה, ואין הגדולה המדינית והחכמה נפגשות באחד... לא תהיה לערים מנוחה מרעותיהן..."
-
-> "How then may we devise one of those needful falsehoods of which we lately spoke—just one royal lie which may deceive the rulers, if that be possible, and at any rate the rest of the city?"
-
-*Republic*, ספר 3 (414b–c לפי [^s2]), תרגום ג'ואט [^s4]. תרגום חופשי: "איך אפוא נמציא אחד מאותם שקרים נחוצים שדיברנו עליהם לא מכבר, שקר מלכותי אחד שיטעה את השליטים עצמם אם אפשר, ובכל מקרה את שאר העיר?"
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא נבדק במנה זו.

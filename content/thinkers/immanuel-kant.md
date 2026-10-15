@@ -11,6 +11,11 @@ verification:
     - "תורת ההכרה של קאנט (ביקורת התבונה הטהורה) מוזכרת רק בקצרה. הכרטיס מתמקד במוסר ובפוליטיקה, לפי צורכי השאלות בספרייה."
     - "הציטוטים מה'הנחת יסוד' לקוחים מתרגום Abbott ב-Gutenberg, שהוא ישן ושונה מהתרגומים האקדמיים המקובלים היום (למשל Gregor). מספור האקדמיה (4:421, 4:429) מופיע דרך s3 ולא נבדק בתרגום."
     - "אין כרטיסי יצירה. key_works ריק."
+  weakest_claims:
+    - "האיסור לשקר לרוצח נשען על אזכור אחד בערך סטנפורד על הגדרת השקר (s6). החיבור של קאנט לא נפתח."
+    - "ביקורת הגל (\"פורמליזם ריק\") והתשובה לה מובאות דרך s7 בלבד."
+    - "\"רוב חייו לימד באוניברסיטת עירו\" הוא הכללה מ-s1, שמתאר שנים של עבודה כמורה פרטי לפני כן."
+    - "הציטוטים מתרגום Abbott, שונה מהתרגומים האקדמיים המקובלים."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -53,8 +58,25 @@ sources:
 born: 1724
 died: 1804
 schools: [social-contract-theory]
-influenced_by: [jean-jacques-rousseau]
 guides: [stanford-encyclopedia-of-philosophy]
+influenced_by:
+  - { id: jean-jacques-rousseau, source: s8 }
+quotes:
+  - text: "Act only on that maxim whereby thou canst at the same time will that it should become a universal law."
+    location: "Groundwork of the Metaphysics of Morals, Second Section (Ak. 4:421)"
+    source: s4
+    translation: "tr. Thomas Kingsmill Abbott, Project Gutenberg #5682"
+    translated_he: "פעל רק לפי אותה מקסימה שבאמצעותה תוכל לרצות בה בעת שתהיה לחוק כללי."
+  - text: "So act as to treat humanity, whether in thine own person or in that of any other, in every case as an end withal, never as means only."
+    location: "Groundwork of the Metaphysics of Morals, Second Section"
+    source: s4
+    translation: "tr. Thomas Kingsmill Abbott, Project Gutenberg #5682"
+    translated_he: "פעל כך שתתייחס לאנושות, בין בגופך ובין בגופו של כל אחר, בכל מקרה גם כמטרה, ולעולם לא כאמצעי בלבד."
+  - text: "The civil constitution of each state shall be republican."
+    location: "Toward Perpetual Peace, First Definitive Article"
+    source: s5
+    translation: "tr. Mary Campbell Smith, Project Gutenberg #50922"
+    translated_he: "החוקה האזרחית של כל מדינה תהיה רפובליקנית."
 ---
 
 ## מי היה
@@ -90,21 +112,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"הנחת יסוד למטפיזיקה של המידות"** (1785), החלק השני, שבו מנוסחים שני הניסוחים המצוטטים כאן [^s4]. בשביל הפוליטיקה, **"לשלום הנצחי"** (1795), שהוא קצר וזמין [^s5]. ערך סטנפורד ממליץ גם על החלק השני של המסה "תאוריה ומעשה" כסיכום של תורת המדינה [^s2].
 :::
-
-## ציטוטים מאומתים
-
-> "Act only on that maxim whereby thou canst at the same time will that it should become a universal law."
-
-*Groundwork* (תרגום Abbott), החלק השני [^s4]. מספור האקדמיה 4:421 לפי [^s3]. תרגום חופשי: "פעל רק לפי אותה מקסימה שבאמצעותה תוכל לרצות בה בעת שתהיה לחוק כללי."
-
-> "So act as to treat humanity, whether in thine own person or in that of any other, in every case as an end withal, never as means only."
-
-*Groundwork* (תרגום Abbott), החלק השני [^s4]. תרגום חופשי: "פעל כך שתתייחס לאנושות, בין בגופך ובין בגופו של כל אחר, בכל מקרה גם כמטרה, ולעולם לא כאמצעי בלבד."
-
-> "The civil constitution of each state shall be republican."
-
-*Perpetual Peace*, התנאי המכריע הראשון (תרגום Campbell Smith) [^s5]. תרגום חופשי: "החוקה האזרחית של כל מדינה תהיה רפובליקנית."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא נבדק במנה זו.

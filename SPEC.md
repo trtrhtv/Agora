@@ -61,6 +61,7 @@ domains: [philosophy, politics, economics]   # philosophy | economics | politics
 verification:
   status: partial          # verified | partial | unverified
   missing: ["ציטוט X לא נמצא במקור ראשוני"]
+  weakest_claims: ["..."]  # 3–5 המשפטים שהכי קשה להגן עליהם; חובה בכרטיס שנבדק
   reviewed_by_me: false    # רק אני משנה ל-true אחרי מעבר
   last_checked: 2026-10-14
 sources:                   # כל הקישורים שהטקסט מפנה אליהם
@@ -70,19 +71,41 @@ sources:                   # כל הקישורים שהטקסט מפנה אלי�
     type: encyclopedia     # primary | encyclopedia | academic | official | journalism | other
 ```
 
-בגוף הקובץ, כל טענה מפנה למקור עם `[^s1]`. משפט שהוא הערכה ולא עובדה מסומן בבלוק `:::assessment`.
+בגוף הקובץ, כל טענה מפנה למקור עם `[^s1]`. בלוק `:::assessment` משמש רק להמלצת קריאה, לשאלה פתוחה או להערה על מצב המקורות, ולא להכרעה איזו עמדה או ביקורת נכונה. כל כרטיס הוגה מצטט לפחות מקור משני אחד שאינו האנציקלופדיה של סטנפורד (נאכף בבנייה).
 
 ### 4.2 הוגה (`thinkers/`)
 
-שדות נוספים: `born`, `died`, `schools[]`, `influenced_by[]`, `influenced[]`, `critics[]` (הוגים שביקרו אותו), `key_works[]`, `guides[]` (מסבירים מומלצים עליו).
+שדות נוספים: `born`, `died`, `schools[]`, `influenced_by[]`, `influenced[]`, `critics[]` (הוגים שביקרו אותו), `key_works[]`, `guides[]` (מסבירים מומלצים עליו), `media[]` (הרצאות ופודקאסטים, ראה 4.5).
+
+קשרי השפעה וביקורת הם טענות, ולכן כל אחד מהם עם מקור:
+
+```yaml
+influenced_by:
+  - { id: thomas-hobbes, source: s10 }
+```
+
+ציטוטים הם נתונים מובנים ולא טקסט חופשי. המקור חייב להיות טקסט ראשוני, ויש לציין את התרגום:
+
+```yaml
+quotes:
+  - text: "...the life of man, solitary, poore, nasty, brutish, and short."
+    location: "Leviathan, Part I, ch. 13"
+    source: s4                         # type: primary
+    translation: "original English (1651), Project Gutenberg #3207"
+    translated_he: "...וחיי האדם בודדים, עניים, מאוסים, אכזריים וקצרים."
+misattributed:                         # ציטוט מזויף או מעוות, עם מקור שמפריך
+  - text: "The end justifies the means."
+    verdict_he: "תיאור מקובל של עמדתו, לא ציטוט..."
+    sources: [s2, s3]
+```
 
 מבנה גוף הכרטיס:
 1. **מי היה:** הקשר היסטורי קצר.
 2. **רעיונות מרכזיים:** בגרסה החזקה, כל רעיון עם מקור.
 3. **הביקורת החזקה:** מי ביקר, מה הטענה, עם מקור.
 4. **איפה להתחיל:** יצירה אחת או שתיים לכניסה, ולמה.
-5. **ציטוטים מאומתים:** רק עם הפניה למקום המדויק ביצירה.
-6. **ציטוטים מזויפים או מיוחסים בטעות:** אם ידועים, עם מקור שמפריך.
+
+הציטוטים המאומתים והמזויפים מוצגים בעמוד מתוך השדות `quotes` ו-`misattributed`.
 
 ### 4.3 זרם (`schools/`)
 
@@ -111,8 +134,11 @@ tensions:                  # צירופי עמדות שיש ביניהם מתח,
   - with: { question: property, position: strong-redistribution }
     my_position: philosophical-anarchism
     note_he: "חלוקה מחדש בהיקף רחב דורשת מנגנון כפייה מרכזי"
+    basis: sourced           # sourced (חובה source) | structural (נימוק של כותב הכרטיס, מוצג כהערכה)
     source: s3
 ```
+
+לשאלה יכולה להיות גם רשימת `media[]` של הרצאות ופודקאסטים.
 
 גוף: למה השאלה חשובה, ולכל עמדה: הגרסה החזקה, מי מחזיק בה, הביקורת החזקה.
 
@@ -122,7 +148,7 @@ tensions:                  # צירופי עמדות שיש ביניהם מתח,
 
 ```yaml
 type: book                 # book | essay | lecture | podcast | novel | video
-author: john-stuart-mill
+author: john-stuart-mill    # הוגה; בהרצאה או בפודקאסט: מסביר (guides/)
 year: 1859
 language: en
 availability: public_domain    # public_domain | excerpt_only | reference_only
@@ -134,6 +160,8 @@ translations:
     publisher: some-publisher-id
     url: ...
 ```
+
+**הרצאות ופודקאסטים:** יצירה מסוג `lecture`, `podcast` או `video`, שהמחבר שלה הוא מסביר, ומקושרת מהוגים ומשאלות דרך `media[]`. לפני שמוסיפים: לפתוח את דף הפרק, לוודא שהוא קיים ומי מדבר בו ושהוא עוסק בנושא, ולוודא שלמסביר יש כרטיס עם השיוך, ההתמחות והנטיות הידועות שלו. האזנה היא פרשן נוסף, לא תחליף לטקסט המקורי.
 
 **כלל זכויות יוצרים:** טקסט מלא מוצג רק ל-`public_domain`. ליצירות מוגנות: תקציר במילים שלנו, ציטוטים קצרים בלבד, והפניה לספר, לפרק או לקישור.
 

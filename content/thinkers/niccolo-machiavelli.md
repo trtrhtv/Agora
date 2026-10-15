@@ -10,6 +10,11 @@ verification:
     - "הקביעה שהביטוי 'המטרה מקדשת את האמצעים' אינו מופיע ב'הנסיך' נבדקה רק בתרגום אחד (Marriott, חיפוש טקסטואלי). לא נבדק במקור האיטלקי."
     - "פרשנויות של חוקרים חיים (למשל סקינר, מנספילד) מובאות דרך s1 בלי לייחס להן עמדה בשמן, לפי הנוהל."
     - "אין כרטיסי יצירה. key_works ריק."
+  weakest_claims:
+    - "ש\"השיחות\" מבטאות \"בכנות רבה יותר\" את אמונותיו היא קביעה של מחבר s1 (Nederman), ויש מי שחולקים."
+    - "היעדר הביטוי \"המטרה מקדשת את האמצעים\" נבדק רק בתרגום אחד, בחיפוש טקסטואלי."
+    - "הקריאה של רוסו את \"הנסיך\" כסאטירה מובאת דרך s1."
+    - "הציטוטים מתרגום Marriott (1908)."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -28,6 +33,21 @@ sources:
 born: 1469
 died: 1527
 guides: [stanford-encyclopedia-of-philosophy]
+quotes:
+  - text: "The chief foundations of all states, new as well as old or composite, are good laws and good arms; and as there cannot be good laws where the state is not well armed, it follows that where they are well armed they have good laws."
+    location: "The Prince, ch. 12"
+    source: s3
+    translation: "tr. W. K. Marriott, Project Gutenberg #1232"
+    translated_he: "היסודות העיקריים של כל המדינות, חדשות כישנות או מורכבות, הם חוקים טובים ונשק טוב. ומאחר שלא ייתכנו חוקים טובים במקום שהמדינה אינה חמושה היטב, נובע שבמקום שהיא חמושה היטב יש חוקים טובים."
+  - text: "...it is much safer to be feared than loved, when, of the two, either must be dispensed with. Because this is to be asserted in general of men, that they are ungrateful, fickle, false, cowardly, covetous..."
+    location: "The Prince, ch. 17"
+    source: s3
+    translation: "tr. W. K. Marriott, Project Gutenberg #1232"
+    translated_he: "...בטוח הרבה יותר שייראו ממך מאשר שיאהבו אותך, כשצריך לוותר על אחד מהשניים. כי על בני האדם בכלל אפשר לומר שהם כפויי טובה, הפכפכים, שקרנים, פחדנים וחומדי בצע..."
+misattributed:
+  - text: "The end justifies the means."
+    verdict_he: "תיאור מקובל של עמדתו, לא ציטוט. לפי האנציקלופדיה של האינטרנט עמדתו \"מתוארת בדרך כלל כמשהו כמו\" כך. הביטוי לא מופיע בתרגום של \"הנסיך\" שנבדק. הקרוב ביותר: בפרק 18, במעשי נסיכים \"שופטים לפי התוצאה\" (one judges by the result)."
+    sources: [s2, s3]
 ---
 
 ## מי היה
@@ -59,7 +79,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **לא מקורי ולא עקבי כפי שנדמה.** החוקרים לא הגיעו להכרעה מה "מודרני" או "מקורי" אצלו. יש הרואים בו דמות ביניים שלא השתחררה מהמסורות שתקף [^s1].
 
 :::assessment
-הערכה של כותב הכרטיס: יש גם קריאה הפוכה. רוסו טען שהלקח האמיתי של "הנסיך" הוא לחשוף בפני העם איך נסיכים מתנהגים, ולא לשבח זאת [^s1]. אם הוא צודק, הביקורת "מורה לרשע" מחטיאה. כדאי לקרוא את "הנסיך" יחד עם "השיחות" ולהחליט בעצמך.
+שאלה פתוחה: יש גם קריאה הפוכה. רוסו טען שהלקח האמיתי של "הנסיך" הוא לחשוף בפני העם איך נסיכים מתנהגים, ולא לשבח זאת [^s1]. אם הוא צודק, הביקורת "מורה לרשע" מחטיאה. כדאי לקרוא את "הנסיך" יחד עם "השיחות" ולהחליט בעצמך.
 :::
 
 ## איפה להתחיל
@@ -67,17 +87,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"הנסיך"**, פרקים 15–18 (על מידות הנסיך, אהבה ופחד, עמידה בהבטחות) ופרק 25 (על המזל) [^s3]. הוא קצר וזמין. אחר כך **"השיחות"**, הספר הראשון, שבו הדיונים על המאבקים ברומא ועל חוכמת העם [^s1], כדי לראות את הצד הרפובליקני.
 :::
-
-## ציטוטים מאומתים
-
-> "The chief foundations of all states, new as well as old or composite, are good laws and good arms; and as there cannot be good laws where the state is not well armed, it follows that where they are well armed they have good laws."
-
-*The Prince*, פרק 12 (תרגום Marriott) [^s3]. תרגום חופשי: "היסודות העיקריים של כל המדינות, חדשות כישנות או מורכבות, הם חוקים טובים ונשק טוב. ומאחר שלא ייתכנו חוקים טובים במקום שהמדינה אינה חמושה היטב, נובע שבמקום שהיא חמושה היטב יש חוקים טובים."
-
-> "...it is much safer to be feared than loved, when, of the two, either must be dispensed with. Because this is to be asserted in general of men, that they are ungrateful, fickle, false, cowardly, covetous..."
-
-*The Prince*, פרק 17 [^s3]. תרגום חופשי: "...בטוח הרבה יותר שייראו ממך מאשר שיאהבו אותך, כשצריך לוותר על אחד מהשניים. כי על בני האדם בכלל אפשר לומר שהם כפויי טובה, הפכפכים, שקרנים, פחדנים וחומדי בצע..."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-**"המטרה מקדשת את האמצעים."** לפי האנציקלופדיה של האינטרנט, זה תיאור מקובל של עמדתו ולא ציטוט: עמדתו "מתוארת בדרך כלל כמשהו כמו" כך [^s2]. הביטוי לא מופיע בתרגום של "הנסיך" שנבדק [^s3]. הקרוב ביותר שם הוא, בפרק 18: במעשיהם של בני אדם, ובמיוחד של נסיכים, "שופטים לפי התוצאה" ("one judges by the result") [^s3].

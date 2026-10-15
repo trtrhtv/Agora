@@ -25,6 +25,20 @@ Personal worldview app. The full spec is in `SPEC.md`. Read it before any task.
 - Living scholars known only through a secondary source (e.g. an SEP summary): describe the argument and cite the secondary source, without attributing it by name.
 - Pace: batches of 5–10 cards, then stop for review.
 
+## Source and format rules (after the self-review of batches 1–3)
+
+The build enforces the starred rules (`src/lib/integrity.ts`).
+
+- **Beyond one encyclopedia.** \* Every checked thinker card cites at least one secondary source that is not the Stanford Encyclopedia (SEP). Keep SEP under 60% of a card's citations; the build warns above that. Source titles name the entry's author, so "according to SEP" reads as "according to Kraut".
+- **Quotes are data.** \* Verified quotes live only in the `quotes` field, with `location`, a `source` that is a primary text, and `translation` (translator and edition, or "original"). \* No block quotes in a thinker's body. In the body, quotation marks are allowed only for wording read directly in the primary text; anything read through a secondary source is paraphrased without quotation marks.
+- **Misattributions are data.** \* `misattributed` entries need a source that refutes or corrects them. "Not checked" goes in `verification.missing`, not in the card.
+- **Links are claims.** \* `influenced_by`, `influenced` and `critics` each carry a `source`.
+- **Weakest claims first.** \* Every checked card lists 3–5 `verification.weakest_claims`: the sentences the author would be least able to defend. The owner reviews these first.
+- **What `:::assessment` may hold.** Only: a reading recommendation ("המלצה של כותב הכרטיס"), an open question ("שאלה פתוחה" / "שאלה לקריאה"), or a note on the state of the sources ("הערה על המקורות"). Never a verdict on which position or critique is right or strongest.
+- **Tensions.** `basis: sourced` needs a source. `basis: structural` is the author's own reasoning and is shown to the owner as an assessment.
+- **Independent review.** After writing a batch and before handing it over, a separate agent that did not write the cards checks every cited sentence against its source and looks for second sources. Report its findings and what was fixed.
+- **Lectures and podcasts.** They are `works` of type `lecture`, `podcast` or `video`, whose `author` is a guide card, linked from thinkers and questions through `media`. Before adding one: open the episode page, confirm it exists and who speaks, confirm it covers the topic claimed, and give the guide card the same scrutiny as any guide (affiliation, expertise, known leanings, all with links). Audio is another interpreter, not a substitute for the primary text.
+
 ## Research & verification protocol
 
 Your memory is not a source. Check before you state anything.

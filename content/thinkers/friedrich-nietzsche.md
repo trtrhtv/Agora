@@ -11,6 +11,11 @@ verification:
     - "דבריו של ניטשה על נשים (למשל 'מעבר לטוב ולרע' §231–239) לא נבדקו במנה זו. זו ביקורת שחסרה בכרטיס."
     - "רצון לעוצמה, פרספקטיביזם והשיבה הנצחית מוזכרים רק בשמם. הכרטיס מתמקד בביקורת המוסר."
     - "אין כרטיסי יצירה. key_works ריק."
+  weakest_claims:
+    - "התשובה ל\"חידת הנזק\" היא הפרשנות של Leiter (s2), לא קונצנזוס."
+    - "\"השפעה הרסנית בפוליטיקה בפועל\" היא ניסוח של s2, בלי מחקר היסטורי."
+    - "הקריאה של קטע חוקי מנו כרטורי נשענת על Brobjer דרך s2."
+    - "הציטוטים מתרגומים ישנים (Cohn, Samuel, Ludovici)."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -41,6 +46,26 @@ sources:
 born: 1844
 died: 1900
 guides: [stanford-encyclopedia-of-philosophy]
+quotes:
+  - text: "God is dead! God remains dead! And we have killed him! How shall we console ourselves, the most murderous of all murderers?"
+    location: "The Gay Science, §125 (\"The Madman\")"
+    source: s4
+    translation: "tr. Paul V. Cohn (The Joyful Wisdom), Project Gutenberg #52881"
+    translated_he: "אלוהים מת! אלוהים נשאר מת! ואנחנו הרגנו אותו! איך ננחם את עצמנו, הרוצחים שבכל הרוצחים?"
+  - text: "The revolt of the slaves in morals begins in the very principle of resentment becoming creative and giving birth to values..."
+    location: "On the Genealogy of Morality, First Essay, §10"
+    source: s5
+    translation: "tr. Horace B. Samuel, Project Gutenberg #52319"
+    translated_he: "מרד העבדים במוסר מתחיל כשהטינה עצמה נעשית יוצרת ומולידה ערכים..."
+  - text: "From the military school of life.—That which does not kill me, makes me stronger."
+    location: "Twilight of the Idols, \"Maxims and Arrows\", 8"
+    source: s6
+    translation: "tr. Anthony M. Ludovici, Project Gutenberg #52263"
+    translated_he: "מבית הספר הצבאי של החיים: מה שאינו הורג אותי, מחשל אותי."
+misattributed:
+  - text: "The Will to Power (as a book by Nietzsche)"
+    verdict_he: "יצירה מיוחסת ולא ציטוט מזויף: הספר הוא מבחר שערכה אחותו מהמחברות שלו, בעריכה שלא נשענה על תוכניותיו ונפגמה בגלל האנטישמיות שלה. ציטוט שמקורו בו אינו בהכרח עמדה שניטשה פרסם."
+    sources: [s1, s3]
 ---
 
 ## מי היה
@@ -72,7 +97,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **סגנון שמקשה על הבנה.** ניטשה כתב באפוריזמים, בפרובוקציות ובקטעים שנשמעים אחרת מחוץ להקשר. לפי סטנפורד, הקטע שמצטטים כדי לייחס לו תמיכה בשיטת הקסטות של חוקי מנו נשמע אחרת לגמרי בהקשרו, ככלי רטורי נגד הנצרות [^s2].
 
 :::assessment
-הערכה של כותב הכרטיס: ניטשה הוא ההוגה בספרייה שהכי קל להציג לא נכון, לשני הכיוונים. גם "נביא הנאציזם" וגם "סתם מבקר תרבות אירוני" הן קריאות שהמקורות דוחים. מה שלא שנוי במחלוקת: הוא דוחה את שוויון הערך של בני האדם, וזו דחייה גלויה ולא מקרית [^s2].
+הערה על המקורות: המקורות דוחים את הקריאה של ניטשה כ"נביא הנאציזם" ומתארים איך אחותו קישרה אותו לאידאולוגיה שתיעב [^s1] [^s3]. הם לא חלוקים על כך שהוא דוחה את שוויון הערך של בני האדם [^s2]. שאלה לקריאה: האם הביקורת שלו על המוסר תלויה בדחייה הזו, או שאפשר לקבל אותה בלעדיה?
 :::
 
 ## איפה להתחיל
@@ -80,21 +105,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"לגנאלוגיה של המוסר"** (1887), המסה הראשונה [^s5]. היא הטיעון הרציף והברור ביותר שלו. אחר כך **"המדע העליז"**, סעיף 125 (המשוגע) [^s4]. כדאי לקרוא בתרגום אקדמי מודרני ולא בתרגומים הישנים שב-Gutenberg (ראה missing).
 :::
-
-## ציטוטים מאומתים
-
-> "God is dead! God remains dead! And we have killed him! How shall we console ourselves, the most murderous of all murderers?"
-
-*The Gay Science* (בתרגום Cohn: *The Joyful Wisdom*), סעיף 125, "המשוגע" [^s4]. תרגום חופשי: "אלוהים מת! אלוהים נשאר מת! ואנחנו הרגנו אותו! איך ננחם את עצמנו, הרוצחים שבכל הרוצחים?"
-
-> "The revolt of the slaves in morals begins in the very principle of resentment becoming creative and giving birth to values..."
-
-*The Genealogy of Morals*, מסה ראשונה, סעיף 10 [^s5]. תרגום חופשי: "מרד העבדים במוסר מתחיל כשהטינה עצמה נעשית יוצרת ומולידה ערכים..."
-
-> "From the military school of life.—That which does not kill me, makes me stronger."
-
-*Twilight of the Idols*, "פתגמים וחיצים", 8 [^s6]. תרגום חופשי: "מבית הספר הצבאי של החיים: מה שאינו הורג אותי, מחשל אותי."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-**"הרצון לעוצמה" כספר של ניטשה.** אין זה ציטוט מזויף, אבל זו יצירה מיוחסת: הספר הוא מבחר שערכה אחותו מהמחברות שלו, בעריכה שלא נשענה על תוכניותיו ונפגמה בגלל האנטישמיות שלה. לכן הוא נותן רושם מטעה על מה שכתב [^s1] [^s3]. ציטוט שמקורו בו אינו בהכרח עמדה שניטשה פרסם.

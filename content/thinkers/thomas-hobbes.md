@@ -10,6 +10,11 @@ verification:
     - "השאלה אם הובס היה אגואיסט פסיכולוגי שנויה במחלוקת בין המקורות: s2 אומר שהקריאה הזו 'נדחית כיום באופן נרחב', ו-s5 (IEP, אמנה חברתית) עדיין מציג אותו כאגואיסט פסיכולוגי. הכרטיס הולך לפי s2 ו-s3 ומציין את המחלוקת."
     - "ציטוטים מזויפים: לא נמצא מקור שמפריך ציטוט מסוים. 'מילותיו האחרונות' ('a great leap in the dark') מופיעות ב-Wikiquote תחת Attributed, עם citation needed, ולא אומתו."
     - "הקריאה של הובס כ'ריאליסט' ביחסים בינלאומיים מוזכרת ב-s2 בלבד."
+  weakest_claims:
+    - "הטענה שחלוקת הסמכויות המודרנית \"הפריכה\" את טענת הריבונות הבלתי ניתנת לחלוקה היא עמדת מחבר ה-IEP (Williams), לא קונצנזוס."
+    - "\"מהראשונים במערב שכללו נשים כצד לאמנה\" נשען על s2 בלבד."
+    - "הקריאה של מצב הטבע כ\"דילמת האסיר\" מוצגת כקריאה של חוקרים; s2 מציין שזו מחלוקת פתוחה, והכרטיס עלול להיראות כמכריע."
+    - "הכינוי של ברמהול (\"מדריך למורדים\") בפרפרזה דרך s2."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -36,10 +41,33 @@ sources:
 born: 1588
 died: 1679
 schools: [social-contract-theory]
-critics: [john-locke]
-influenced: [john-locke]
 key_works: [leviathan]
 guides: [stanford-encyclopedia-of-philosophy]
+critics:
+  - { id: john-locke, source: s2 }
+influenced:
+  - { id: john-locke, source: s3 }
+quotes:
+  - text: "...during the time men live without a common Power to keep them all in awe, they are in that condition which is called Warre; and such a warre, as is of every man, against every man."
+    location: "Leviathan, Part I, ch. 13"
+    source: s4
+    translation: "original English (1651), Project Gutenberg #3207"
+    translated_he: "...כל זמן שבני האדם חיים בלי כוח משותף שיטיל אימה על כולם, הם נמצאים במצב שנקרא מלחמה, ומלחמה כזו היא של כל אדם בכל אדם."
+  - text: "...continuall feare, and danger of violent death; And the life of man, solitary, poore, nasty, brutish, and short."
+    location: "Leviathan, Part I, ch. 13"
+    source: s4
+    translation: "original English (1651), Project Gutenberg #3207"
+    translated_he: "...פחד מתמיד וסכנה של מוות אלים, וחיי האדם בודדים, עניים, מאוסים, אכזריים וקצרים."
+  - text: "The Obligation of Subjects to the Soveraign is understood to last as long, and no longer, than the power lasteth, by which he is able to protect them."
+    location: "Leviathan, Part II, ch. 21"
+    source: s4
+    translation: "original English (1651), Project Gutenberg #3207"
+    translated_he: "חובת הנתינים כלפי הריבון מובנת כנמשכת כל עוד, ולא יותר מכך, נמשך הכוח שבו הוא מסוגל להגן עליהם."
+  - text: "For what is it to divide the Power of a Common-wealth, but to Dissolve it; for Powers divided mutually destroy each other."
+    location: "Leviathan, Part II, ch. 29"
+    source: s4
+    translation: "original English (1651), Project Gutenberg #3207"
+    translated_he: "שהרי מה זה לחלק את כוחו של הקהילייה אם לא לפרק אותו, כי כוחות מחולקים משמידים זה את זה."
 ---
 
 ## מי היה
@@ -73,31 +101,9 @@ guides: [stanford-encyclopedia-of-philosophy]
 **סתירה פנימית.** אם הנתין רשאי להתנגד כשחייו בסכנה, ואם כל אחד שופט בעצמו אם הריבון מגן עליו מספיק, נראה שמעולם לא יצאנו ממצב הטבע. הבישוף ג'ון ברמהול, בן זמנו, האשים את "לוויתן" בכך שהוא מדריך למורדים. היום יש מי שרואים בגבולות חובת הציות את עקב אכילס של התורה [^s2].
 
 :::assessment
-הערכה של כותב הכרטיס: שתי הביקורות האחרונות פועלות בכיוונים הפוכים. אחת אומרת שהובס דורש ציות רב מדי (לכל מי שמחזיק בכוח), והשנייה שהוא נותן ציות מעט מדי (כל אחד שופט מתי ההגנה פסקה). שווה לשים לב למתח הזה כשקוראים את פרק 21.
+שאלה לקריאה: שתי הביקורות האחרונות פועלות בכיוונים הפוכים. אחת אומרת שהובס דורש ציות רב מדי (לכל מי שמחזיק בכוח), והשנייה שהוא נותן ציות מעט מדי (כל אחד שופט מתי ההגנה פסקה). כשקוראים את פרק 21, איזו מהן נראית לך מדויקת יותר?
 :::
 
 ## איפה להתחיל
 
 **"לוויתן"** (1651). האנציקלופדיה של סטנפורד ממליצה למתחילים לפתוח בו ולקרוא גם את החלקים השלישי והרביעי, על הדת, ולא רק את הראשון והשני המוכרים [^s2]. הספר זמין במלואו בנחלת הכלל [^s4]. האנציקלופדיה של האינטרנט מציינת ש**"על האזרח"** (De Cive, 1642) מציג את הרעיונות בצורה פשוטה וישירה יותר [^s3].
-
-## ציטוטים מאומתים
-
-> "...during the time men live without a common Power to keep them all in awe, they are in that condition which is called Warre; and such a warre, as is of every man, against every man."
-
-*Leviathan*, חלק 1, פרק 13 [^s4]. תרגום חופשי: "...כל זמן שבני האדם חיים בלי כוח משותף שיטיל אימה על כולם, הם נמצאים במצב שנקרא מלחמה, ומלחמה כזו היא של כל אדם בכל אדם."
-
-> "...continuall feare, and danger of violent death; And the life of man, solitary, poore, nasty, brutish, and short."
-
-*Leviathan*, חלק 1, פרק 13 [^s4]. תרגום חופשי: "...פחד מתמיד וסכנה של מוות אלים, וחיי האדם בודדים, עניים, מאוסים, אכזריים וקצרים."
-
-> "The Obligation of Subjects to the Soveraign is understood to last as long, and no longer, than the power lasteth, by which he is able to protect them."
-
-*Leviathan*, חלק 2, פרק 21 [^s4]. תרגום חופשי: "חובת הנתינים כלפי הריבון מובנת כנמשכת כל עוד, ולא יותר מכך, נמשך הכוח שבו הוא מסוגל להגן עליהם."
-
-> "For what is it to divide the Power of a Common-wealth, but to Dissolve it; for Powers divided mutually destroy each other."
-
-*Leviathan*, חלק 2, פרק 29 [^s4]. תרגום חופשי: "שהרי מה זה לחלק את כוחו של הקהילייה אם לא לפרק אותו, כי כוחות מחולקים משמידים זה את זה."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא נמצא ציטוט מזויף מתועד עם מקור מפריך. ראה `verification.missing`.

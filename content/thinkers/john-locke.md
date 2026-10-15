@@ -13,6 +13,11 @@ verification:
     - "המהדורה/התרגום האנגלי של 'איגרת בדבר הסובלנות' בוויקיטקסט (s5) לא זוהו. הציטוט נלקח משם, ויש לוודא מול מהדורה מזוהה (למשל תרגום פופל, 1689)."
     - "לא נבדקה עמדתו של לוק בכלכלה (כסף, ריבית) ולא כתביו על חינוך. ה-domains מוגבלים לפילוסופיה ופוליטיקה."
     - "אין כרטיס יצירה ל'מסה השנייה על הממשל' ול'איגרת בדבר הסובלנות'. key_works ריק עד שיתווספו."
+  weakest_claims:
+    - "שנת הכתיבה של \"שתי המסות\" (בזמן משבר ההדחה, כ-1681) נשענת על s1 בלבד."
+    - "הפרשנות ש\"נסיך אחר\" מכוון לקתוליות היא של מחבר ערך הסובלנות (s6). לוק עצמו לא נוקב בקתולים בקטע שצוטט."
+    - "דימוי הספינה של יום בפרפרזה דרך s7 ו-s8. החיבור של יום לא נפתח."
+    - "הקריאה הקולוניאלית של תורת הרכוש נשענת על חוקרים שמובאים דרך s2 ו-s3, בלי לבדוק את המחקר עצמו."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -59,8 +64,30 @@ sources:
 born: 1632
 died: 1704
 schools: [liberalism, social-contract-theory]
-influenced_by: [thomas-hobbes]
 guides: [stanford-encyclopedia-of-philosophy]
+influenced_by:
+  - { id: thomas-hobbes, source: s10 }
+quotes:
+  - text: "But though this be a state of liberty, yet it is not a state of licence... being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions..."
+    location: "Second Treatise, ch. 2, §6"
+    source: s4
+    translation: "original English (1690), Project Gutenberg #7370"
+    translated_he: "אך אף שזהו מצב של חירות, אין זה מצב של הפקרות... בהיותם כולם שווים ובלתי תלויים, אל לאיש לפגוע בזולתו בחייו, בבריאותו, בחירותו או ברכושו..."
+  - text: "...every man has a property in his own person: this no body has any right to but himself."
+    location: "Second Treatise, ch. 5, §27"
+    source: s4
+    translation: "original English (1690), Project Gutenberg #7370"
+    translated_he: "...לכל אדם יש קניין בגופו שלו. לזה אין לאיש זכות מלבדו."
+  - text: "MEN being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent."
+    location: "Second Treatise, ch. 8, §95"
+    source: s4
+    translation: "original English (1690), Project Gutenberg #7370"
+    translated_he: "בני האדם, בהיותם כאמור מטבעם כולם חופשיים, שווים ובלתי תלויים, איש אינו יכול להיות מוצא ממצב זה ומוכפף לכוחו הפוליטי של אחר בלי הסכמתו שלו."
+  - text: "Lastly, those are not at all to be tolerated who deny the being of a God. Promises, covenants, and oaths, which are the bonds of human society, can have no hold upon an atheist."
+    location: "A Letter Concerning Toleration, near the end"
+    source: s5
+    translation: "English translation on Wikisource (translator not identified)"
+    translated_he: "ולבסוף, אין לסבול כלל את המכחישים את קיום האל. הבטחות, אמנות ושבועות, שהם קשרי החברה האנושית, אינם יכולים לחייב אתאיסט."
 ---
 
 ## מי היה
@@ -92,7 +119,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **גבולות הסובלנות.** לוק עצמו קבע שאין לסבול מי שמכחישים את קיום האל, כי "הבטחות, אמנות ושבועות" לא מחייבות אתאיסט [^s5]. הוא קבע גם שאין לסבול כנסייה שמי שמצטרף אליה מעמיד את עצמו בשירות "נסיך אחר" [^s5]. לפי ערך הסובלנות בסטנפורד, הכוונה בעיניו הייתה, למשל, לקתוליות [^s6]. בן זמנו ג'ונס פרואסט השיב לטיעון המרכזי שכוח אמנם לא משנה אמונה ישירות, אבל יכול להועיל בעקיפין, למשל בכך שהוא מכריח אנשים לשקול טיעונים שהיו מתעלמים מהם [^s2].
 
 :::assessment
-הערכה של כותב הכרטיס: הביקורת על ההסכמה השתיקתית היא החזקה ביותר, כי היא פוגעת בבסיס שעליו כל השאר נשען. עם זאת, ערך סטנפורד מציג גם קריאה שלפיה אצל לוק איכות השלטון והתאמתו לחוק הטבע הם העיקר, ולא מעשה הסכמה היסטורי [^s2]. אם הקריאה הזו נכונה, הביקורת של יום פוגעת פחות.
+שאלה פתוחה: האם הביקורת על ההסכמה השתיקתית פוגעת ביסוד שעליו כל השאר נשען? ערך סטנפורד מציג גם קריאה שלפיה אצל לוק איכות השלטון והתאמתו לחוק הטבע הם העיקר, ולא מעשה הסכמה היסטורי [^s2]. אם הקריאה הזו נכונה, הביקורת של יום פוגעת פחות. איזו קריאה משכנעת אותך יותר?
 :::
 
 ## איפה להתחיל
@@ -100,25 +127,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"המסה השנייה על הממשל"** (1690), פרקים 2 (מצב הטבע), 5 (רכוש), 8 (ראשית החברה הפוליטית, כולל הסכמה שבשתיקה) ו-19 (פירוק השלטון). הספר זמין במלואו [^s4]. אחר כך **"איגרת בדבר הסובלנות"** [^s5], שהיא קצרה ונוגעת ישירות בשאלת גבולות הכפייה.
 :::
-
-## ציטוטים מאומתים
-
-> "But though this be a state of liberty, yet it is not a state of licence... being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions..."
-
-*Second Treatise*, פרק 2, סעיף 6 [^s4]. תרגום חופשי: "אך אף שזהו מצב של חירות, אין זה מצב של הפקרות... בהיותם כולם שווים ובלתי תלויים, אל לאיש לפגוע בזולתו בחייו, בבריאותו, בחירותו או ברכושו..."
-
-> "...every man has a property in his own person: this no body has any right to but himself."
-
-*Second Treatise*, פרק 5, סעיף 27 [^s4]. תרגום חופשי: "...לכל אדם יש קניין בגופו שלו. לזה אין לאיש זכות מלבדו."
-
-> "MEN being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent."
-
-*Second Treatise*, פרק 8, סעיף 95 [^s4]. תרגום חופשי: "בני האדם, בהיותם כאמור מטבעם כולם חופשיים, שווים ובלתי תלויים, איש אינו יכול להיות מוצא ממצב זה ומוכפף לכוחו הפוליטי של אחר בלי הסכמתו שלו."
-
-> "Lastly, those are not at all to be tolerated who deny the being of a God. Promises, covenants, and oaths, which are the bonds of human society, can have no hold upon an atheist."
-
-*A Letter Concerning Toleration*, לקראת הסוף (הנוסח האנגלי שבוויקיטקסט) [^s5]. תרגום חופשי: "ולבסוף, אין לסבול כלל את המכחישים את קיום האל. הבטחות, אמנות ושבועות, שהם קשרי החברה האנושית, אינם יכולים לחייב אתאיסט."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא אומת ציטוט מזויף עם מקור מפריך. שני מועמדים מפורטים ב-`verification.missing`.

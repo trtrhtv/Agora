@@ -11,6 +11,11 @@ verification:
     - "המחלוקת על אנטישמיות ב'בשאלת היהודים' מובאת דרך טרום-פרסום של מאמר ב-Historical Materialism (s9). שם המחבר לא מופיע בעמוד שנבדק, והגרסה הסופית אמורה להתפרסם בהוצאת בריל."
     - "ביקורת כלכלית מודרנית (בעיית החישוב הסוציאליסטי, מיזס והאייק) לא נכללה. היא תיכנס עם כרטיס האייק."
     - "אין כרטיסי יצירה או זרם (סוציאליזם/מרקסיזם). schools ו-key_works ריקים."
+  weakest_claims:
+    - "הפרשנות של \"דיקטטורת הפרולטריון\" כשלטון חירום דמוקרטי היא של מחברי s1 ושל החוקרים שהם מצטטים; יש קריאות אחרות."
+    - "הקשר למשטרים הקומוניסטיים מקבל משפט אחד, בלי מקור שדן בו."
+    - "מחבר המאמר ב-Historical Materialism (s9) לא זוהה, והוא טרום-פרסום."
+    - "דברי סימון וייל מובאים דרך s1."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -52,8 +57,27 @@ sources:
     type: academic
 born: 1818
 died: 1883
-critics: []
 guides: [stanford-encyclopedia-of-philosophy]
+quotes:
+  - text: "The history of all hitherto existing societies is the history of class struggles."
+    location: "The Communist Manifesto, ch. 1, \"Bourgeois and Proletarians\""
+    source: s2
+    translation: "English edition of 1888, edited by Engels, Project Gutenberg #61"
+    translated_he: "ההיסטוריה של כל החברות שהתקיימו עד כה היא ההיסטוריה של מאבקי מעמדות."
+  - text: "The philosophers have only interpreted the world, in various ways; the point is to change it."
+    location: "Theses on Feuerbach, Thesis XI"
+    source: s3
+    translation: "tr. W. Lough, Marxists Internet Archive"
+    translated_he: "הפילוסופים רק פירשו את העולם בדרכים שונות; העיקר הוא לשנות אותו."
+  - text: "...society inscribe on its banners: From each according to his ability, to each according to his needs!"
+    location: "Critique of the Gotha Programme, Part I"
+    source: s4
+    translation: "English translation, Marxists Internet Archive (translator not stated)"
+    translated_he: "...החברה תכתוב על דגליה: מכל אחד לפי יכולתו, לכל אחד לפי צרכיו!"
+misattributed:
+  - text: "Religion is the opium of the masses."
+    verdict_he: "לא מזויף, אבל מצוטט בדרך כלל קטוע. במקור המשפט בא אחרי \"הדת היא אנחת היצור המדוכא, לבו של עולם חסר לב\", כלומר הדת היא גם ביטוי לסבל אמיתי וגם מחאה נגדו. ובתרגום האנגלי: \"of the people\", לא \"of the masses\"."
+    sources: [s5]
 ---
 
 ## מי היה
@@ -85,7 +109,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **"בשאלת היהודים".** בחלק השני של החיבור (1844) מרקס כותב: "מהו הבסיס החילוני של היהדות? צורך מעשי, אינטרס עצמי. מהי הדת החילונית של היהודי? רוכלות. מהו אלוהיו החילוני? הכסף" [^s7]. לפי סטנפורד, החיבור עצמו הוא תשובה לברונו באואר שהתנגד לאמנציפציה של היהודים, ומרקס תמך באמנציפציה הפוליטית [^s1]. מאמר ב-Historical Materialism מתאר את הוויכוח אם מרקס היה אנטישמי כוויכוח חוזר, ואומר שה"מקומות המשותפים היודופוביים" שבחיבור מקרבים אותו, באופן רופף, לסוציאליסטים צרפתים כמו פורייה, טוסנל ופרודון [^s9].
 
 :::assessment
-הערכה של כותב הכרטיס: לגבי פרודון הבאתי את האנטישמיות כביקורת מרכזית, וכאן היא מובאת כמחלוקת. ההבדל מבוסס על המקורות: אצל פרודון יש קריאה מפורשת לגירוש ולהשמדה, ומחקר שמראה שהשנאה ליהודים עוברת לאורך כל כתביו (ראה כרטיס פרודון). אצל מרקס יש קטע אחד שנוי במחלוקת בתוך טיעון בעד אמנציפציה. אבל זו הכרעה שלי, ויש לבחון אותה.
+הערה על המקורות: לגבי פרודון הבאתי את האנטישמיות כביקורת מרכזית, וכאן היא מובאת כמחלוקת. ההבדל מבוסס על המקורות: אצל פרודון יש קריאה מפורשת לגירוש ולהשמדה, ומחקר שמראה שהשנאה ליהודים עוברת לאורך כל כתביו (ראה כרטיס פרודון). אצל מרקס יש קטע אחד שנוי במחלוקת בתוך טיעון בעד אמנציפציה. זו הכרעה של כותב הכרטיס, ויש לבחון אותה.
 :::
 
 ## איפה להתחיל
@@ -93,21 +117,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"המניפסט הקומוניסטי"** (1848), פרק 1 [^s2], ו**התזות על פויירבך** (עמוד אחד) [^s3]. בשביל התאוריה הרצינית, לפי ערך סטנפורד, "ההקדמה מ-1859" מנסחת את המטריאליזם ההיסטורי בצורה החדה ביותר [^s1]. "הקפיטל" ארוך וקשה. כדאי להתחיל בפרק הראשון של הכרך הראשון.
 :::
-
-## ציטוטים מאומתים
-
-> "The history of all hitherto existing societies is the history of class struggles."
-
-*The Communist Manifesto*, פרק 1, "בורגנים ופרולטרים" [^s2]. תרגום חופשי: "ההיסטוריה של כל החברות שהתקיימו עד כה היא ההיסטוריה של מאבקי מעמדות."
-
-> "The philosophers have only interpreted the world, in various ways; the point is to change it."
-
-*Theses on Feuerbach*, תזה 11 [^s3]. תרגום חופשי: "הפילוסופים רק פירשו את העולם בדרכים שונות; העיקר הוא לשנות אותו."
-
-> "...society inscribe on its banners: From each according to his ability, to each according to his needs!"
-
-*Critique of the Gotha Programme*, חלק 1 [^s4]. תרגום חופשי: "...החברה תכתוב על דגליה: מכל אחד לפי יכולתו, לכל אחד לפי צרכיו!"
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-**"הדת היא אופיום להמונים."** לא מזויף, אבל מצוטט בדרך כלל קטוע. במקור המשפט בא אחרי "הדת היא אנחת היצור המדוכא, לבו של עולם חסר לב", וההקשר הוא שהדת היא גם ביטוי לסבל אמיתי וגם מחאה נגדו [^s5]. בתרגום האנגלי: "the opium of the people" (של העם), לא "of the masses" [^s5].

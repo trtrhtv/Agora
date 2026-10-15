@@ -10,6 +10,11 @@ verification:
     - "'תאוריית הרגשות המוסריים' (1759) לא נפתחה במקור. כל מה שנאמר עליה מגיע דרך s1 ו-s2."
     - "ביקורת חיצונית על סמית' (למשל של מרקס, או ביקורת היסטורית על 'היד הנעלמה' כמטפורה) לא נבדקה במנה זו. הביקורות בכרטיס הן אלה שבערכים האנציקלופדיים."
     - "אין כרטיס זרם (ליברליזם כלכלי) ואין כרטיסי יצירה."
+  weakest_claims:
+    - "הצד הכלכלי של סמית' כמעט חסר, והכרטיס עלול להיראות מלא יותר משהוא."
+    - "שסמית' תמך בחלוקה מחדש \"במידה מסוימת\" היא קריאה של מחבר s1 (Fleischacker); קוראים ליברטריאנים חולקים."
+    - "שהביטוי \"יד נעלמה\" מופיע פעם אחת ב\"עושר העמים\" נבדק בחיפוש במהדורה אחת (Gutenberg)."
+    - "הניסוח \"הביקורת החריפה ביותר על השוק נמצאת אצל סמית' עצמו\" הוא מסגור של כותב הכרטיס."
   reviewed_by_me: false
   last_checked: 2026-10-14
 sources:
@@ -28,6 +33,22 @@ sources:
 born: 1723
 died: 1790
 guides: [stanford-encyclopedia-of-philosophy]
+quotes:
+  - text: "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest. We address ourselves, not to their humanity, but to their self-love..."
+    location: "Wealth of Nations, Book I, ch. 2"
+    source: s3
+    translation: "original English (1776), Project Gutenberg #3300"
+    translated_he: "לא מנדיבותם של הקצב, המבשל או האופה אנחנו מצפים לארוחת הערב שלנו, אלא מדאגתם לאינטרס שלהם. אנחנו פונים לא לאנושיותם אלא לאהבתם העצמית..."
+  - text: "...he intends only his own gain; and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention."
+    location: "Wealth of Nations, Book IV, ch. 2"
+    source: s3
+    translation: "original English (1776), Project Gutenberg #3300"
+    translated_he: "...הוא מתכוון רק לרווח שלו, ובזה, כמו במקרים רבים אחרים, הוא מובל על ידי יד נעלמה לקדם מטרה שלא הייתה חלק מכוונתו."
+  - text: "He naturally loses, therefore, the habit of such exertion, and generally becomes as stupid and ignorant as it is possible for a human creature to become."
+    location: "Wealth of Nations, Book V, ch. 1"
+    source: s3
+    translation: "original English (1776), Project Gutenberg #3300"
+    translated_he: "הוא מאבד אפוא באופן טבעי את ההרגל למאמץ כזה, ובדרך כלל נעשה טיפש ובור ככל שאפשר ליצור אנושי להיות."
 ---
 
 ## מי היה
@@ -55,7 +76,7 @@ guides: [stanford-encyclopedia-of-philosophy]
 **"היד הנעלמה" כמיתוס.** הביטוי מופיע ב"עושר העמים" פעם אחת בלבד, בהקשר של העדפת השקעה מקומית על פני זרה [^s3], ופעם נוספת ב"תאוריית הרגשות המוסריים", בהקשר של חלוקת מצרכי החיים בין עשירים לעניים [^s2]. מי שמציג אותו כעיקרון כללי ש"השוק תמיד צודק" מנכס לסמית' יותר ממה שכתב.
 
 :::assessment
-הערכה של כותב הכרטיס: הקושי האמיתי בסמית' הוא שהוא מנוכס מכל הכיוונים. ליברטריאנים מצטטים את הקצב והאופה, ומבקרי השוק מצטטים את העובד ה"טיפש ובור". שניהם ציטוטים מדויקים מאותו ספר. הכרטיס הזה חסר את הצד הכלכלי המקצועי (ראה missing), ולכן הוא עדיף על הצד המוסרי-פוליטי שלו.
+הערה על המקורות: ליברטריאנים מצטטים את הקצב והאופה, ומבקרי השוק מצטטים את העובד ה"טיפש ובור". שניהם ציטוטים מדויקים מאותו ספר [^s3]. הכרטיס חסר את הצד הכלכלי המקצועי (ראה missing), ולכן הוא נשען יותר על הצד המוסרי-פוליטי.
 :::
 
 ## איפה להתחיל
@@ -63,21 +84,3 @@ guides: [stanford-encyclopedia-of-philosophy]
 :::assessment
 המלצה של כותב הכרטיס: **"עושר העמים"**, ספר 1, פרקים 1–2 (חלוקת עבודה, הקצב והאופה), ספר 4, פרק 2 (היד הנעלמה, בהקשר), וספר 5, פרק 1 (תפקידי המדינה והחינוך) [^s3]. את "תאוריית הרגשות המוסריים" כדאי לקרוא לפחות בחלקה הראשון, כדי לא לקרוא את סמית' כמי שהאמין שהאדם אנוכי בלבד [^s2].
 :::
-
-## ציטוטים מאומתים
-
-> "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own interest. We address ourselves, not to their humanity, but to their self-love..."
-
-*The Wealth of Nations*, ספר 1, פרק 2 [^s3]. תרגום חופשי: "לא מנדיבותם של הקצב, המבשל או האופה אנחנו מצפים לארוחת הערב שלנו, אלא מדאגתם לאינטרס שלהם. אנחנו פונים לא לאנושיותם אלא לאהבתם העצמית..."
-
-> "...he intends only his own gain; and he is in this, as in many other cases, led by an invisible hand to promote an end which was no part of his intention."
-
-*The Wealth of Nations*, ספר 4, פרק 2 [^s3]. תרגום חופשי: "...הוא מתכוון רק לרווח שלו, ובזה, כמו במקרים רבים אחרים, הוא מובל על ידי יד נעלמה לקדם מטרה שלא הייתה חלק מכוונתו."
-
-> "He naturally loses, therefore, the habit of such exertion, and generally becomes as stupid and ignorant as it is possible for a human creature to become."
-
-*The Wealth of Nations*, ספר 5, פרק 1 [^s3]. תרגום חופשי: "הוא מאבד אפוא באופן טבעי את ההרגל למאמץ כזה, ובדרך כלל נעשה טיפש ובור ככל שאפשר ליצור אנושי להיות."
-
-## ציטוטים מזויפים או מיוחסים בטעות
-
-לא נבדק במנה זו. ראה את ההערה על "היד הנעלמה" למעלה.
