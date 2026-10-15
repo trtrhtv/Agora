@@ -16,7 +16,7 @@ sources:
     type: official
 type: lecture
 author: efraim-podoksik
-series: "מחשבה מדינית מודרנית (האוניברסיטה העברית, אביב 2018)"
+series: "מחשבה מדינית מודרנית (אביב 2018)"
 url: https://www.youtube.com/watch?v=isM6Bybi2N8
 duration_min: 91
 year: 2018

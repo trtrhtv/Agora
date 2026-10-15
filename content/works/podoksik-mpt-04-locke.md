@@ -6,8 +6,7 @@ domains: [politics, philosophy]
 verification:
   status: partial
   missing:
-    - "תיאור הסרטון של הרצאה 4 לא נפתח (רק הכותרת, הערוץ והאורך). ההנחה שהיא מאותו קורס מאביב 2018 נשענת על מספור הסדרה ועל תיאור הרצאה 3."
-    - "ההרצאה לא נשמעה במלואה בעת הוספת הכרטיס. נבדקו הכותרת, הדובר, האורך והתיאור."
+      - "ההרצאה לא נשמעה במלואה בעת הוספת הכרטיס. נבדקו הכותרת, הדובר, האורך והתיאור."
   reviewed_by_me: false
   last_checked: 2026-10-15
 sources:
@@ -17,7 +16,7 @@ sources:
     type: official
 type: lecture
 author: efraim-podoksik
-series: "מחשבה מדינית מודרנית (האוניברסיטה העברית, אביב 2018)"
+series: "מחשבה מדינית מודרנית (אביב 2018)"
 url: https://www.youtube.com/watch?v=XfCleHOwqnM
 duration_min: 92
 year: 2018

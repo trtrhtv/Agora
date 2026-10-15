@@ -22,7 +22,7 @@ sources:
     url: https://shalempress.co.il/shop/leviathan/%d7%9c%d7%95%d7%99%d7%aa%d7%9f/
     type: official
   - id: s3
-    title: "Shalem Press: free sample PDF of the Hebrew Leviathan (title pages and Lorberbaum's introduction)"
+    title: "Shalem Press: free sample PDF of the Hebrew Leviathan (title pages, opening of the introduction, chapter 13)"
     url: http://shalempress.co.il/wp-content/uploads/2017/05/9_9_2009_36_28_Hobbes.pdf
     type: official
   - id: s4
@@ -54,5 +54,5 @@ translations:
 
 ## בעברית
 
-- **הוצאת שלם (2009):** התרגום העברי השלם הראשון, כולל ארבעת החלקים. תרגום אהרן אמיר, עריכה, מבוא, הערות ומונחון של מנחם לורברבוים, תוך השוואה לגרסה הלטינית [^s2]. בדגימה החינמית באתר ההוצאה יש את עמודי השער וחלק גדול מהמבוא [^s3].
+- **הוצאת שלם (2009):** התרגום העברי השלם הראשון, כולל ארבעת החלקים. תרגום אהרן אמיר, עריכה, מבוא, הערות ומונחון של מנחם לורברבוים, תוך השוואה לגרסה הלטינית [^s2]. בדגימה החינמית באתר ההוצאה (58 עמודים) יש את עמודי השער, את תחילת המבוא (עמ' ט–יב), את ההקדמה של הובס ואת פרק 13 (מצב הטבע) בעברית [^s3].
 - **מאגנס (1962):** תרגום יוסף אור, החלקים הראשון והשני בלבד [^s4]. החלקים השלישי והרביעי, על הדת, לא תורגמו במהדורה הזו.

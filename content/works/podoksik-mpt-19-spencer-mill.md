@@ -17,8 +17,8 @@ sources:
     type: official
 type: lecture
 author: efraim-podoksik
-series: "מחשבה מדינית מודרנית (האוניברסיטה העברית, אביב 2018)"
-url: https://podcasters.spotify.com/pod/show/efraim-podoksik/episodes/19---ehjb2u
+series: "מחשבה מדינית מודרנית (אביב 2018)"
+url: https://creators.spotify.com/pod/profile/efraim-podoksik/episodes/19---ehjb2u
 duration_min: 92
 year: 2018
 language: he
