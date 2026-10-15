@@ -12,7 +12,7 @@ verification:
 sources:
   - id: s1
     title: "Philosophy Bites: Quentin Skinner on Hobbes on the State (15 Oct 2007)"
-    url: https://philosophybites.libsyn.com/quentin_skinner_on_hobbes_on_the_state
+    url: https://philosophybites.com/podcast/quentin-skinner-on-hobbes-on-the-state/
     type: official
   - id: s2
     title: "Five Books: The Best Thomas Hobbes Books, recommended by Arash Abizadeh (2021)"
@@ -21,7 +21,7 @@ sources:
 type: podcast
 author: philosophy-bites
 series: "Philosophy Bites"
-url: https://philosophybites.libsyn.com/quentin_skinner_on_hobbes_on_the_state
+url: https://philosophybites.com/podcast/quentin-skinner-on-hobbes-on-the-state/
 duration_min: 18
 year: 2007
 language: en
@@ -30,4 +30,4 @@ availability: reference_only
 
 ## על היצירה
 
-ראיון של כ-18 דקות עם קוונטין סקינר, מאוקטובר 2007, שפותח בשאלה מהי המדינה [^s1]. ערש אבי-זאדה (מקגיל) מכנה את סקינר אחד מחוקרי הובס החשובים [^s2].
+ראיון של כ-18 דקות עם קוונטין סקינר, מאוקטובר 2007, שפותח בשאלות מהי המדינה ואיך יחידים מעניקים סמכות לגיטימית למי שפועל בשמה. בעמוד הפרק יש תמליל מלא [^s1]. ערש אבי-זאדה (מקגיל) מכנה את סקינר אחד מחוקרי הובס החשובים [^s2].
