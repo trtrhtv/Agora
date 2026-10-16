@@ -32,7 +32,7 @@ affiliation: "אוניברסיטת תל אביב, תכנית כלים שלובי
 affiliation_url: https://core.tau.ac.il/story/12
 expertise: ["פילוסופיה אנליטית של המאה העשרים", "אסתטיקה", "ספרות העולם", "סמיוטיקה של תרבויות"]
 languages: [he]
-works: [unger-hobbes-intro, unger-plato-machiavelli, unger-rousseau-social-contract, unger-kant-at-a-glance, unger-kant-categorical-imperative]
+works: [unger-hobbes-intro, unger-plato-machiavelli, unger-rousseau-social-contract, unger-kant-at-a-glance, unger-kant-categorical-imperative, unger-plato-republic-a, unger-plato-republic-b, unger-plato-cave-forms, unger-aristotle-ethics-1, unger-aristotle-foundations, unger-nietzsche-1, unger-nietzsche-2, unger-nietzsche-14]
 ---
 
 ## מי זה
@@ -41,7 +41,7 @@ works: [unger-hobbes-intro, unger-plato-machiavelli, unger-rousseau-social-contr
 
 ## התמחות
 
-לפי אותו דף: פילוסופיה אנליטית של המאה העשרים, אסתטיקה, ספרות העולם וסמיוטיקה של תרבויות. הדף מציין שהוא מרצה בתחומים מגוונים, מפילוסופיה וספרות ועד קולנוע [^s1]. הוגים כמו הובס, מקיאוולי, רוסו וקאנט אינם בתחומי ההתמחות שהדף מונה.
+לפי אותו דף: פילוסופיה אנליטית של המאה העשרים, אסתטיקה, ספרות העולם וסמיוטיקה של תרבויות. הדף מציין שהוא מרצה בתחומים מגוונים, מפילוסופיה וספרות ועד קולנוע [^s1]. הוגים כמו אפלטון, אריסטו, הובס, מקיאוולי, רוסו, קאנט וניטשה אינם בתחומי ההתמחות שהדף מונה.
 
 :::assessment הערה על המקורות: לכן הוא מוצג כאן כמרצה כללי ולא כמומחה להוגה מסוים. ההרצאות שלו לא נשמעו, ואין עליהן ביקורת עצמאית. הן לא תחליף לטקסט עצמו או למחקר.
 
