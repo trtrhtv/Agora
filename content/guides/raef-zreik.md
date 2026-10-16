@@ -6,10 +6,10 @@ domains: [philosophy, politics]
 verification:
   status: partial
   missing:
-    - "לא נמצא דף רשמי שלו באחד המוסדות. השיוך לקוח מדף ההרצאה בלבד."
-    - "לא נבדקו עמדותיו הפוליטיות, ולכן לא מיוחסת לו כאן עמדה."
+    - "השיוך למוסדות בישראל לקוח מדף ההרצאה בלבד. דף SOAS מתאר את השכלתו ואת תחום מחקרו, לא את משרותיו בישראל."
+    - "הסוקר העצמאי דיווח על ביוגרפיה שלו באתר +972 ועל כתיבה ציבורית שלו על ישראל ופלסטין (למשל הרצאה ב-SOAS על פרדיגמת האפרטהייד). האתר חסם גישה בבדיקה חוזרת, ולכן העמדות לא נבדקו בדבריו שלו ולא מיוחסות לו כאן."
   weakest_claims:
-    - "השיוך האקדמי נשען על מקור אחד, דף ההרצאה."
+    - "השיוך למוסדות בישראל נשען על מקור אחד, דף ההרצאה."
   reviewed_by_me: false
   last_checked: 2026-10-16
 sources:
@@ -17,9 +17,13 @@ sources:
     title: "Van Leer Jerusalem Institute: Kant, Colonialism and Universalism (Yes We Kant)"
     url: https://www.vanleer.org.il/en/videos/kant-colonialism-and-universalism-yes-we-kant/
     type: official
+  - id: s2
+    title: "SOAS University of London: Dr Raef Zreik (biography)"
+    url: https://www.soas.ac.uk/about/raef-zreik
+    type: official
 affiliation: "המכללה האקדמית תל אביב-יפו; הקריה האקדמית אונו; מכון ון ליר"
 affiliation_url: https://www.vanleer.org.il/en/videos/kant-colonialism-and-universalism-yes-we-kant/
-expertise: ["פילוסופיה פוליטית ומשפטית"]
+expertise: ["פילוסופיה פוליטית", "פילוסופיה של המשפט", "מושג המשפט אצל קאנט"]
 languages: [he]
 works: [zreik-kant-colonialism]
 ---
@@ -30,11 +34,11 @@ works: [zreik-kant-colonialism]
 
 ## התמחות
 
-לא נמצא מקור מעבר לדף ההרצאה. ההרצאה שלו עוסקת בקאנט, בקולוניאליזם ובאוניברסליזם [^s1].
+לפי דף שלו ב-SOAS: משפטן וחוקר פלסטיני שמתמחה בפילוסופיה פוליטית ובפילוסופיה של המשפט, עם תארים במשפטים מהאוניברסיטה העברית, LLM מקולומביה ודוקטורט מבית הספר למשפטים של הרווארד. ספרו Kant's Struggle for Autonomy (2023) עוסק במושג המשפט אצל קאנט ובמעבר מהאתיקה למשפט [^s2]. כלומר, בניגוד לחלק מהמרצים כאן, הוא חוקר קאנט.
 
 ## עמדות ידועות
 
-לא נמצא מקור. לפי דף ההרצאה, היא דנה בשאלות האלה ביחס לישראל ופלסטין [^s1].
+לא נבדקו בדבריו שלו (ראו `verification.missing`). לפי דף ההרצאה, היא דנה בשאלות האלה ביחס לישראל ופלסטין [^s1].
 
 ## אופן הצגה
 

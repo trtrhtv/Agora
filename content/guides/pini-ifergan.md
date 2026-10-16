@@ -29,6 +29,10 @@ sources:
     title: "Van Leer Jerusalem Institute: Kant, Colonialism and Universalism (Yes We Kant), series credits"
     url: https://www.vanleer.org.il/en/videos/kant-colonialism-and-universalism-yes-we-kant/
     type: official
+  - id: s5
+    title: "YouTube (channel: הערוץ של מכון ארגמן): הקאנון, פרק 7 (description)"
+    url: https://www.youtube.com/watch?v=GPleeC3jNVk
+    type: official
 affiliation: "אוניברסיטת בר-אילן, המחלקה לפילוסופיה"
 affiliation_url: https://philosophy.biu.ac.il/PiniIfergan
 expertise: ["פילוסופיה גרמנית קלאסית", "אידיאליזם גרמני", "פילוסופיה פוליטית"]
@@ -38,7 +42,7 @@ works: [argaman-kanon-07-groundwork-a, argaman-kanon-08-groundwork-b]
 
 ## מי זה
 
-פרופסור במחלקה לפילוסופיה באוניברסיטת בר-אילן. תחומי העניין שבדף שלו: פילוסופיה גרמנית קלאסית, אידיאליזם גרמני, השיח הפילוסופי של המודרניות ואנתרופולוגיה פילוסופית [^s1].
+פרופסור במחלקה לפילוסופיה באוניברסיטת בר-אילן. בתיאור הפודקאסט הוא מוצג כראש החוג לפילוסופיה בבר-אילן ועמית במכון ון ליר [^s5]. תחומי העניין שבדף שלו: פילוסופיה גרמנית קלאסית, אידיאליזם גרמני, השיח הפילוסופי של המודרניות ואנתרופולוגיה פילוסופית [^s1].
 
 ## התמחות
 
@@ -52,7 +56,7 @@ works: [argaman-kanon-07-groundwork-a, argaman-kanon-08-groundwork-b]
 
 כאן הוא מופיע כאורח בפודקאסט "הקאנון" של מכון ארגמן. המכון מתאר את עצמו כמקום לעיון "במיטב ההגות השמרנית והליברלית" [^s2].
 
-:::assessment הערה על המקורות: הרבה מהשכבה העברית על קאנט עוברת דרכו (התרגום, הסדרה בוון ליר והפודקאסט). כדאי לשמוע לצדו גם את דרור ינון ואת ראיף זריק.
+:::assessment הערה על המקורות: הרבה מהשכבה העברית על קאנט עוברת דרכו (התרגום, הסדרה בוון ליר והפודקאסט). דרור ינון הוא שותפו לעריכת הסדרה. הקול העצמאי יותר בשכבה הזו הוא ראיף זריק.
 
 ## חסר לאימות מלא
 

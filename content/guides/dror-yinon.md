@@ -17,7 +17,7 @@ sources:
     title: "Van Leer Jerusalem Institute: Peace as Security: Kant's Ideal of Peace (Yes We Kant)"
     url: https://www.vanleer.org.il/en/videos/peace-as-security-kants-ideal-of-peace-yes-we-kant/
     type: official
-affiliation: "התכנית להרמנויטיקה ולימודי תרבות, אוניברסיטת בר-אילן; מרכז שפינוזה, מכון ון ליר"
+affiliation: "התכנית ללימודי פרשנות ותרבות, אוניברסיטת בר-אילן; מרכז שפינוזה, מכון ון ליר"
 affiliation_url: https://www.vanleer.org.il/en/videos/peace-as-security-kants-ideal-of-peace-yes-we-kant/
 expertise: ["פילוסופיה"]
 languages: [he]
@@ -26,7 +26,7 @@ works: [yinon-kant-peace]
 
 ## מי זה
 
-לפי דף ההרצאה במכון ון ליר: ד"ר בתכנית להרמנויטיקה ולימודי תרבות באוניברסיטת בר-אילן ובמרכז שפינוזה של מכון ון ליר, ואחד משני העורכים של הסדרה "עדיין קאנט" [^s1].
+לפי דף ההרצאה במכון ון ליר: ד"ר בתכנית ללימודי פרשנות ותרבות באוניברסיטת בר-אילן ובמרכז שפינוזה של מכון ון ליר, ואחד משני העורכים של הסדרה "עדיין קאנט" [^s1].
 
 ## התמחות
 

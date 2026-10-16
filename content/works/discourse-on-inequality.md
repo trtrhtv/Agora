@@ -7,7 +7,6 @@ verification:
   status: partial
   missing:
     - "לא אומת מהו המאמר השני בכרך \"מאמרים\"."
-    - "שנת הכרך (1993) לקוחה מדוח סוכן המחקר ולא נבדקה מחדש."
   reviewed_by_me: false
   last_checked: 2026-10-16
 sources:
