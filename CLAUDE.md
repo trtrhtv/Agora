@@ -60,7 +60,7 @@ Your memory is not a source. Check before you state anything.
 - Quotes: find them in the primary text (Gutenberg, Wikisource, the book itself). Quote sites and Wikiquote are only leads. Check Wikiquote's "Misattributed" / "Disputed" sections.
 - Separate fact from interpretation. Interpretation goes in an `:::assessment` block and names whose interpretation it is.
 - Actively search for the opposite: critics of the thinker, critics of the guide, evidence against your summary. If you only found supporting sources, you haven't searched enough.
-- People with similar names: confirm identity (institution, field, dates) before attributing anything. Example from planning: a "Henry Unger at TAU" exists, but in the Faculty of Arts, and his Wittgenstein expertise was not confirmed.
+- People with similar names: confirm identity (institution, field, dates) before attributing anything. Example: Henry Unger's identity is confirmed (TAU page core.tau.ac.il/story/12, and his own YouTube channel). His listed expertise is 20th-century analytic philosophy, aesthetics and world literature, so present him as a generalist lecturer, not a specialist in the thinkers he covers. Link only his YouTube channel, not the unofficial fan site.
 
 **After writing (self-review before handing over)**
 - Re-read the card as a skeptic: which sentence would I be least able to defend? Verify it or remove it.

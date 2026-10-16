@@ -10,7 +10,7 @@ verification:
   weakest_claims:
     - "ההערכה לסדרה נשענת על ביקורת אחת (Times Higher Education) על ספר שמבוסס על הסדרה, לא על הפודקאסט עצמו."
   reviewed_by_me: false
-  last_checked: 2026-10-15
+  last_checked: 2026-10-16
 sources:
   - id: s1
     title: "University of Cambridge, POLIS: Professor David Runciman"
@@ -24,7 +24,7 @@ affiliation: "University of Cambridge, Department of Politics and International 
 affiliation_url: https://www.polis.cam.ac.uk/people/david-runciman
 expertise: ["תולדות הרעיונות הפוליטיים"]
 languages: [en]
-works: [runciman-hobbes-state]
+works: [runciman-hobbes-state, runciman-marx-engels-revolution]
 ---
 
 ## מי זה

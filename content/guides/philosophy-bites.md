@@ -10,7 +10,7 @@ verification:
   weakest_claims:
     - "הנטיות רלוונטיות ברמת המרואיין בכל פרק, ולא נבדקו לכל מרואיין."
   reviewed_by_me: false
-  last_checked: 2026-10-15
+  last_checked: 2026-10-16
 sources:
   - id: s1
     title: "Philosophy Bites (official site)"
@@ -24,7 +24,7 @@ affiliation: "פודקאסט עצמאי (David Edmonds ו-Nigel Warburton)"
 affiliation_url: https://philosophybites.com/
 expertise: ["פילוסופיה"]
 languages: [en]
-works: [pb-skinner-hobbes-state, pb-dunn-locke-toleration, pb-reeves-mill-on-liberty]
+works: [pb-skinner-hobbes-state, pb-dunn-locke-toleration, pb-reeves-mill-on-liberty, pb-skinner-machiavelli-prince, pb-wolff-marx-alienation, pb-bourke-burke, pb-bertram-rousseau-psychology, pb-moore-williams-ethics]
 ---
 
 ## מי זה

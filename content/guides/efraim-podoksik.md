@@ -11,7 +11,7 @@ verification:
   weakest_claims:
     - "שהערוץ והפודקאסט שייכים לו נשען על שם הערוץ ותיאורי ההרצאות, ולא על דף רשמי שמפנה אליהם."
   reviewed_by_me: false
-  last_checked: 2026-10-15
+  last_checked: 2026-10-16
 sources:
   - id: s1
     title: "Hebrew University, Department of Political Science: Efraim Podoksik (faculty page)"
@@ -29,7 +29,7 @@ affiliation: "האוניברסיטה העברית בירושלים, המחלקה
 affiliation_url: https://en.politics.huji.ac.il/people/ephraim-podoksik
 expertise: ["פילוסופיה פוליטית ותאוריה פוליטית"]
 languages: [he]
-works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-mill, podoksik-mpt-20-mill]
+works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-mill, podoksik-mpt-20-mill, podoksik-mpt-02-machiavelli, podoksik-pk-05-machiavelli, podoksik-mpt-06-rousseau, podoksik-mpt-07-rousseau, podoksik-ideas-04-rousseau, podoksik-mpt-10-burke, podoksik-mpt-11-burke, podoksik-mpt-17-marx, podoksik-red-terror-10]
 ---
 
 ## מי זה
@@ -38,7 +38,7 @@ works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-m
 
 ## התמחות
 
-מחשבה מדינית. בערוץ היוטיוב ובפודקאסט שלו מופיעות הקלטות של הקורס "מחשבה מדינית מודרנית", שהועבר בסמסטר אביב 2018: הרצאה לכל הוגה או זרם, ממקיאוולי, הובס ולוק ועד מרקס, מיל, הלאומיות והפשיזם [^s2] [^s3]. בתיאורי ההרצאות לא נאמר באיזה מוסד הועבר הקורס.
+מחשבה מדינית. בערוץ היוטיוב ובפודקאסט שלו מופיעות הקלטות של הקורס "מחשבה מדינית מודרנית", שהועבר בסמסטר אביב 2018: הרצאה לכל הוגה או זרם, ממקיאוולי, הובס ולוק ועד מרקס, מיל, הלאומיות והפשיזם [^s2] [^s3]. בתיאורי ההרצאות לא נאמר באיזה מוסד הועבר הקורס. באותם ערוצים יש גם קורסים נוספים, למשל "פוליטיקה כיעוד: רעיון החינוך לפוליטיקה בהגות המדינית" ו"הטרור האדום", וסדרת פרקים קצרים בשם "רעיונות, לא מה שחשבתם" [^s3].
 
 ## עמדות ידועות
 

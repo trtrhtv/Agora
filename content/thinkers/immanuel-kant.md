@@ -12,7 +12,7 @@ verification:
     - "תורת הגזע של קאנט מובאת דרך s2 בלבד. החיבורים עצמם לא נבדקו."
     - "תורת ההכרה של קאנט (ביקורת התבונה הטהורה) מוזכרת רק בקצרה. הכרטיס מתמקד במוסר ובפוליטיקה, לפי צורכי השאלות בספרייה."
     - "הציטוטים מה'הנחת יסוד' לקוחים מתרגום Abbott ב-Gutenberg, שהוא ישן ושונה מהתרגומים האקדמיים המקובלים היום (למשל Gregor). מספור האקדמיה (4:421, 4:429) מופיע דרך s3 ולא נבדק בתרגום."
-    - "אין כרטיסי יצירה. key_works ריק."
+    - "כרטיסי היצירה ל'הנחת יסוד' ול'לשלום הנצחי' נוספו עם רשימת להעמיק. אין כרטיס ל'תורת המשפט' ואין לה תרגום עברי שנמצא."
   weakest_claims:
     - "האיסור לשקר לרוצח נשען על אזכור אחד בערך סטנפורד על הגדרת השקר (s6). החיבור של קאנט לא נפתח."
     - "התשובה לביקורת הגל (שהיא לא הוגנת) היא עמדתו של Thom Brooks (s7), שמסתמך על Wood. זו לא הכרעה מוסכמת."
@@ -83,6 +83,101 @@ quotes:
     source: s5
     translation: "tr. Mary Campbell Smith, Project Gutenberg #50922"
     translated_he: "החוקה האזרחית של כל מדינה תהיה רפובליקנית."
+key_works: [groundwork, perpetual-peace]
+deepen:
+  - work: "groundwork"
+    layer: "text"
+    note_he: "סעיף ראשון (הרצון הטוב, ופעולה מתוך חובה) וסעיף שני (נוסחי הצו הקטגורי, שכבר מצוטטים בכרטיס). בעברית יש שני תרגומים: שפי (מאגנס) ואלשטיין (ידיעות ספרים, 2010)."
+    endorsement:
+      by_he: "אדריאן מור (אוקספורד) ב-Five Books: קשה לקריאה, אבל מציג את העקרונות היסודיים של המוסר של קאנט"
+      url: https://fivebooks.com/best-books/kant/
+  - work: "perpetual-peace"
+    layer: "text"
+    note_he: "הסעיף המכריע הראשון: חוקה רפובליקנית, ולמה אזרחים מהססים לצאת למלחמה. בעברית: ברגמן ורוטנשטרייך (מאגנס), או בכרך \"מהי נאורות?\" של רסלינג."
+  - work: "argaman-kanon-07-groundwork-a"
+    layer: "listen"
+    note_he: "ההדרכה הטובה ביותר שנמצאה בעברית לקריאת \"הנחת יסוד\" עצמו, לפי הסדר של הסעיף הראשון. מכון ארגמן מתאר את עצמו כמקום לעיון בהגות השמרנית והליברלית."
+  - work: "argaman-kanon-08-groundwork-b"
+    layer: "listen"
+    note_he: "המשך: החוק המוסרי והנוסחים שלו. מתאים לסעיף השני."
+  - work: "unger-kant-categorical-imperative"
+    layer: "listen"
+    note_he: "מרצה כללי, לא מומחה לקאנט (ראו כרטיס המנחה). לפי התיאור, עיון ב\"ביקורת התבונה המעשית\" ובאתיקה הדאונטולוגית."
+  - work: "unger-kant-at-a-glance"
+    layer: "listen"
+    note_he: "מבט כולל על השיטה של קאנט, לא רק על המוסר. אפשר לדלג אם העניין הוא במוסר ובפוליטיקה."
+  - work: "yinon-kant-peace"
+    layer: "listen"
+    note_he: "הפוליטיקה של קאנט: האם אפשר לממש את הצו המוסרי בפוליטיקה? השלום כמושג מפתח בין מדינות."
+  - work: "zreik-kant-colonialism"
+    layer: "listen"
+    note_he: "הביקורת החזקה ביותר שנמצאה בעברית, מתאימה לפרק על היררכיה גזעית בכרטיס: האם קאנט הצדיק קולוניאליזם, או שיש בו גם בסיס לביקורת עליו?"
+  - work: "in-our-time-kant-ci"
+    layer: "listen"
+    note_he: "שיחה באנגלית על הצו הקטגורי. בדף הפרק רשימת קריאה, שעליה נשענות כמה מההמלצות כאן."
+  - work: "pb-moore-williams-ethics"
+    layer: "listen"
+    note_he: "קול המבקר: ברנרד ויליאמס נגד התאוריה המוסרית, קאנט בכלל זה. כדאי לשמוע לפני הספר של ויליאמס למטה."
+  - title: "Kant: A Very Short Introduction"
+    by: "Roger Scruton"
+    type: "book"
+    language: "en"
+    year: 2001
+    url: "https://doi.org/10.1093/actrade/9780192801999.001.0001"
+    layer: "intro"
+    note_he: "מבוא קצר לשיטה כולה, כולל הצו הקטגורי ומשפט ונאורות. סקרוטון היה הוגה שמרן בולט."
+    endorsement:
+      by_he: "ברשימת הקריאה של In Our Time על הצו הקטגורי"
+      url: https://www.bbc.co.uk/programmes/b0952zl3
+  - title: "הפילוסופיה של עמנואל קאנט"
+    by: "שמואל הוגו ברגמן"
+    type: "book"
+    language: "he"
+    year: 1980
+    url: "https://www.magnespress.co.il/book/x-5637"
+    layer: "intro"
+    note_he: "מבוא בעברית לכל השיטה, כולל פרק על תורת המוסר ועל הטענות נגד הצו הקטגורי. המהדורה הראשונה מ-1927, והספר מיושן. ההמלצה היחידה שנמצאה היא של ההוצאה."
+  - title: "Force and Freedom: Kant's Legal and Political Philosophy"
+    by: "Arthur Ripstein"
+    type: "book"
+    language: "en"
+    year: 2009
+    url: "https://doi.org/10.4159/9780674054516"
+    layer: "deep"
+    note_he: "תורת המשפט של קאנט כתורה עצמאית. שאלה לקחת: האם הפוליטיקה של קאנט עומדת בלי האתיקה שלו? אלן ווד, בביקורת שלו, לא השתכנע מהניסיון לגזור את המשפט מהצו הקטגורי."
+    endorsement:
+      by_he: "אלן ווד, Notre Dame Philosophical Reviews (2009): סוף סוף הספר שהיה צריך להיכתב, אם כי לא משכנע בשאלה העמוקה"
+      url: https://ndpr.nd.edu/news/force-and-freedom-kant-s-legal-and-political-philosophy/
+  - title: "The Right to Lie: Kant on Dealing with Evil"
+    by: "Christine Korsgaard"
+    type: "article"
+    language: "en"
+    year: 1986
+    url: "https://dash.harvard.edu/server/api/core/bitstreams/7312037c-70d5-6bd4-e053-0100007fdf3b/content"
+    layer: "deep"
+    note_he: "חינם. עוסק ישירות בטענה החלשה בכרטיס, הרוצח בדלת. המאמר נפתח בקושי: המוסר של קאנט נראה כאילו הוא משאיר אותנו חסרי אונים מול הרוע. שאלה לקחת: האם קורסגארד מצילה את קאנט, או מתקנת אותו?"
+    endorsement:
+      by_he: "הספר שמקבץ את המאמר, Creating the Kingdom of Ends, ברשימת הקריאה של In Our Time"
+      url: https://www.bbc.co.uk/programmes/b0952zl3
+  - title: "Ethics and the Limits of Philosophy"
+    by: "Bernard Williams"
+    type: "book"
+    language: "en"
+    year: 1985
+    url: "https://plato.stanford.edu/entries/williams-bernard/"
+    layer: "deep"
+    note_he: "המבקר הרציני, בעיקר הפרק האחרון, \"Morality, the Peculiar Institution\". לפי סטנפורד, ויליאמס ממשיך מסורת ביקורתית שמתחילה לפחות בהגל, שטען שהמוסר של קאנט ריק. הקישור הוא לערך על ויליאמס בסטנפורד."
+    endorsement:
+      by_he: "סטנפורד (Chappell & Smyth): הספר שמציג באופן המאוחד והשיטתי ביותר את מה שהיה לוויליאמס לומר על האתיקה"
+      url: https://plato.stanford.edu/entries/williams-bernard/
+  - title: "Black Radical Kantianism"
+    by: "Charles W. Mills"
+    type: "article"
+    language: "en"
+    year: 2018
+    url: "https://doi.org/10.11612/resphil.1622"
+    layer: "deep"
+    note_he: "מאמר בתשלום, שלא נקרא. לפי שמו ולפי דף ההרצאה של פיני איפרגן בוון ליר על אותו רעיון, מדובר בגישה שבוחנת את יחסו של קאנט לגזע ובה בעת רואה בקריאה מחודשת שלו הזדמנות לעמדה מוסרית שחורגת ממגבלותיו. לפי סטנפורד, הוויכוח פתוח: לו-אדלר טוענת לגזענות עקבית, וקליינגלד טוענת שקאנט שינה את עמדתו."
 ---
 
 ## מי היה

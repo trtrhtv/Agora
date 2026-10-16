@@ -10,7 +10,7 @@ verification:
     - "הפנתיאון (1794) ודיוקנו של רוסו בביתו של קאנט מובאים דרך s1 בלבד. ה-IEP לא מזכיר אותם."
     - "'אמיל' (חינוך) ו'וידויים' לא נבדקו מעבר לתיאור ב-s1. הכרטיס מתמקד בפוליטיקה. התחום lifestyle מסומן על סמך s1 (חינוך, אותנטיות) בלבד."
     - "הציטוטים מ'האמנה החברתית' נלקחו מתרגום G. D. H. Cole (1913) ב-Gutenberg. מספרי הפרקים מאומתים מול הטקסט שם."
-    - "אין כרטיס יצירה ל'האמנה החברתית'. key_works ריק."
+    - "כרטיסי היצירה ל'האמנה החברתית', ל'מאמר על אי-השוויון' ול'אמיל' נוספו עם רשימת להעמיק."
   weakest_claims:
     - "נטישת חמשת הילדים מבוססת על עדותו של רוסו עצמו, כפי שמובאת ב-s1."
     - "הקריאה הטוטליטרית מיוחסת ב-s1 לכותבים עוינים בלי שמות. קונסטן (s5) הוא מקור ראשוני אחד, והוא עצמו מתון: הוא מטיל את עיקר האחריות על מבלי."
@@ -65,6 +65,87 @@ quotes:
     source: s3
     translation: "tr. G. D. H. Cole (1913), Project Gutenberg #46333"
     translated_he: "...מי שמסרב לציית לרצון הכללי ייאלץ לעשות זאת בידי הגוף כולו. פירוש הדבר לא פחות מכך שהוא ייאלץ להיות חופשי..."
+key_works: [social-contract, discourse-on-inequality, emile]
+deepen:
+  - work: "discourse-on-inequality"
+    layer: "text"
+    note_he: "להתחיל כאן. בחלק השני, המשפט על האדם הראשון שגידר חלקת אדמה ואמר \"זה שלי\". בעברית: בכרך \"מאמרים\" של מאגנס."
+    endorsement:
+      by_he: "כריס ברטרם (בריסטול) ב-Five Books: המאמר על אי-השוויון הוא מקום טוב להתחיל בו, הוא לא ארוך ומלא רעיונות"
+      url: https://fivebooks.com/best-books/rousseau-christopher-bertram/
+  - work: "social-contract"
+    layer: "text"
+    note_he: "ספר א פרקים 1, 6–8 (כבר בכרטיס). אחר כך ספר ב פרק 3 (האם הרצון הכללי יכול לטעות), ספר ב פרק 7 (המחוקק) וספר ד פרק 8 (הדת האזרחית), כדי לשפוט בעצמך את הקריאה הטוטליטרית."
+  - work: "emile"
+    layer: "text"
+    note_he: "הפתיחה של ספר א, ובספר ד \"וידוי האמונה של הכומר הסבויארדי\". בעברית: מאגנס ודביר, 2009."
+  - work: "podoksik-mpt-06-rousseau"
+    layer: "listen"
+    note_he: "הרצאה אקדמית בעברית. החלק על רוסו מתחיל אחרי סיום מונטסקייה, באמצע ההרצאה (המיקום המדויק לא נבדק)."
+  - work: "podoksik-mpt-07-rousseau"
+    layer: "listen"
+    note_he: "המשך ההרצאה על רוסו, ואחריו הנאורות הסקוטית."
+  - work: "podoksik-ideas-04-rousseau"
+    layer: "listen"
+    note_he: "עשר דקות בעברית נגד הקריאה הטוטליטרית, לפי הכותרת. כדאי לשמוע יחד עם ברלין למטה, שמייצג את הקריאה ההפוכה."
+  - work: "unger-rousseau-social-contract"
+    layer: "listen"
+    note_he: "מרצה כללי, לא מומחה לרוסו (ראו כרטיס המנחה). דיון ארוך ב\"האמנה החברתית\"."
+  - work: "heyd-rousseau-genealogy"
+    layer: "listen"
+    note_he: "דוד הד קורא את המאמר על אי-השוויון כשיטה גנאלוגית. זו קרובה לקריאה של פרדריק נויהאוזר (למטה)."
+  - work: "pb-bertram-rousseau-psychology"
+    layer: "listen"
+    note_he: "20 דקות, עם תמליל: שלושת המושגים של הפסיכולוגיה המוסרית של רוסו. שאלה לקחת: האם האהבה העצמית תלוית ההשוואה היא רק רעל, או שאפשר לכוון אותה?"
+  - work: "berlin-freedom-betrayal-rousseau"
+    layer: "listen"
+    note_he: "המבקר הקלאסי, בהקלטה מ-1952: ברלין על ההשלכות הסמכותניות של רוסו."
+  - title: "Rousseau: A Very Short Introduction"
+    by: "Robert Wokler"
+    type: "book"
+    language: "en"
+    year: 2001
+    url: "https://doi.org/10.1093/actrade/9780192801982.001.0001"
+    layer: "intro"
+    note_he: "מבוא קצר. ברטרם ב-Five Books מתאר את וולקר כאחד מחוקרי רוסו החשובים במאה העשרים ומזכיר את הספר הקצר שכתב לסדרת Past Masters, שממנה נולד הכרך הזה. ההמלצה של ברטרם היא על אוסף מאמרים אחר של וולקר, לא על המבוא."
+  - title: "Rousseau's Critique of Inequality: Reconstructing the Second Discourse"
+    by: "Frederick Neuhouser"
+    type: "book"
+    language: "en"
+    year: 2014
+    url: "https://doi.org/10.1017/cbo9781107587731"
+    layer: "deep"
+    note_he: "שחזור שיטתי של הטיעון במאמר על אי-השוויון. שאלה לקחת: האם אי-השוויון הוא בעיה כלכלית, או בעיה של הכרה ושל תלות בעיני אחרים?"
+    endorsement:
+      by_he: "כריס ברטרם ב-Five Books: ניסיון לשחזר את טיעון המאמר השני, כגנאלוגיה בדומה לניטשה"
+      url: https://fivebooks.com/best-books/rousseau-christopher-bertram/
+  - title: "Rousseau: An Introduction to His Psychological, Social and Political Theory"
+    by: "N. J. H. Dent"
+    type: "book"
+    language: "en"
+    year: 1988
+    url: "https://doi.org/10.2307/2185550"
+    layer: "deep"
+    note_he: "הספר ששינה את הקריאה בפסיכולוגיה של רוסו, לפי ברטרם. הקישור הוא לביקורת על הספר ב-Philosophical Review, כי לא נמצא דף הוצאה."
+    endorsement:
+      by_he: "כריס ברטרם ב-Five Books: ניק דנט חולל מהפכה באופן שבו אנחנו חושבים היום על הפסיכולוגיה המוסרית של רוסו"
+      url: https://fivebooks.com/best-books/rousseau-christopher-bertram/
+  - title: "The Origins of Totalitarian Democracy (בעברית: ראשיתה של הדמוקרטיה הטוטליטרית)"
+    by: "J. L. Talmon (יעקב טלמון)"
+    type: "book"
+    language: "en"
+    year: 1952
+    url: "https://doi.org/10.2307/2182735"
+    layer: "deep"
+    note_he: "המבקר הישראלי: הרצון הכללי כזרע של \"דמוקרטיה טוטליטרית\". הקישור הוא לביקורת של ג'ורג' סבין משנת 1953, שלא נקראה. קיימת מהדורה עברית (דביר, ואחר כך כנרת), אבל המתרגם והשנה לא אומתו. שאלה לקחת: האם המחלוקת היא על רוסו, או על מה שעשו בשמו?"
+  - title: "רוסו: הקדמה כמלכודת"
+    by: "יפתח גולדמן"
+    type: "book"
+    language: "he"
+    year: 2010
+    url: "https://www.magnespress.co.il/book/x-2491"
+    layer: "deep"
+    note_he: "מחקר בעברית על המאמר על אי-השוויון, מזווית מרקסיסטית לפי תוכן העניינים שראה סוכן המחקר (פרק \"מרקס נגד רוסו\"). לא נמצאה ביקורת עצמאית."
 ---
 
 ## מי היה

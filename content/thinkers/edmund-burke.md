@@ -7,12 +7,12 @@ verification:
   status: partial
   missing:
     - "שנת הלידה שנויה במחלוקת: s1 נותן 1730, ו-s6 (DNB, 1886) נותן 12 בינואר 1729 לפי הלוח החדש, ומציין שהתאריך המדויק אינו ודאי. בכרטיס 1729 לפי s6. ה-DNB הוא מקור מ-1886, ומחקר מאוחר יותר לא נבדק."
-    - "'הרהורים על המהפכה בצרפת' מצוטט מכרך 3 של כתבי ברק ב-Gutenberg (s3), בלי חלוקה לפרקים, כי לספר אין חלוקה כזו (לפי s1)."
+    - "'הרהורים על המהפכה בצרפת' מצוטט מכרך 3 של כתבי ברק ב-Gutenberg (s3), בלי חלוקה לפרקים, כי לספר אין חלוקה כזו (לפי s1). התרגום העברי בהוצאת שלם נקרא 'מחשבות על המהפכה בצרפת', והעורכים חילקו בו את הטקסט לתשעה פרקים (ראו כרטיס היצירה)."
     - "דברי ג'יימס מיל וקולרידג' על ברק מובאים בפרפרזה דרך s1 ו-s2. הטקסטים שלהם לא נפתחו; 'The Friend' של קולרידג' לא נמצא ב-Gutenberg."
     - "הייחוס המוטעה נשען על מקור אחד (Quote Investigator, s5). לא נמצא מקור שני."
     - "'הגנה על זכויות האדם' של מרי וולסטונקרפט (1790) זמין ב-Gutenberg אבל לא נקרא במנה זו. רק פיין מצוטט כמבקר בן הזמן."
     - "עמדותיו של ברק על אירלנד, הודו (משפט וורן הייסטינגס) ואמריקה מוזכרות רק בקצרה. הן חשובות להבנת מה הוא 'שמרן' בעניינו."
-    - "אין כרטיס זרם 'שמרנות' ואין כרטיסי יצירה. schools ו-key_works ריקים."
+    - "אין כרטיס זרם 'שמרנות' ואין כרטיס זרם. schools ריק. כרטיס היצירה ל'מחשבות על המהפכה בצרפת' נוסף עם רשימת להעמיק."
   weakest_claims:
     - "שנת הלידה (1729 או 1730)."
     - "שרוב הנבלים ב\"הרהורים\" הם דמויות קש הוא שיפוט של מחבר s1 (Harris)."
@@ -67,6 +67,61 @@ misattributed:
   - text: "The only thing necessary for the triumph of evil is for good men to do nothing."
     verdict_he: "לא נמצא בכתבי ברק. מהדורות מאוחרות של Bartlett's Familiar Quotations מציינות שחיפושים נמרצים לא איתרו אותו. אצל ברק (1770) יש משפט קרוב ברעיון אך שונה: על הצורך של אנשים טובים להתאגד נגד רעים. הייחוס הראשון של הנוסח המודרני לברק הוא מ-1920."
     sources: [s5]
+key_works: [reflections-on-the-revolution-in-france]
+deepen:
+  - work: "reflections-on-the-revolution-in-france"
+    layer: "text"
+    note_he: "לקרוא את הקטע שמתחיל בזיכרון של ברק ממלכת צרפת (\"עידן האבירות חלף\"), דרך הקטע על הדעות הקדומות, ועד \"החברה היא אכן חוזה\", השותפות בין החיים, המתים ומי שעוד ייוולדו. זה הקטע שפיין ווולסטונקראפט תקפו. שאלה לקחת: האם ברק טוען, או מפעיל רגש?"
+  - work: "podoksik-mpt-10-burke"
+    layer: "listen"
+    note_he: "הרצאה אקדמית בעברית: ברק אחרי המהפכה הצרפתית."
+  - work: "podoksik-mpt-11-burke"
+    layer: "listen"
+    note_he: "המשך: ברק ואחריו ז'וזף דה מסטר. שאלה לקחת: במה שונה השמרנות של ברק מהריאקציה של דה מסטר?"
+  - work: "pb-bourke-burke"
+    layer: "listen"
+    note_he: "14 דקות, עם תמליל, של מי שכתב אחר כך את הביוגרפיה המחקרית של ברק (ראו למטה)."
+  - work: "in-our-time-burke"
+    layer: "listen"
+    note_he: "שיחה באנגלית על ברק כולו (אמריקה, הודו, צרפת) ועל מלחמת החוברות שעורר."
+  - title: "הפולמוס הגדול: אדמנד ברק, תומס פיין והולדת הימין והשמאל"
+    by: "יובל לוין"
+    type: "book"
+    language: "he"
+    year: 2018
+    url: "https://shalempress.co.il/shop/democratic-thought/%D7%94%D7%A4%D7%95%D7%9C%D7%9E%D7%95%D7%A1-%D7%94%D7%92%D7%93%D7%95%D7%9C/"
+    layer: "intro"
+    note_he: "מבוא בעברית לוויכוח בין ברק לפיין. לוין הוא מייסד ועורך כתב העת השמרני National Affairs, וההוצאה היא שלם, לכן כדאי לקרוא בידיעה שהמסגור נוטה לברק. Kirkus כתב על הספר ביקורת מעורבת. בספר עצמו יש גם מבוא של יורם ברונובסקי לתרגום \"מחשבות\"."
+  - title: "Empire and Revolution: The Political Life of Edmund Burke"
+    by: "Richard Bourke"
+    type: "book"
+    language: "en"
+    year: 2015
+    url: "https://press.princeton.edu/books/paperback/9780691175652/empire-and-revolution"
+    layer: "deep"
+    note_he: "הביוגרפיה המחקרית: ברק כפוליטיקאי של אימפריה (אמריקה, הודו, אירלנד) ולא רק כמבקר המהפכה. שאלה לקחת: האם התווית \"שמרן\" היא אנכרוניזם?"
+    endorsement:
+      by_he: "שיימוס דין, Literary Review (2015): הרהור ארוך וחודר על האופן שבו ברק ספג את המסורת האינטלקטואלית האירופית"
+      url: https://literaryreview.co.uk/civilising-influence
+  - title: "A Vindication of the Rights of Men"
+    by: "Mary Wollstonecraft"
+    type: "book"
+    language: "en"
+    year: 1790
+    url: "https://www.gutenberg.org/ebooks/62757"
+    layer: "deep"
+    note_he: "המבקרת בת הזמן, טקסט חופשי. ביקורת על הרגש, על האבירות ועל הרכוש המורש, נפרדת מהטיעון של פיין על זכויות החיים. לא נמצא תרגום עברי. סילבנה טומסלי ערכה את מהדורת קיימברידג' של הטקסט, ולכן ההמלצה שלה אינה עצמאית לגמרי."
+    endorsement:
+      by_he: "סילבנה טומסלי (קיימברידג') ב-Five Books: התקפה חדה מאוד, רטורית ואנליטית; היא לא הוגנת, אבל היא באמת מבינה את ברק"
+      url: https://fivebooks.com/best-books/mary-wollstonecraft-sylvana-tomaselli/
+  - title: "The Reactionary Mind: Conservatism from Edmund Burke to Sarah Palin"
+    by: "Corey Robin"
+    type: "book"
+    language: "en"
+    year: 2011
+    url: "https://newrepublic.com/article/91901/reactionary-mind-corey-robin"
+    layer: "deep"
+    note_he: "ביקורת מודרנית מהשמאל: שמרנות כתגובה לערעור על היררכיה, לא כזהירות. ההמלצה שנויה במחלוקת: אלן וולף (New Republic, הקישור) כותב שרובין רואה רק סוג אחד של שמרנות, ומרק לילה (NYRB) כותב שזה ספר שימושי כדוגמה למה שיש להימנע ממנו. דברי רובין עצמו לא נקראו, ולכן לא מיוחסת לו כאן טענה מעבר למה שמבקריו מתארים."
 ---
 
 ## מי היה

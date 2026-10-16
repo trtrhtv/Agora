@@ -11,7 +11,7 @@ verification:
   weakest_claims:
     - "שהתוכנית משמשת כמבוא אקדמי נשען על תיאור התוכנית בדף שלה ועל השיוכים שבדפי הפרקים, לא על ביקורת חיצונית."
   reviewed_by_me: false
-  last_checked: 2026-10-15
+  last_checked: 2026-10-16
 sources:
   - id: s1
     title: "BBC Radio 4: In Our Time (programme page)"
@@ -21,7 +21,7 @@ affiliation: "BBC Radio 4"
 affiliation_url: https://www.bbc.co.uk/programmes/b006qykl
 expertise: ["היסטוריה, פילוסופיה, דת, מדע, ספרות, אמנות ותרבות"]
 languages: [en]
-works: [in-our-time-hobbes, in-our-time-on-liberty]
+works: [in-our-time-hobbes, in-our-time-on-liberty, in-our-time-machiavelli, in-our-time-marx, in-our-time-burke, in-our-time-kant-ci]
 ---
 
 ## מי זה

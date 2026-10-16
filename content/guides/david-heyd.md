@@ -10,7 +10,7 @@ verification:
   weakest_claims:
     - "אופן ההצגה בהרצאה על הובס ידוע רק מכותרתה. ההרצאה לא נשמעה."
   reviewed_by_me: false
-  last_checked: 2026-10-15
+  last_checked: 2026-10-16
 sources:
   - id: s1
     title: "YouTube, Van Leer Jerusalem Institute: ליברלים אחרים | הובס: הוויתור על החירות כבסיס לסדר הפוליטי | פרופ' דוד הד"
@@ -24,7 +24,7 @@ affiliation: "האוניברסיטה העברית בירושלים, החוג ל�
 affiliation_url: https://david-heyd.huji.ac.il/
 expertise: ["אתיקה", "פילוסופיה פוליטית", "ביואתיקה"]
 languages: [he]
-works: [heyd-hobbes-van-leer]
+works: [heyd-hobbes-van-leer, heyd-rousseau-genealogy]
 ---
 
 ## מי זה
