@@ -1,0 +1,75 @@
+---
+// Generic card page for schools, works, guides and publishers. Thinkers and questions have their own pages.
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Verification from '../../components/Verification.astro';
+import Sources from '../../components/Sources.astro';
+import RefLinks from '../../components/RefLinks.astro';
+import { KIND_LABEL, loadIndex, titleOf, type Ref } from '../../lib/view';
+
+type Kind = 'schools' | 'works' | 'guides' | 'publishers';
+
+export async function getStaticPaths() {
+  // getStaticPaths is hoisted out of the component, so the list lives inside it.
+  const paths = [];
+  for (const kind of ['schools', 'works', 'guides', 'publishers'] as const)
+    for (const entry of await getCollection(kind)) paths.push({ params: { kind, id: entry.data.id }, props: { kind, entry } });
+  return paths;
+}
+
+const { kind, entry } = Astro.props as { kind: Kind; entry: CollectionEntry<Kind> };
+const d = entry.data as Record<string, any>;
+const { Content } = await render(entry);
+const { ref } = await loadIndex();
+
+const groups: { title: string; items: { ref: Ref }[] }[] = [];
+const add = (title: string, k: Parameters<typeof ref>[0], ids: string[] | undefined) =>
+  ids?.length && groups.push({ title, items: ids.map((id) => ({ ref: ref(k, id) })) });
+if (kind === 'schools') {
+  add('הוגים מרכזיים', 'thinkers', d.key_thinkers);
+  add('זרמי אם', 'schools', d.parent_schools);
+  add('זרמים מנוגדים', 'schools', d.opposed_schools);
+}
+if (kind === 'works') {
+  // The author is a thinker, or a guide for lectures and podcasts.
+  const t = ref('thinkers', d.author);
+  add(t.title === d.author ? 'מאת (מסביר)' : 'מאת', t.title === d.author ? 'guides' : 'thinkers', [d.author]);
+}
+if (kind === 'guides') add('יצירות', 'works', d.works);
+---
+
+<Base title={titleOf(d)}>
+  <p class="muted">{KIND_LABEL[kind]}</p>
+  <h1>{titleOf(d)}</h1>
+  {d.name_en && <p class="muted" lang="en">{d.name_en}</p>}
+  <Verification v={d.verification} />
+  {
+    kind === 'works' && (
+      <ul class="links">
+        {d.full_text_url && <li><a href={d.full_text_url}>הטקסט המלא (נחלת הכלל)</a></li>}
+        {d.url && <li><a href={d.url}>עמוד היצירה</a>{d.series && <> · <span lang={d.language}>{d.series}</span></>}{d.duration_min && <> · {d.duration_min} דק'</>}</li>}
+        {d.translations.map((t: any) => (
+          <li>
+            תרגום ({t.language}): {t.url ? <a href={t.url}>{t.title}</a> : t.title}
+            {t.translator && <>, {t.translator}</>}
+            {t.publisher && <>, <a href={`/publishers/${t.publisher}/`}>{ref('publishers', t.publisher).title}</a></>}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <article>
+    <Content />
+  </article>
+  {
+    groups.length > 0 && (
+      <section>
+        <h2>קישורים</h2>
+        {groups.map((g) => (
+          <RefLinks title={g.title} items={g.items} />
+        ))}
+      </section>
+    )
+  }
+  <Sources sources={d.sources} />
+</Base>

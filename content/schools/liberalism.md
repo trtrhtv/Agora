@@ -14,7 +14,7 @@ sources:
     title: "Stanford Encyclopedia of Philosophy: Liberalism"
     url: https://plato.stanford.edu/entries/liberalism/
     type: encyclopedia
-key_thinkers: [john-stuart-mill]
+key_thinkers: [john-stuart-mill, john-locke]
 ---
 
 ## הרעיון המרכזי

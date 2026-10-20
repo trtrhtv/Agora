@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/trtrhtv/agora#readme",
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.2",
     "astro": "^7.3.8"
   },
   "private": true,

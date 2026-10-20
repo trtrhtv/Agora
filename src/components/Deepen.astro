@@ -1,0 +1,114 @@
+---
+// "Go deeper" (SPEC 4.2): works grouped by layer of depth, Hebrew first within each layer.
+import { getCollection } from 'astro:content';
+import { href, type Ref } from '../lib/view';
+
+type Layer = 'text' | 'listen' | 'intro' | 'deep';
+type Inline = { title: string; by: string; type: string; language: 'he' | 'en'; year?: number; url: string };
+type Endorsement = { by_he: string; url: string };
+interface Props {
+  items: ({ layer: Layer; note_he: string; endorsement?: Endorsement } & ({ work: string } | Inline))[];
+  ref: (kind: 'thinkers' | 'guides' | 'publishers', id: string) => Ref;
+}
+const { items, ref } = Astro.props;
+const works = new Map((await getCollection('works')).map((w) => [w.data.id, w.data]));
+const publishers = new Map((await getCollection('publishers')).map((p) => [p.data.id, p.data]));
+
+const LAYERS = [
+  ['text', 'הטקסט עצמו'],
+  ['listen', 'להאזין ולצפות'],
+  ['intro', 'מאמר מבוא'],
+  ['deep', 'לעומק'],
+] as const;
+const TYPE_LABEL: Record<string, string> = {
+  book: 'ספר',
+  essay: 'מסה',
+  article: 'מאמר',
+  chapter: 'פרק בספר',
+  lecture: 'הרצאה',
+  podcast: 'פודקאסט',
+  video: 'וידאו',
+  novel: 'רומן',
+};
+const isHebrew = (w: { language: string; translations: { language: string }[] }) =>
+  w.language === 'he' || w.translations.some((t) => t.language === 'he');
+const author = (id: string) => {
+  const t = ref('thinkers', id);
+  return t.title !== id ? t : ref('guides', id);
+};
+---
+
+{
+  items.length > 0 && (
+    <section>
+      <h2>להעמיק</h2>
+      {LAYERS.map(([layer, label]) => {
+        const inWorks = items
+          .filter((i) => i.layer === layer && 'work' in i)
+          // Unknown works are reported by the integrity check; skip them here so that error surfaces.
+          .flatMap((i) => ('work' in i && works.has(i.work) ? [{ i, w: works.get(i.work)! }] : []))
+          .sort((a, b) => Number(isHebrew(b.w)) - Number(isHebrew(a.w)));
+        const inline = items
+          .filter((i): i is { layer: Layer; note_he: string; endorsement?: Endorsement } & Inline => i.layer === layer && !('work' in i))
+          .sort((a, b) => Number(b.language === 'he') - Number(a.language === 'he'));
+        const rows = inWorks;
+        return (
+          rows.length + inline.length > 0 && (
+            <>
+              <h3>{label}</h3>
+              <ul class="deepen">
+                {rows.map(({ i, w }) => {
+                  const by = author(w.author);
+                  const he = w.translations.filter((t) => t.language === 'he');
+                  const link = w.url ?? w.full_text_url;
+                  return (
+                    <li>
+                      <span class="badge">{w.language === 'he' ? 'עברית' : he.length > 0 ? 'עברית + מקור' : w.language === 'en' ? 'English' : 'מקור'}</span>
+                      {link ? <a href={link}>{w.name_he}</a> : <span>{w.name_he}</span>}{' '}
+                      <span class="muted">
+                        · {TYPE_LABEL[w.type]} · <a href={href(by.kind, by.id)}>{by.title}</a>
+                        {w.series && <> · <span lang={w.language}>{w.series}</span></>}
+                        {w.duration_min && <> · {w.duration_min} דק'</>}
+                        {' · '}
+                        <a href={href('works', w.id)}>פרטים</a>
+                      </span>
+                      {he.map((t) => (
+                        <div class="muted">
+                          בעברית: {t.url ? <a href={t.url}>{t.title}</a> : t.title}
+                          {t.translator && <>, תרגום {t.translator}</>}
+                          {t.publisher && <>, {publishers.get(t.publisher)?.name_he ?? t.publisher}</>}
+                        </div>
+                      ))}
+                      <div>{i.note_he}</div>
+                      {i.endorsement && (
+                        <div class="muted">
+                          מומלץ: <a href={i.endorsement.url}>{i.endorsement.by_he}</a>
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
+                {inline.map((i) => (
+                  <li>
+                    <span class="badge">{i.language === 'he' ? 'עברית' : 'English'}</span>
+                    <a href={i.url}>{i.title}</a>{' '}
+                    <span class="muted">
+                      · {TYPE_LABEL[i.type]} · {i.by}
+                      {i.year && <> · {i.year}</>}
+                    </span>
+                    <div>{i.note_he}</div>
+                      {i.endorsement && (
+                        <div class="muted">
+                          מומלץ: <a href={i.endorsement.url}>{i.endorsement.by_he}</a>
+                        </div>
+                      )}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )
+        );
+      })}
+    </section>
+  )
+}

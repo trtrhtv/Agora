@@ -1,0 +1,27 @@
+---
+import { SOURCE_TYPE_LABEL } from '../lib/view';
+
+interface Props {
+  sources: { id: string; title: string; url: string; type: string }[];
+}
+const { sources } = Astro.props;
+---
+
+{
+  sources.length > 0 && (
+    <section>
+      <h2>מקורות</h2>
+      <ol class="sources">
+        {sources.map((s) => (
+          <li id={`src-${s.id}`}>
+            <strong>{s.id}</strong>{' '}
+            <a href={s.url} lang="en" rel="noopener">
+              {s.title}
+            </a>{' '}
+            <span class="muted">({SOURCE_TYPE_LABEL[s.type] ?? s.type})</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

@@ -1,38 +1,57 @@
 ---
-// Phase 0 placeholder home page. Running the integrity check here makes every build enforce it.
+// Home: the library lists. Running the integrity check here makes every build enforce it.
 import Base from '../layouts/Base.astro';
 import { assertIntegrity } from '../lib/integrity';
+import { KINDS, KIND_LABEL, STATUS_ICON, href, lifeSpan, titleOf } from '../lib/view';
 
 const all = await assertIntegrity();
 
-const labels = {
-  thinkers: 'הוגים',
-  schools: 'זרמים',
-  questions: 'שאלות',
-  works: 'יצירות',
-  guides: 'מסבירים',
-  publishers: 'הוצאות לאור',
-} as const;
-
-const badge = (v: { status: string; reviewed_by_me: boolean }) =>
-  (v.status === 'verified' ? '🟢' : v.status === 'partial' ? '🟡' : '⚪') + (v.reviewed_by_me ? '' : ' ✋');
-
-const title = (d: Record<string, unknown>) => (d.name_he ?? d.question_he) as string;
+const thinkers = [...all.thinkers].sort((a, b) => (a.data.born ?? 0) - (b.data.born ?? 0));
+const rest = KINDS.filter((k) => k !== 'thinkers' && k !== 'questions');
 ---
 
 <Base title="אגורה">
   <h1>אגורה</h1>
-  <p>ספרייה אישית של רעיונות. שלב 0: תשתית.</p>
+  <p class="muted">
+    🟢 מאומת · 🟡 מאומת חלקית · ⚪ לא מאומת · ✋ טרם עברתי. כל הכרטיסים הם טיוטות עד שאתה מאשר אותם.
+  </p>
+
+  <h2>{KIND_LABEL.thinkers} ({thinkers.length})</h2>
+  <ul class="links">
+    {
+      thinkers.map((e) => (
+        <li>
+          {STATUS_ICON[e.data.verification.status]}
+          {e.data.verification.reviewed_by_me ? '' : '✋'} <a href={href('thinkers', e.data.id)}>{e.data.name_he}</a>{' '}
+          <span class="muted" dir="ltr">{lifeSpan(e.data.born, e.data.died)}</span>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>{KIND_LABEL.questions} ({all.questions.length})</h2>
+  <ul class="links">
+    {
+      all.questions.map((e) => (
+        <li>
+          {STATUS_ICON[e.data.verification.status]}
+          {e.data.verification.reviewed_by_me ? '' : '✋'}{' '}
+          <a href={href('questions', e.data.id)}>{e.data.question_he}</a>
+        </li>
+      ))
+    }
+  </ul>
+
   {
-    Object.entries(labels).map(([kind, label]) => (
+    rest.map((kind) => (
       <section>
         <h2>
-          {label} ({all[kind as keyof typeof labels].length})
+          {KIND_LABEL[kind]} ({all[kind].length})
         </h2>
-        <ul>
-          {all[kind as keyof typeof labels].map((e) => (
+        <ul class="links">
+          {all[kind].map((e) => (
             <li>
-              {badge(e.data.verification)} {title(e.data)}
+              {STATUS_ICON[e.data.verification.status]} <a href={href(kind, e.data.id)}>{titleOf(e.data)}</a>
             </li>
           ))}
         </ul>
