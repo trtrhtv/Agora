@@ -18,7 +18,7 @@ sources:
     url: https://cris.haifa.ac.il/en/persons/roni-hirsch/
     type: official
   - id: s2
-    title: "Omny: הצוללת, פרק 313 (Globes)"
+    title: "Omny: הצוללת, פרק 313"
     url: https://omny.fm/shows/zsolelet/313
     type: official
 affiliation: "אוניברסיטת חיפה, בית הספר למדעי המדינה"
@@ -42,7 +42,7 @@ works: [tzolelet-313-smith]
 
 ## אופן הצגה
 
-כאן היא מופיעה כאורחת בפודקאסט "הצוללת" של העיתון הכלכלי גלובס [^s2].
+כאן היא מופיעה כאורחת בפודקאסט "הצוללת" [^s2].
 
 ## חסר לאימות מלא
 

@@ -2,18 +2,17 @@
 
 Where the work stands, so a new session can start cheaply. Read this, then CLAUDE.md. Update it at the end of every session (in the same commit as the work).
 
-## Current state (2026-10-20)
+## Current state (2026-10-20, end of session)
 
 - Phase 1.5 reader is built (Astro 7, `npm test` = build + invalid fixtures).
 - `deepen` (go-deeper) lists are done and independently reviewed for: Hobbes, Locke, Mill, Machiavelli, Rousseau, Kant, Burke, Marx.
-- Batch B (Plato, Aristotle, Adam Smith, Proudhon, Nietzsche): cards and deepen lists written and pushed (commit 2d776fa, "pending independent review"). Independent review is running; next: apply its findings, commit, report to the owner per card in Hebrew.
+- `deepen` lists done and independently reviewed for all 13 thinkers (batch B review on Sonnet found overclaims and unsourced notes, no factual errors in names/years/durations; all fixed).
 
 ## Next steps
 
-1. Finish batch B (above).
-2. `deepen` for the 2 question cards.
-3. Pilot of card shortening (~500 words) + "קרא את זה" on 3 cards.
-4. The owner's reading week in the reader.
+1. `deepen` for the 2 question cards.
+2. Pilot of card shortening (~500 words) + "קרא את זה" on 3 cards.
+3. The owner's reading week in the reader.
 
 ## Owner decisions to remember
 

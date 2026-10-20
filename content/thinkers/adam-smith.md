@@ -31,7 +31,7 @@ sources:
     url: https://www.gutenberg.org/ebooks/3300
     type: primary
   - id: s4
-    title: "Adam Smith, Essays on Philosophical Subjects (incl. The History of Astronomy, Sect. III), Project Gutenberg #58559"
+    title: "The Essays of Adam Smith (incl. The History of Astronomy), Project Gutenberg #58559"
     url: https://www.gutenberg.org/ebooks/58559
     type: primary
   - id: s5
@@ -70,7 +70,7 @@ deepen:
     note_he: "12 דקות בעברית, שלפי הכותרת קוראות את סמית בלי הסיסמה. מתאים לפרק \"היד הנעלמה כמיתוס\" בכרטיס."
   - work: "tzolelet-313-smith"
     layer: "listen"
-    note_he: "חוקרת סמית מאוניברסיטת חיפה, בעברית, על הפער בין המיתוס למציאות ועל המונופולים בישראל. שאלה לקחת: האם החשדנות של סמית כלפי סוחרים חלה על הענפים הריכוזיים של היום?"
+    note_he: "מרצה בכירה למדעי המדינה מאוניברסיטת חיפה, שפרסמה מחקר על סמית, בעברית, על הפער בין המיתוס למציאות ועל המונופולים בישראל. שאלה לקחת: האם החשדנות של סמית כלפי סוחרים חלה על הענפים הריכוזיים של היום?"
   - work: "in-our-time-wealth-of-nations"
     layer: "listen"
     note_he: "שיחה באנגלית על \"עושר העמים\" בהקשרו ההיסטורי והכלכלי."
@@ -89,7 +89,7 @@ deepen:
     by: "Jerry Z. Muller"
     type: "book"
     language: "en"
-    year: 1993
+    year: 1995
     url: "https://fivebooks.com/best-books/adam-smith-dennis-rasmussen/"
     layer: "intro"
     note_he: "מבוא באנגלית לחייו ולמחשבתו של סמית. המראיין ב-Five Books מעיר שהספר נטוע בוויכוח האמריקאי בין ימין לשמאל. הקישור הוא לראיון."
@@ -114,7 +114,7 @@ deepen:
     year: 2001
     url: "https://doi.org/10.2307/j.ctvjnrtf3"
     layer: "deep"
-    note_he: "הטענה שהיד הנעלמה היא אצל סמית בדיחה אירונית קלה. הקבלה חלוקה: ג'ייקוב סטיבנס ב-New Left Review (כתב עת שמאלי) משבח את הפרק אבל מעיר שאהדת המחברת ברורה, וג'יימס אוטסון (באתר FEE, קרן בעד שוק חופשי) כותב שהטיעון מעורר מחשבה אך לא משכנע, כי רעיון היד הנעלמה חודר לכל הספר גם אם הביטוי נדיר."
+    note_he: "הטענה שהיד הנעלמה היא אצל סמית בדיחה אירונית קלה. הקבלה חלוקה: ג'ייקוב סטיבנס ב-New Left Review (כתב עת שמאלי) משבח את הפרק אבל מעיר שנקודות מרכזיות וציטוטים חוזרים בספר פעמים רבות, וג'יימס אוטסון (https://fee.org/articles/economic-sentiments-adam-smith-condorcet-and-the-enlightenment/, באתר FEE, קרן בעד שוק חופשי) כותב שהטיעון מעורר מחשבה אך לא משכנע, כי רעיון היד הנעלמה חודר לכל הספר גם אם הביטוי נדיר."
     endorsement:
       by_he: "ג'ייקוב סטיבנס, New Left Review: פרשנות רהוטה מחדש למטפורה המפורסמת"
       url: https://newleftreview.org/issues/ii23/articles/jacob-stevens-artificial-twins
@@ -125,7 +125,7 @@ deepen:
     year: 1867
     url: "https://www.marxists.org/archive/marx/works/1867-c1/ch14.htm"
     layer: "deep"
-    note_he: "המבקר: מרקס מצטט את קטע \"טיפש ובור\" של סמית, וכותב שסמית ממליץ על חינוך העם בידי המדינה, אבל בזהירות ובמנות הומאופתיות. כנגד: רסמוסן ב-Five Books טוען שמרקס קורא את הקטע לא נכון, כי הוא מופיע בדיון על חינוך ולא על חלוקת עבודה. בעברית: כרך א של \"הקפיטל\" (ספריית פועלים)."
+    note_he: "המבקר: מרקס מצטט את קטע \"טיפש ובור\" של סמית, וכותב שסמית ממליץ על חינוך העם בידי המדינה, אבל בזהירות ובמנות הומאופתיות. כנגד: רסמוסן ב-Five Books מדגיש שהקטע מופיע בדיון על חינוך, שבו סמית קורא למדינה לדאוג לחינוך ילדי העניים. בעברית: כרך א של \"הקפיטל\" (ספריית פועלים)."
 ---
 
 ## מי היה
