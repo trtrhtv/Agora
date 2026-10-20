@@ -21,7 +21,7 @@ affiliation: "BBC Radio 4"
 affiliation_url: https://www.bbc.co.uk/programmes/b006qykl
 expertise: ["היסטוריה, פילוסופיה, דת, מדע, ספרות, אמנות ותרבות"]
 languages: [en]
-works: [in-our-time-hobbes, in-our-time-on-liberty, in-our-time-machiavelli, in-our-time-marx, in-our-time-burke, in-our-time-kant-ci]
+works: [in-our-time-hobbes, in-our-time-on-liberty, in-our-time-machiavelli, in-our-time-marx, in-our-time-burke, in-our-time-kant-ci, in-our-time-plato-republic, in-our-time-aristotle-ethics, in-our-time-aristotle-politics, in-our-time-wealth-of-nations, in-our-time-anarchism, in-our-time-genealogy]
 ---
 
 ## מי זה

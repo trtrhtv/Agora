@@ -53,7 +53,7 @@ year: {year}
 language: {lang}
 availability: public_domain
 full_text_url: {full_text}
-translations:
+translations:{(' []' if not tr else '')}
 {tr}---
 
 {body}

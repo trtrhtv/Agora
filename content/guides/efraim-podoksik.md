@@ -29,7 +29,7 @@ affiliation: "האוניברסיטה העברית בירושלים, המחלקה
 affiliation_url: https://en.politics.huji.ac.il/people/ephraim-podoksik
 expertise: ["פילוסופיה פוליטית ותאוריה פוליטית"]
 languages: [he]
-works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-mill, podoksik-mpt-20-mill, podoksik-mpt-02-machiavelli, podoksik-pk-05-machiavelli, podoksik-mpt-06-rousseau, podoksik-mpt-07-rousseau, podoksik-ideas-04-rousseau, podoksik-mpt-10-burke, podoksik-mpt-11-burke, podoksik-mpt-17-marx, podoksik-red-terror-10]
+works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-mill, podoksik-mpt-20-mill, podoksik-mpt-02-machiavelli, podoksik-pk-05-machiavelli, podoksik-mpt-06-rousseau, podoksik-mpt-07-rousseau, podoksik-ideas-04-rousseau, podoksik-mpt-10-burke, podoksik-mpt-11-burke, podoksik-mpt-17-marx, podoksik-red-terror-10, podoksik-yesodot-03-plato, podoksik-yesodot-04-aristotle, podoksik-yesodot-05-aristotle, podoksik-ideas-02-smith]
 ---
 
 ## מי זה
@@ -38,7 +38,7 @@ works: [podoksik-mpt-03-hobbes, podoksik-mpt-04-locke, podoksik-mpt-19-spencer-m
 
 ## התמחות
 
-מחשבה מדינית. בערוץ היוטיוב ובפודקאסט שלו מופיעות הקלטות של הקורס "מחשבה מדינית מודרנית", שהועבר בסמסטר אביב 2018: הרצאה לכל הוגה או זרם, ממקיאוולי, הובס ולוק ועד מרקס, מיל, הלאומיות והפשיזם [^s2] [^s3]. בתיאורי ההרצאות לא נאמר באיזה מוסד הועבר הקורס. באותם ערוצים יש גם קורסים נוספים, למשל "פוליטיקה כיעוד: רעיון החינוך לפוליטיקה בהגות המדינית" ו"הטרור האדום", וסדרת פרקים קצרים בשם "רעיונות, לא מה שחשבתם" [^s3].
+מחשבה מדינית. בערוץ היוטיוב ובפודקאסט שלו מופיעות הקלטות של הקורס "מחשבה מדינית מודרנית", שהועבר בסמסטר אביב 2018: הרצאה לכל הוגה או זרם, ממקיאוולי, הובס ולוק ועד מרקס, מיל, הלאומיות והפשיזם [^s2] [^s3]. בתיאורי ההרצאות לא נאמר באיזה מוסד הועבר הקורס. באותם ערוצים יש גם קורסים נוספים, למשל "יסודות המחשבה המדינית" (אביב 2023), "פוליטיקה כיעוד: רעיון החינוך לפוליטיקה בהגות המדינית" ו"הטרור האדום", וסדרת פרקים קצרים בשם "רעיונות, לא מה שחשבתם" [^s3].
 
 ## עמדות ידועות
 

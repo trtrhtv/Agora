@@ -24,7 +24,7 @@ affiliation: "פודקאסט עצמאי (David Edmonds ו-Nigel Warburton)"
 affiliation_url: https://philosophybites.com/
 expertise: ["פילוסופיה"]
 languages: [en]
-works: [pb-skinner-hobbes-state, pb-dunn-locke-toleration, pb-reeves-mill-on-liberty, pb-skinner-machiavelli-prince, pb-wolff-marx-alienation, pb-bourke-burke, pb-bertram-rousseau-psychology, pb-moore-williams-ethics]
+works: [pb-skinner-hobbes-state, pb-dunn-locke-toleration, pb-reeves-mill-on-liberty, pb-skinner-machiavelli-prince, pb-wolff-marx-alienation, pb-bourke-burke, pb-bertram-rousseau-psychology, pb-moore-williams-ethics, pb-lane-plato-totalitarianism, pb-srinivasan-genealogy, pb-phillipson-smith]
 ---
 
 ## מי זה
