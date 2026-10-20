@@ -6,9 +6,7 @@ Where the work stands, so a new session can start cheaply. Read this, then CLAUD
 
 - Phase 1.5 reader is built (Astro 7, `npm test` = build + invalid fixtures).
 - `deepen` (go-deeper) lists are done and independently reviewed for: Hobbes, Locke, Mill, Machiavelli, Rousseau, Kant, Burke, Marx.
-- Batch B in progress: Plato, Aristotle, Adam Smith, Proudhon, Nietzsche.
-  - Done: Henry Unger lecture work cards for Plato, Aristotle, Nietzsche (`content/works/unger-*`).
-  - Pending: research reports, then work/guide cards and deepen lists, independent review, fixes, per-card report to the owner.
+- Batch B (Plato, Aristotle, Adam Smith, Proudhon, Nietzsche): cards and deepen lists written and pushed (commit 2d776fa, "pending independent review"). Independent review is running; next: apply its findings, commit, report to the owner per card in Hebrew.
 
 ## Next steps
 
@@ -37,4 +35,5 @@ Where the work stands, so a new session can start cheaply. Read this, then CLAUD
 - Biggest costs: research agents (~200k tokens each) and the reviewer (~300k). Main-session verification is smaller.
 - Start a new session per batch; this file plus CLAUDE.md is enough context. Don't continue a compacted session for a new batch.
 - Brief agents to cap each layer at 2–3 items and not to re-open sources.
+- The independent reviewer can run on Sonnet (batch B did) to save tokens; compare its findings with batch A's before deciding to keep doing so.
 - Known-good guides already exist (Podoksik, In Our Time, Philosophy Bites, Runciman, Heyd, Unger, Ifergan, Berlin...); reuse them instead of re-researching.
